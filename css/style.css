@@ -2586,6 +2586,7 @@ header .container .nav-menu-wrapper ul.nav-menu li:last-child a {
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  text-shadow: -1px 1px 7px #333;
 }
 
 .homepage-boxes .container .col .second-overlay {
@@ -2649,5 +2650,6 @@ footer .footer-bar .container .footer-link a {
   color: #fff;
 }
 
+/******************************** About Us ********************************/
 /**** Media-queries ****/
 /*# sourceMappingURL=style.css.map */
