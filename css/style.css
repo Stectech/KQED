@@ -2479,6 +2479,19 @@ p {
   padding: 0 120px;
 }
 
+/**** Typography Imports ****/
+@font-face {
+  font-family: 'Adelle-Bold';
+  src: url("../fonts/2EF55B_0_0.eot");
+  src: url("../fonts/2EF55B_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_0_0.woff2") format("woff2"), url("../fonts/2EF55B_0_0.woff") format("woff"), url("../fonts/2EF55B_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Adelle-Light';
+  src: url("../fonts/2EF55B_1_0.eot");
+  src: url("../fonts/2EF55B_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_1_0.woff2") format("woff2"), url("../fonts/2EF55B_1_0.woff") format("woff"), url("../fonts/2EF55B_1_0.ttf") format("truetype");
+}
+
 /**************** Header ****************/
 header {
   background-color: #000;
@@ -2637,16 +2650,4 @@ footer .footer-bar .container .footer-link a {
 }
 
 /**** Media-queries ****/
-/**** Typography Imports ****/
-@font-face {
-  font-family: 'Adelle-Bold';
-  src: url("../fonts/2EF55B_0_0.eot");
-  src: url("../fonts/2EF55B_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_0_0.woff2") format("woff2"), url("../fonts/2EF55B_0_0.woff") format("woff"), url("../fonts/2EF55B_0_0.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'Adelle-Light';
-  src: url("../fonts/2EF55B_1_0.eot");
-  src: url("../fonts/2EF55B_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_1_0.woff2") format("woff2"), url("../fonts/2EF55B_1_0.woff") format("woff"), url("../fonts/2EF55B_1_0.ttf") format("truetype");
-}
 /*# sourceMappingURL=style.css.map */
