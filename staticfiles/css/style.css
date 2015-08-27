@@ -2466,7 +2466,7 @@ p {
   z-index: 1;
 }
 
-.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar {
+.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .innerpage-head, .page-content {
   float: left;
   width: 100%;
 }
@@ -2533,6 +2533,10 @@ header .container .nav-menu-wrapper ul.nav-menu li a {
 header .container .nav-menu-wrapper ul.nav-menu li:last-child a {
   margin-right: 0;
   font-size: 18px;
+}
+
+header .container .nav-menu-wrapper ul.nav-menu li.active-menu-item a {
+  color: #cfde00;
 }
 
 /**************** ATF-Section ****************/
@@ -2648,6 +2652,174 @@ footer .footer-bar .container .footer-link a {
   font-size: 24px;
   font-weight: 300;
   color: #fff;
+}
+
+/**************** Cascade-Boxes ****************/
+.cascadeboxes-wrapper h3 {
+  font-size: 80px;
+  font-weight: 300;
+  color: #00a7ce;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 50px 0;
+}
+
+.cascadeboxes-wrapper .single-box {
+  position: relative;
+  width: 50%;
+  height: 223px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  float: left;
+  cursor: pointer;
+}
+
+.cascadeboxes-wrapper .single-box .overlay {
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.cascadeboxes-wrapper .single-box .overlay h3 {
+  font-size: 34px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px 1px 7px #333;
+  line-height: 130px;
+  position: relative;
+}
+
+.cascadeboxes-wrapper .single-box .overlay h3 i {
+  font-style: initial;
+  position: absolute;
+  top: 38%;
+  right: 6%;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #fff;
+  line-height: 27px;
+  text-align: center;
+  text-indent: 4px;
+  border-radius: 100px;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.cascadeboxes-wrapper .single-box .overlay h3 i.active {
+  -webkit-transform: rotate(133deg);
+      -ms-transform: rotate(133deg);
+          transform: rotate(133deg);
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.cascadeboxes-wrapper .single-box .overlay:hover {
+  background-color: transparent;
+}
+
+.cascadeboxes-wrapper .single-box .inactive-overlay {
+  background-color: rgba(255, 255, 255, 0.55);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
+
+.cascadeboxes-wrapper #box-no1 {
+  background-image: url("../img/image-7.jpg");
+}
+
+.cascadeboxes-wrapper #box-no2 {
+  background-image: url("../img/image-4.jpg");
+}
+
+.cascadeboxes-wrapper #box-no3 {
+  background-image: url("../img/image-5.jpg");
+}
+
+.cascadeboxes-wrapper #box-no4 {
+  background-image: url("../img/image-6.jpg");
+}
+
+.cascadeboxes-wrapper #box-no5 {
+  background-image: url("../img/image-9.jpg");
+}
+
+.cascadeboxes-wrapper #box-no6 {
+  background-image: url("../img/image-8.jpg");
+}
+
+.cascadeboxes-wrapper .details {
+  background-color: #00a7ce;
+  display: none;
+}
+
+.cascadeboxes-wrapper .details .container {
+  max-width: 934px;
+  margin: 100px auto 150px;
+}
+
+.cascadeboxes-wrapper .details .container p {
+  color: #fff;
+  font-family: Adelle-Light;
+  font-size: 28px;
+  text-align: justify;
+}
+
+/******************************** Inner-Pages-Elements ********************************/
+.innerpage-head {
+  position: relative;
+}
+
+.innerpage-head img {
+  max-width: 100%;
+}
+
+.innerpage-head .container h2 {
+  font-size: 154px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: -3px 3px 12px #333;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+.page-content {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.page-content .container {
+  max-width: 934px;
+}
+
+.page-content p {
+  font-family: "Adelle-Light";
+  font-size: 28px;
+  color: #000;
+  text-align: justify;
+  margin: 10px 0 40px;
 }
 
 /******************************** About Us ********************************/
