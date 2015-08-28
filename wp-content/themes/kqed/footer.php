@@ -13,13 +13,15 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kqed' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kqed' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kqed' ), 'kqed', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+	<!-- Footer -->
+	<footer>
+		<div class="footer-bar">
+			<div class="container">
+				<p class="copyright-note">© KQED 2015</p>
+				<div class="footer-link"><a href="#">CONTACT US</a></div>
+			</div>
+		</div>
+	</footer>
 
 <?php wp_footer(); ?>
 

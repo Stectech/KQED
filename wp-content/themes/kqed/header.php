@@ -31,17 +31,13 @@
 				</h1>
 			</div>
 			<div class="nav-menu-wrapper">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<ul class="nav-menu">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</ul>
 			</div>
 		</div>
 	</header>
 
-	<!-- ATF-Section -->
-	<section class="atf-section">
-		<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
-		<div class="container">
-			
-		</div>
-	</section>
+	
 
 	<div id="content" class="site-content">

@@ -10,6 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<!-- ATF-Section -->
+	<section class="atf-section">
+		<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
+		<div class="container">
+			
+		</div>
+	</section>
+	
 	<!-- Homepage-Content -->
 	<div class="homepage-content">
 		<div class="container containerv2">
