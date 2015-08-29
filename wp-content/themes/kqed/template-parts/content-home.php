@@ -9,31 +9,28 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<?php //edit_post_link( esc_html__( 'Edit', 'kqed' ), '<span class="edit-link">', '</span>' ); ?>
 	<!-- ATF-Section -->
-	<section class="atf-section">
-		<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
-		<div class="container">
-			
-		</div>
-	</section>
-	
-	<!-- Homepage-Content -->
-	<div class="homepage-content">
-		<div class="container containerv2">
-			<div class="entry-content">
-				<?php the_content(); ?>
-				<?php
-					wp_link_pages( array(
-						'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kqed' ),
-						'after'  => '</div>',
-					) );
-				?>
-			</div><!-- .entry-content -->
-		</div>
+<section class="atf-section">
+	<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
+	<div class="container">
+		
 	</div>
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'kqed' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</section>
 
+<!-- Homepage-Content -->
+<div class="homepage-content">
+	<div class="container containerv2">
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kqed' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+	</div>
+</div>
+
+<?php echo do_shortcode('[catlist name="homepage" content="yes" template="homeblocks" thumbnail="yes" thumbnail_size="full"]'); ?>
