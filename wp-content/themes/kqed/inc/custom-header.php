@@ -26,8 +26,8 @@ function kqed_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'kqed_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 1920,
+		'height'                 => 490,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'kqed_header_style',
 		'admin-head-callback'    => 'kqed_admin_header_style',

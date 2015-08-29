@@ -9,8 +9,7 @@
 
 ?>
 
-<?php //edit_post_link( esc_html__( 'Edit', 'kqed' ), '<span class="edit-link">', '</span>' ); ?>
-	<!-- ATF-Section -->
+<!-- ATF-Section -->
 <section class="atf-section">
 	<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
 	<div class="container">

@@ -8,25 +8,31 @@
  */
 
 ?>
-test
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kqed' ),
-				'after'  => '</div>',
-			) );
-		?>
-	</div><!-- .entry-content -->
+<?php if ( get_header_image() ) : ?>
+<div class="innerpage-head">
+	<img src="<?php header_image(); ?>" alt="header">
+	<div class="container">
+		<h2><?php single_post_title(); ?></h2>
+	</div>	
+</div>
+<?php endif; // End header image check. ?>
 
-	<footer class="entry-footer">
-		<?php edit_post_link( esc_html__( 'Edit', 'kqed' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+<!-- Homepage-Content -->
+<div class="page-content">
+	<div class="container containerv2">
+		<div class="entry-content">
+			<?php the_content(); ?>
+			<?php
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kqed' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+	</div>
+</div>
 
+<?php $accordion = get_post_meta($post->ID, 'accordion', true); ?>
+<?php echo do_shortcode($accordion); ?>
