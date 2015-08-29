@@ -34,4 +34,5 @@
 	</div>
 </div>
 
-<?php echo do_shortcode('[catlist name="about" content="yes" template="accordion" thumbnail="yes" thumbnail_size="full"]'); ?>
+<?php $accordion = get_post_meta($post->ID, 'accordion', true); ?>
+<?php echo do_shortcode($accordion); ?>
