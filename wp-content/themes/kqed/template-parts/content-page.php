@@ -48,3 +48,6 @@
 
 <?php $accordion = get_post_meta($post->ID, 'accordion', true); ?>
 <?php echo do_shortcode($accordion); ?>
+
+
+
