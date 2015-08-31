@@ -8,6 +8,8 @@
 /**** Imports ****/
 @import url(../css/normalize.css);
 @import url(../css/responsive.gs.12col.css);
+@import url(../css/flexslider.css);
+@import url(../css/jquery.fancybox.css);
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2466,7 +2468,7 @@ p {
   z-index: 1;
 }
 
-.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .innerpage-head, .page-content {
+.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .innerpage-head, .page-content, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .cascadeboxes-wrapper .details-v2, .innerslider-wrapper, .videobox-wrapper {
   float: left;
   width: 100%;
 }
@@ -2654,6 +2656,46 @@ footer .footer-bar .container .footer-link a {
   color: #fff;
 }
 
+/******************************** Inner-Pages ********************************/
+.innerpage-head {
+  position: relative;
+}
+
+.innerpage-head img {
+  max-width: 100%;
+}
+
+.innerpage-head .container h2 {
+  font-size: 154px;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: -3px 3px 12px #333;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+}
+
+.page-content {
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+
+.page-content .container {
+  max-width: 934px;
+}
+
+.page-content p {
+  font-family: "Adelle-Light";
+  font-size: 28px;
+  color: #000;
+  text-align: justify;
+  margin: 10px 0 40px;
+}
+
 /**************** Cascade-Boxes ****************/
 .cascadeboxes-wrapper h3 {
   font-size: 80px;
@@ -2782,46 +2824,126 @@ footer .footer-bar .container .footer-link a {
   text-align: justify;
 }
 
-/******************************** Inner-Pages-Elements ********************************/
-.innerpage-head {
+.cascadeboxes-wrapper .details-v2 {
+  background-color: #00a7ce;
+  display: none;
+}
+
+.cascadeboxes-wrapper .details-v2 .container .col .big-text {
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 62px;
+  padding: 0 5% 0 8%;
+}
+
+.cascadeboxes-wrapper .details-v2 .container .col .accordion {
+  margin: 80px 0;
+}
+
+/******************************** Inner-Slider ********************************/
+.innerslider-wrapper h3 {
+  font-size: 80px;
+  font-weight: 300;
+  color: #00a7ce;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 50px 0;
+}
+
+.innerslider-wrapper #future-slider {
+  max-height: 525px;
+  border: none;
+  box-shadow: none;
+  margin: 0 0 0;
+}
+
+.innerslider-wrapper #future-slider ul li .image-side img {
+  max-width: 100%;
+  height: 456px;
+}
+
+.innerslider-wrapper #future-slider ul li .text-side {
+  background-color: #000;
+  padding: 2% 2% 1% 4%;
+}
+
+.innerslider-wrapper #future-slider ul li .text-side h4 {
+  font-size: 70px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 80px;
+  margin: 0;
+}
+
+.innerslider-wrapper #future-slider ul li .text-side p {
+  font-size: 26px;
+  font-family: Adelle-Light;
+  color: #fff;
+}
+
+.innerslider-wrapper #future-slider .flex-control-nav {
+  bottom: 30px;
+}
+
+.innerslider-wrapper #future-slider .flex-control-paging li a {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #cede00;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.innerslider-wrapper #future-slider .flex-control-paging li a.flex-active {
+  background-color: #cede00;
+}
+
+/******************************** Video-Box ********************************/
+.videobox-wrapper {
   position: relative;
 }
 
-.innerpage-head img {
+.videobox-wrapper .videobox-bg {
+  float: left;
   max-width: 100%;
 }
 
-.innerpage-head .container h2 {
-  font-size: 154px;
-  font-weight: 300;
-  color: #fff;
-  text-shadow: -3px 3px 12px #333;
-  text-align: center;
-  letter-spacing: 10px;
-  margin: 0;
+.videobox-wrapper .container {
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: 40px;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  display: table;
 }
 
-.page-content {
-  margin-top: 140px;
-  margin-bottom: 100px;
+.videobox-wrapper .container h3 {
+  font-size: 80px;
+  font-weight: 300;
+  line-height: 70px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px 1px 7px #333;
+  margin: 0 0 50px;
 }
 
-.page-content .container {
-  max-width: 934px;
+.videobox-wrapper .container a {
+  font-size: 36px;
+  font-family: Adelle-Light;
+  margin: 0 auto;
+  display: table;
 }
 
-.page-content p {
-  font-family: "Adelle-Light";
-  font-size: 28px;
-  color: #000;
-  text-align: justify;
-  margin: 10px 0 40px;
+.videobox-wrapper .container a img {
+  margin-right: 15px;
+  float: left;
 }
 
-/******************************** About Us ********************************/
+.fancybox-skin {
+  background: rgba(249, 249, 249, 0.12);
+  border-radius: 0px;
+}
+
 /**** Media-queries ****/
 /*# sourceMappingURL=style.css.map */

@@ -10,14 +10,26 @@
 ?>
 
 
-<?php if ( get_header_image() ) : ?>
+<?php /*if ( get_header_image() ) : ?>
 <div class="innerpage-head">
 	<img src="<?php header_image(); ?>" alt="header">
 	<div class="container">
 		<h2><?php single_post_title(); ?></h2>
 	</div>	
 </div>
-<?php endif; // End header image check. ?>
+<?php endif; */ // End header image check. ?>
+
+<?php
+	$thumb = wp_get_attachment_url( get_post_thumbnail_id($post->ID)); 
+	$url = $thumb;
+?>
+
+<div class="innerpage-head">
+	<img src="<?php echo $url ?>" alt="header">
+	<div class="container">
+		<h2><?php single_post_title(); ?></h2>
+	</div>	
+</div>
 
 <!-- Homepage-Content -->
 <div class="page-content">

@@ -55,10 +55,11 @@ $lcp_display_output .= '<div class="cascadeboxes-wrapper" id="cbs-aboutpage">';
  * You can now pass an html tag as a parameter. This tag will sorround the info
  * you want to display. You can also assign a specific CSS class to each field.
  */
+
 foreach ($this->catlist->get_categories_posts() as $single){
 
   $ctr++;
-  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID, 'full'));
+  $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
 
   
