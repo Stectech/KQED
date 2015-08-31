@@ -33,7 +33,7 @@
 
 <!-- Homepage-Content -->
 <div class="page-content">
-	<div class="container containerv2">
+	<div class="container">
 		<div class="entry-content">
 			<?php the_content(); ?>
 			<?php
