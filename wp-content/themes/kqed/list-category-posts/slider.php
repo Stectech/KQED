@@ -31,6 +31,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  * the instance of CatListDisplayer that called this file.
  */
 
+
 /* This is the string which will gather all the information.*/
 $lcp_display_output = '';
 
