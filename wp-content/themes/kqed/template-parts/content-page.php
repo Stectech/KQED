@@ -46,8 +46,41 @@
 	</div>
 </div>
 
+<!-- create shortcodes -->
 <?php $accordion = get_post_meta($post->ID, 'accordion', true); ?>
 <?php echo do_shortcode($accordion); ?>
+
+<?php $slider = get_post_meta($post->ID, 'slider', true); ?>
+<?php echo do_shortcode($slider); ?>
+
+<?php $future_subcontent = get_post_meta($post->ID, 'future_subcontent', true); ?>
+<?php $bg =   get_field( "background", $post->ID ); ?>
+
+<?php $video_url = get_field( "video_url", $post->ID ); ?>
+
+<!-- subcontent for the future page -->
+<?php if ( $future_subcontent ) : ?>
+	<div class="page-content">
+		<div class="container">
+			<p><?php echo do_shortcode($future_subcontent); ?></p>
+		</div>
+	</div>
+<?php endif; ?>
+
+<!-- Video-box -->
+<?php if ( $bg ) : ?>
+	<div class="videobox-wrapper">
+		<img src="<?php echo $bg['url'] ?>" class="videobox-bg" alt="video" />
+		<div class="container">
+			<h3>lorem ipsum dolor sit amet</h3>
+			<a href="<?php echo $video_url ?>" class="lightbox fancybox.iframe">
+				<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" />
+				Play video
+			</a>
+		</div>
+	</div>
+<?php endif; ?>
+
 
 
 

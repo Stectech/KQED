@@ -18,9 +18,12 @@
 	<?php $url = get_post_meta(get_the_ID(), 'url', true); ?>
 	
 	<footer>
-		<div class="container">
-			<a href="<?php echo $url; ?>" class="bold-link"><?php echo $linkname; ?><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" /></a>
-		</div>
+		<?php if ( $linkname ) : ?>
+			<div class="container">
+				<a href="<?php echo $url; ?>" class="bold-link"><?php echo $linkname; ?><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" /></a>
+			</div>
+		<?php endif; ?>
+		
 		<div class="footer-bar">
 			<div class="container">
 				<p class="copyright-note">© KQED 2015</p>
