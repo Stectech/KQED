@@ -20,7 +20,11 @@
 	<footer>
 		<?php if ( $linkname ) : ?>
 			<div class="container">
-				<a href="<?php echo $url; ?>" class="bold-link"><?php echo $linkname; ?><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" /></a>
+				<a href="<?php echo $url; ?>" class="bold-link">
+					<span data-text="<?php echo $linkname; ?>">
+						<?php echo $linkname; ?><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" />
+					</span>
+				</a>
 			</div>
 		<?php endif; ?>
 		

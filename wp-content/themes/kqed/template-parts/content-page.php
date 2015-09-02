@@ -82,6 +82,73 @@
 	</div>
 <?php endif; ?>
 
+	<!-- Investors -->
+	<div class="investors-wrapper">
+		<div class="container">
+			<h3>INVESTORS</h3>
+		</div>
+		<div class="left-side">
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image.jpg" alt="eric & wendy schmidth">
+					<h4>eric & wendy schmidt</h4>
+				</a>
+			</div>
+			<div class="col span_12 quotation">
+				<p>“KQED has been at the cutting edge of Arts and Science programming for generations. Innovative original content will inspire creativity and imagination in the artists, scientists, learners and dreamers of the future.”</p>
+				<h5>John smith</h5>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-5.jpg" alt="yogen & peggy dalal">
+					<h4>yogen & peggy dalal</h4>
+				</a>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-6.jpg" alt="Doris fisher">
+					<h4>Doris fisher</h4>
+				</a>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-7.jpg" alt="les & Judy vadasz">
+					<h4>les & Judy vadasz</h4>
+				</a>
+			</div>
+		</div>
+		<div class="right-side">
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-1.jpg" alt="mark & mauree jane perry">
+					<h4>mark & mauree jane perry</h4>
+				</a>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-2.jpg" alt="anne & greg davis">
+					<h4>anne & greg davis</h4>
+				</a>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-3.jpg" alt="Diane B. wilsey">
+					<h4>Diane B. wilsey</h4>
+				</a>
+			</div>
+			<div class="col span_12">
+				<a href="#">
+					<img src="img/investors/image-4.jpg" alt="dirk & charlene kabcenell">
+					<h4>dirk & charlene kabcenell</h4>
+				</a>
+			</div>
+			<div class="col span_12 quotation">
+				<p>“Public media consumers of the future won’t be sitting in front of their televisions or listening to whatever happens to be on the car radio during their commute. They will want their media delivered on-demand where they are, when they wish, on their digital platform of choice.”</p>
+				<h5>ANONYMOUS</h5>
+			</div>
+		</div>
+	</div>
+
 
 
 
