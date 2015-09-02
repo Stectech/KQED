@@ -42,6 +42,7 @@ $lcp_display_output .= $this->get_conditional_title();
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
 $lcp_display_output .= '<div class="cascadeboxes-wrapper" id="cbs-aboutpage">';
+$lcp_display_output .= '<h3>CAMPAIGN OBJECTIVES</h3>';
 
 /**
  * POSTS LOOP
@@ -69,7 +70,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= '<div class="inactive-overlay"></div>';
   $lcp_display_output .= '<div class="overlay">';
   $lcp_display_output .= '<h3>';
-  $lcp_display_output .= $this->get_post_title($single);
+  $lcp_display_output .= get_the_title($single->ID);
   $lcp_display_output .= '<i class="">+</i></h3>';
   $lcp_display_output .= '</div></div>';
 

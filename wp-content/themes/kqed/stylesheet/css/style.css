@@ -2468,7 +2468,7 @@ p {
   z-index: 1;
 }
 
-.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .innerpage-head, .page-content, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .cascadeboxes-wrapper .details-v2, .innerslider-wrapper, .videobox-wrapper {
+.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .innerpage-head, .page-content, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .cascadeboxes-wrapper .details-v2, .innerslider-wrapper, .videobox-wrapper, .investors-wrapper, .progressintro-wrapper, .todayskqed-section {
   float: left;
   width: 100%;
 }
@@ -2618,21 +2618,6 @@ header .container .nav-menu-wrapper ul.nav-menu li.active-menu-item a {
 }
 
 /**************** Footer ****************/
-footer .container .bold-link {
-  font-size: 80px;
-  font-weight: 300;
-  background-color: #cede00;
-  letter-spacing: 3px;
-  padding: 65px 190px 45px 190px;
-  display: table;
-  margin: 150px auto;
-}
-
-footer .container .bold-link img {
-  display: block;
-  margin: 50px auto 0;
-}
-
 footer .footer-bar {
   background-color: #000;
 }
@@ -2654,6 +2639,98 @@ footer .footer-bar .container .footer-link a {
   font-size: 24px;
   font-weight: 300;
   color: #fff;
+}
+
+.bold-link {
+  font-size: 80px;
+  font-weight: 300;
+  background-color: #cede00;
+  letter-spacing: 3px;
+  padding: 65px 190px 45px 190px;
+  display: table;
+  margin: 150px auto;
+}
+
+.bold-link span {
+  position: relative;
+}
+
+.bold-link img {
+  display: block;
+  margin: 50px auto 0;
+  transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  -webkit-transition: all 800ms ease-in-out;
+  -ms-transition: all 800ms ease-in-out;
+}
+
+.bold-link span::before {
+  color: #000;
+  max-width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  content: attr(data-text);
+  transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+}
+
+.bold-link:hover span::before,
+.bold-link:focus span::before {
+  max-width: 100%;
+  outline: none;
+  text-shadow: none;
+}
+
+.bold-link:hover img,
+.bold-link:focus img {
+  -webkit-transform: rotateX(180deg);
+  transition: all 800ms ease-in-out;
+  -o-transition: all 800ms ease-in-out;
+  -moz-transition: all 800ms ease-in-out;
+  -webkit-transition: all 800ms ease-in-out;
+  -ms-transition: all 800ms ease-in-out;
+}
+
+@-webkit-keyframes arrowMove {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  100% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+/* Standard syntax */
+@keyframes arrowMove {
+  0% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    -webkit-filter: FlipH;
+            filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
 }
 
 /******************************** Inner-Pages ********************************/
@@ -2840,7 +2917,7 @@ footer .footer-bar .container .footer-link a {
   margin: 80px 0;
 }
 
-/******************************** Inner-Slider ********************************/
+/**************** Inner-Slider ****************/
 .innerslider-wrapper h3 {
   font-size: 80px;
   font-weight: 300;
@@ -2897,7 +2974,7 @@ footer .footer-bar .container .footer-link a {
   background-color: #cede00;
 }
 
-/******************************** Video-Box ********************************/
+/**************** Video-Box ****************/
 .videobox-wrapper {
   position: relative;
 }
@@ -2943,6 +3020,209 @@ footer .footer-bar .container .footer-link a {
 .fancybox-skin {
   background: rgba(249, 249, 249, 0.12);
   border-radius: 0px;
+}
+
+/**************** Investors-Section ****************/
+.investors-wrapper .container h3 {
+  font-size: 80px;
+  font-weight: 300;
+  color: #00a7ce;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 50px 0;
+}
+
+.investors-wrapper .col {
+  position: relative;
+  height: 195px;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.investors-wrapper .col + a {
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.investors-wrapper .col img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.investors-wrapper .col h4 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 10% 0;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: -1px 1px 7px #333;
+}
+
+.investors-wrapper .col:hover {
+  opacity: .9;
+}
+
+.investors-wrapper .col.quotation {
+  background-color: #000;
+  height: 390px;
+  padding: 8% 8% 8% 12%;
+}
+
+.investors-wrapper .col.quotation p {
+  font-size: 28px;
+  font-family: Adelle-Light;
+  line-height: 34px;
+  text-align: justify;
+  color: #fff;
+  margin: 0;
+}
+
+.investors-wrapper .col.quotation h5 {
+  font-weight: 400;
+  font-size: 28px;
+  color: #cede00;
+  text-transform: uppercase;
+  margin: 44px 0 0;
+}
+
+.investors-wrapper .col.quotation:hover {
+  opacity: 1;
+}
+
+.investors-wrapper .left-side {
+  float: left;
+  width: 50%;
+}
+
+.investors-wrapper .right-side {
+  float: left;
+  width: 50%;
+}
+
+.investors-wrapper .right-side .quotation {
+  padding: 6% 8% 7% 12%;
+}
+
+.investors-wrapper .right-side .quotation h5 {
+  margin: 35px 0 0;
+}
+
+/**************** ProgressIntro-Section ****************/
+.progressintro-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.progressintro-wrapper .backgrounds-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.progressintro-wrapper .backgrounds-wrapper img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+}
+
+.progressintro-wrapper .backgrounds-wrapper img.active-image {
+  opacity: 1;
+}
+
+.progressintro-wrapper .items-wrapper {
+  float: none;
+  width: 890px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.progressintro-wrapper .items-wrapper ul {
+  float: left;
+  width: 100%;
+  padding-left: 0;
+  padding: 100px 0;
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+.progressintro-wrapper .items-wrapper ul li {
+  float: left;
+  width: 100%;
+}
+
+.progressintro-wrapper .items-wrapper ul li a {
+  color: #000;
+  font-size: 34px;
+  font-weight: 400;
+  display: block;
+  text-align: left;
+  margin: 0px 50px;
+  padding: 30px 0;
+  border-bottom: 4px solid #000;
+}
+
+.progressintro-wrapper .items-wrapper ul li a span {
+  float: right;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #000;
+  margin-top: 10px;
+  border-radius: 100px;
+}
+
+.progressintro-wrapper .items-wrapper ul li a span img {
+  max-width: 85%;
+  margin: 2px auto;
+  display: block;
+}
+
+.progressintro-wrapper .items-wrapper ul li:first-child a {
+  border-top: 4px solid #000;
+}
+
+/**************** TodaysKQED-Section ****************/
+.todayskqed-section {
+  margin-top: 150px;
+}
+
+.todayskqed-section h3 {
+  font-size: 80px;
+  font-weight: 300;
+  color: #00a7ce;
+  text-align: center;
+  letter-spacing: 4px;
+  margin: 50px 0;
+}
+
+.todayskqed-section .inner-wrapper {
+  background-color: #00a7ce;
+  font-size: 154px;
+  font-weight: 300;
+  color: #fff;
+  padding: 100px 80px;
+  height: 650px;
 }
 
 /**** Media-queries ****/
