@@ -85,7 +85,8 @@
 	</div>
 <?php endif; ?>
 
-
+<!-- Investors -->
+<?php if ( $investors_left ) : ?>
  <div class="investors-wrapper">
 	<div class="container">
 		<h3>INVESTORS</h3>
@@ -97,6 +98,7 @@
 		<?php echo do_shortcode($investors_right); ?>
 	</div>
 </div> 
+<?php endif; ?>
 
 
 
