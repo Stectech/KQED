@@ -83,7 +83,7 @@
 <?php endif; ?>
 
 	<!-- Investors -->
-	<div class="investors-wrapper">
+	<!-- <div class="investors-wrapper">
 		<div class="container">
 			<h3>INVESTORS</h3>
 		</div>
@@ -147,7 +147,7 @@
 				<h5>ANONYMOUS</h5>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 
 
