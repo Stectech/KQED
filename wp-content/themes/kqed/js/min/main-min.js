@@ -22,8 +22,8 @@ $(document).ready(function() {
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
 
-		var $el = $(this);
-		var $val = $(this).attr('data-counter');
+		var $el = $(this), 
+		$val = $(this).attr('data-counter');
 
 		$(".details, .details-v2").slideUp(300);
 
@@ -82,6 +82,29 @@ $(document).ready(function() {
 	//Video Lightbox
 	$('.lightbox').fancybox();
 
+	//======= ProgressIntro-Section =======//
+	var $detNo = $(this).attr('data-img');
+	var $imgNo = $('.progressintro-wrapper .backgrounds-wrapper img').attr('data-img');
+
+	$('.progressintro-wrapper .items-wrapper ul li a').on('mouseover', function() {
+		var $detNo = $(this).attr('data-img');
+		$(".progressintro-wrapper .backgrounds-wrapper img").removeClass('active-image');
+
+		$(".progressintro-wrapper .backgrounds-wrapper img[data-img="+$detNo+"]").addClass('active-image');
+	});
+
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
