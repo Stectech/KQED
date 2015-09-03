@@ -1,3 +1,7 @@
 .DS_Store
 wp-config.php
 wp-snapshots/*
+
+staticfiles/.DS_Store
+
+staticfiles/.DS_Store
