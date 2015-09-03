@@ -6,7 +6,7 @@ add_action('admin_menu', 'friendsonly_createmenu');
 
 function friendsonly_createmenu() {
 
-	add_options_page('Friends Only Options', 'Friends Only', 'manage_options', 'friendsonly-settings', 'friendsonly_options');
+	add_options_page('Access Page', 'Access Page', 'manage_options', 'friendsonly-settings', 'friendsonly_options');
 
 	//call register settings function
 	add_action( 'admin_init', 'register_friendsonlysettings' );
@@ -48,7 +48,7 @@ function friendsonly_options() {
 ?>
 
 <div class="wrap">
-<h2>Friends Only Options</h2>
+<h2>Access Code Options</h2>
 
 <form method="post" action="options.php">
     <?php settings_fields( 'friendsonly-main' ); ?>

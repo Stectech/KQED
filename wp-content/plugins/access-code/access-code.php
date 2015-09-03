@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Friends Only
+Plugin Name: Access Code
 Plugin URI: http://wordpress.org/extend/plugins/friends-only/
 Description: Restrict blog access to users who log in with a permitted email addresses (no usernames or passwords required!).
 Version: 0.7.2

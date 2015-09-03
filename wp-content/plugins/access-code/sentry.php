@@ -269,14 +269,9 @@ function fo_showLoginForm($error_message) {
 		
 	echo "</head>
 	
-	<body>
+	<body>";
 	
-	<h1>";
-	
-	echo bloginfo('name');
 				
-	echo "</h1>\n";
-	
 	if ($error_message == NULL) {
 		echo get_option('prompt_email');
 	}
@@ -290,19 +285,9 @@ function fo_showLoginForm($error_message) {
 	
 	echo get_option('prompt_submit');
 	
-	echo "' />\n</form>
-	</div>
-	<p class='admin'><a class='adminlink' href='";
+	echo "' />\n</form></div>";
 	
-	echo site_url();
-	
-	echo "/wp-admin/'>";
-	
-	echo get_option('prompt_admin');
-	
-	echo "</a></p>
-	</body>
-	</html>";
+	echo "</body></html>";
 	
 	// stop at this point
 	die();
