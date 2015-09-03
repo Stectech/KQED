@@ -2543,7 +2543,9 @@ header .container .nav-menu-wrapper ul.nav-menu li.active-menu-item a {
 }
 
 /**************** ATF-Section ****************/
-.atf-section img {
+.atf-section video {
+  float: left;
+  width: 100%;
   max-width: 100%;
 }
 
@@ -2691,47 +2693,13 @@ footer .footer-bar .container .footer-link a {
 .bold-link:hover img,
 .bold-link:focus img {
   -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  transform: rotateX(180deg);
   transition: all 800ms ease-in-out;
   -o-transition: all 800ms ease-in-out;
   -moz-transition: all 800ms ease-in-out;
   -webkit-transition: all 800ms ease-in-out;
   -ms-transition: all 800ms ease-in-out;
-}
-
-@-webkit-keyframes arrowMove {
-  0% {
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-filter: FlipH;
-            filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  100% {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -webkit-filter: FlipH;
-            filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-}
-
-/* Standard syntax */
-@keyframes arrowMove {
-  0% {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    -webkit-filter: FlipH;
-            filter: FlipH;
-    -ms-filter: "FlipH";
-  }
-  50% {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
-  100% {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
 }
 
 /******************************** Inner-Pages ********************************/
@@ -3152,11 +3120,17 @@ footer .footer-bar .container .footer-link a {
 }
 
 .progressintro-wrapper .items-wrapper {
-  float: none;
-  width: 890px;
-  margin: 0 auto;
+  width: 50%;
   position: relative;
   z-index: 1;
+  -webkit-transform: translate(50%, 0px);
+  -ms-transform: translate(50%, 0px);
+  transform: translate(50%, 0px);
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
 
 .progressintro-wrapper .items-wrapper ul {
@@ -3181,6 +3155,12 @@ footer .footer-bar .container .footer-link a {
   margin: 0px 50px;
   padding: 30px 0;
   border-bottom: 4px solid #000;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
 }
 
 .progressintro-wrapper .items-wrapper ul li a span {
@@ -3197,10 +3177,71 @@ footer .footer-bar .container .footer-link a {
   max-width: 85%;
   margin: 2px auto;
   display: block;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
 }
 
-.progressintro-wrapper .items-wrapper ul li:first-child a {
-  border-top: 4px solid #000;
+.progressintro-wrapper .items-wrapper ul li a span img.opened {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.progressintro-wrapper .items-wrapper ul li:first-child a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+  background-color: #000;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.progressintro-wrapper .items-wrapper ul li:first-child.active-image a::before {
+  opacity: .3;
+}
+
+.progressintro-wrapper .items-wrapper ul li.nonactive-item a {
+  opacity: 0.3;
+}
+
+.progressintro-wrapper .items-wrapper.opened {
+  -webkit-transform: translate(0%, 0px);
+  -ms-transform: translate(0%, 0px);
+  transform: translate(0%, 0px);
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box {
+  background-color: #00a7ce;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transform: translate(200%, 0px);
+  -ms-transform: translate(200%, 0px);
+  transform: translate(200%, 0px);
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box.opened {
+  -webkit-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transform: translate(100%, 0px);
 }
 
 /**************** TodaysKQED-Section ****************/

@@ -8,3 +8,12 @@
 header .container .nav-menu-wrapper .current-menu-item a {
 	color: #cfde00;
 }
+
+.content-404 h3 {
+    font-size: 80px;
+    font-weight: 300;
+    color: #00a7ce;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 50px 0;
+}

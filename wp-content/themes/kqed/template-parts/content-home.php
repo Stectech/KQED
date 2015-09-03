@@ -8,13 +8,12 @@
  */
 
 ?>
-
 <!-- ATF-Section -->
 <section class="atf-section">
-	<img src="<?php bloginfo('template_directory'); ?>/img/video.jpg" alt="video" />
-	<div class="container">
-		
-	</div>
+	<video loop poster="<?php bloginfo('template_directory'); ?>/img/video.jpg" id="homepage-video">
+		<source src="<?php bloginfo('template_directory'); ?>/img/videos/KQ001_CAMPAIGN_21_05_1-VP9_1080p_3Mbps.webm" type="video/webm"/>
+		<source src="<?php bloginfo('template_directory'); ?>/img/videos/KQ001_CAMPAIGN_21_05_1-H264_1080p_3200kbs.mov" type="video/mp4"/>
+	</video>
 </section>
 
 <!-- Homepage-Content -->
