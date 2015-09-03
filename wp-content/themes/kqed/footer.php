@@ -27,6 +27,15 @@
 				</a>
 			</div>
 		<?php endif; ?>
+		<?php if ( is_404() ) : ?>
+			<div class="container">
+				<a href="/" class="bold-link">
+					<span data-text="KQED.com">
+						KQED.com<img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" />
+					</span>
+				</a>
+			</div>
+		<?php endif; ?>
 		
 		<div class="footer-bar">
 			<div class="container">
