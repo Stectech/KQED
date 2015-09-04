@@ -2485,14 +2485,14 @@ p {
 /**** Typography Imports ****/
 @font-face {
   font-family: 'Adelle-Bold';
-  src: url("../fonts/2EF55B_0_0.eot");
-  src: url("../fonts/2EF55B_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_0_0.woff2") format("woff2"), url("../fonts/2EF55B_0_0.woff") format("woff"), url("../fonts/2EF55B_0_0.ttf") format("truetype");
+  src: url("fonts/2EF55B_0_0.eot");
+  src: url("fonts/2EF55B_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/2EF55B_0_0.woff2") format("woff2"), url("fonts/2EF55B_0_0.woff") format("woff"), url("fonts/2EF55B_0_0.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Adelle-Light';
-  src: url("../fonts/2EF55B_1_0.eot");
-  src: url("../fonts/2EF55B_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2EF55B_1_0.woff2") format("woff2"), url("../fonts/2EF55B_1_0.woff") format("woff"), url("../fonts/2EF55B_1_0.ttf") format("truetype");
+  src: url("fonts/2EF55B_1_0.eot");
+  src: url("fonts/2EF55B_1_0.eot?#iefix") format("embedded-opentype"), url("fonts/2EF55B_1_0.woff2") format("woff2"), url("fonts/2EF55B_1_0.woff") format("woff"), url("fonts/2EF55B_1_0.ttf") format("truetype");
 }
 
 /**************** Header ****************/
@@ -2830,27 +2830,27 @@ footer .footer-bar .container .footer-link a {
 }
 
 .cascadeboxes-wrapper #box-no1 {
-  background-image: url("../img/image-7.jpg");
+  background-image: url("img/image-7.jpg");
 }
 
 .cascadeboxes-wrapper #box-no2 {
-  background-image: url("../img/image-4.jpg");
+  background-image: url("img/image-4.jpg");
 }
 
 .cascadeboxes-wrapper #box-no3 {
-  background-image: url("../img/image-5.jpg");
+  background-image: url("img/image-5.jpg");
 }
 
 .cascadeboxes-wrapper #box-no4 {
-  background-image: url("../img/image-6.jpg");
+  background-image: url("img/image-6.jpg");
 }
 
 .cascadeboxes-wrapper #box-no5 {
-  background-image: url("../img/image-9.jpg");
+  background-image: url("img/image-9.jpg");
 }
 
 .cascadeboxes-wrapper #box-no6 {
-  background-image: url("../img/image-8.jpg");
+  background-image: url("img/image-8.jpg");
 }
 
 .cascadeboxes-wrapper .details {
