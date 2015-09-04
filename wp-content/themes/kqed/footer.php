@@ -52,18 +52,10 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  // localhost
-  //ga('create', 'UA-67164516-1', {"cookieDomain":"none"});
   
   ga('create', 'UA-67164516-1', 'auto');
   ga('set', 'dimension1', "<?php echo $access_code ?>");
-
-  //todo: removed the title when google already tracks the data, i added this just to test
-  // if the access code successfully track the data
-  ga('send', 'pageview', {
-  	'title': '<?php echo $access_code ?>'
-  });
+  ga('send', 'pageview', {'title': '<?php echo $access_code ?>'});
   
 </script>
 
