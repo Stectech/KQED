@@ -88,6 +88,7 @@ function fo_runSentry() {
 	if (isset($_POST['access_email'])) {
 	
 		$supplied_address = strtolower(trim($_POST['access_email']));
+		setcookie("access_code", $supplied_address);
 	 
 		if ( strlen($supplied_address) == 0 ) { $supplied_address = 'null'; }
 	
