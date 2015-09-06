@@ -2469,7 +2469,7 @@ p {
   z-index: 1;
 }
 
-.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .innerpage-head, .page-content, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .cascadeboxes-wrapper .details-v2, .innerslider-wrapper, .videobox-wrapper, .investors-wrapper, .progressintro-wrapper, .todayskqed-section {
+.section, header, .atf-section, .homepage-content, .homepage-boxes, footer, footer .footer-bar, .innerpage-head, .page-content, .cascadeboxes-wrapper, .cascadeboxes-wrapper .details, .cascadeboxes-wrapper .details-v2, .innerslider-wrapper, .videobox-wrapper, .investors-wrapper, .progressintro-wrapper, .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper, .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul, .todayskqed-section {
   float: left;
   width: 100%;
 }
@@ -3067,6 +3067,14 @@ footer .footer-bar .container .footer-link a {
   opacity: 1;
 }
 
+.investors-wrapper .col.hasvideo .play-icon {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: 20px;
+  top: 20px;
+}
+
 .investors-wrapper .left-side {
   float: left;
   width: 50%;
@@ -3184,7 +3192,7 @@ footer .footer-bar .container .footer-link a {
   -ms-transition: all 300ms ease-in-out;
 }
 
-.progressintro-wrapper .items-wrapper ul li a span img.opened {
+.progressintro-wrapper .items-wrapper ul li a span img.activated {
   -webkit-transform: rotate(-135deg);
   -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
@@ -3206,7 +3214,7 @@ footer .footer-bar .container .footer-link a {
   -ms-transition: all 300ms ease-in-out;
 }
 
-.progressintro-wrapper .items-wrapper ul li:first-child.active-image a::before {
+.progressintro-wrapper .items-wrapper ul li:first-child.active-item a::before {
   opacity: .3;
 }
 
@@ -3221,13 +3229,15 @@ footer .footer-bar .container .footer-link a {
 }
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box {
-  background-color: #00a7ce;
+  background-color: #00a6cf;
   width: 50%;
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1;
+  padding: 60px 50px;
+  overflow: scroll;
   transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -3242,6 +3252,125 @@ footer .footer-bar .container .footer-link a {
   -webkit-transform: translate(100%, 0px);
   -ms-transform: translate(100%, 0px);
   transform: translate(100%, 0px);
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px 0 30px;
+  text-transform: uppercase;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
+  font-family: 'adelle-bold';
+  font-size: 26px;
+  color: #fff;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p.serif {
+  font-family: 'Adelle-Light';
+  margin: 5px 0 40px;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
+  display: block;
+  margin: 10px 30px 10px 0;
+  position: relative;
+  width: 45%;
+  float: left;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link img {
+  max-width: 100%;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link img.play-icon {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger {
+  font-family: 'Adelle-Light';
+  font-size: 26px;
+  color: #cede00;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger img {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info {
+  background-color: #00a6cf;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  padding: 60px 50px;
+  overflow: scroll;
+  -webkit-transform: translate(100%, 0px);
+  -ms-transform: translate(100%, 0px);
+  transform: translate(100%, 0px);
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info.opened {
+  -webkit-transform: translate(0%, 0px);
+  -ms-transform: translate(0%, 0px);
+  transform: translate(0%, 0px);
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info h3 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin: 10px 0 30px;
+  text-transform: uppercase;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul {
+  padding-left: 0;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  font-family: 'Adelle-Light';
+  font-size: 26px;
+  color: #fff;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li b {
+  font-family: 'adelle-bold';
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info .moreinfo-back-trigger {
+  font-family: 'Adelle-Light';
+  font-size: 26px;
+  color: #cede00;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info .moreinfo-back-trigger img {
+  margin-right: 15px;
+  vertical-align: middle;
 }
 
 /**************** TodaysKQED-Section ****************/
@@ -3268,4 +3397,5 @@ footer .footer-bar .container .footer-link a {
 }
 
 /**** Media-queries ****/
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */

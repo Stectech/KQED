@@ -44,11 +44,21 @@ foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
+  $video_url = get_post_meta($single->ID, 'video_url', true);
 
-  if ( $url ) {
+  if( $video_url == NULL and $url) {
     $lcp_display_output .= '<div class="col span_12">';
     $lcp_display_output .= '<a href="#">';
     $lcp_display_output .= '<img src="'.$url.'"/>';
+    $lcp_display_output .= '<h4>'.get_the_title($single->ID).'</h4>';
+    $lcp_display_output .= '</a>';
+    $lcp_display_output .=  '</div>';
+  } else 
+  if ( $video_url and  $url) {
+    $lcp_display_output .= '<div class="col span_12 hasvideo">';
+    $lcp_display_output .= '<a href="'.$video_url.'" class="lightbox fancybox.iframe">';
+    $lcp_display_output .= '<img src="'.$url.'"/>';
+    $lcp_display_output .= '<img src="/wp-content/themes/kqed/img/play-icon.png" alt="play icon" class="play-icon" />';
     $lcp_display_output .= '<h4>'.get_the_title($single->ID).'</h4>';
     $lcp_display_output .= '</a>';
     $lcp_display_output .=  '</div>';
