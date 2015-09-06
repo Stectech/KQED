@@ -36,7 +36,6 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
-
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
 
@@ -100,7 +99,7 @@ $(document).ready(function() {
 	//Lightbox Video
 	$('.lightbox').fancybox();
 
-	//======= ProgressIntro-Section =======//
+	//============== ProgressIntro-Section ==============//
 	var $detNo = $(this).attr('data-counter'), 
 	$imgNo = $('.progressintro-wrapper .backgrounds-wrapper img').attr('data-img'),
 
@@ -109,7 +108,7 @@ $(document).ready(function() {
 	$pCloseBtn = $('.progressintro-wrapper .items-wrapper ul li a img');
 
 
-	//Rollover
+	//Rollover event
 	$('.progressintro-wrapper .items-wrapper ul li').on('mouseover', function() {
 		var $detNo = $(this).attr('data-counter');
 		$(".progressintro-wrapper .backgrounds-wrapper img").removeClass('active-image');
@@ -118,32 +117,59 @@ $(document).ready(function() {
 	});
 
 
-	//Click
+	//Click event
 	$pLi.click(function() {
 
-		$pLi.removeClass('active-image nonactive-item');
-
-		$pWrapper.toggleClass('opened');
-		$(this).find('img').toggleClass('opened');
-
-		$(".progressintro-wrapper .additionalinfo-wrapper .single-box[data-counter="+$detNo+"]").addClass('opened');
+		$('.progressintro-wrapper').toggleClass('active');
+		$detNo = $(this).attr('data-counter');
 
 
-		//List Effect
-		$(this).addClass('active-image');
-		$(this).siblings().addClass('nonactive-item');
-
-
-		//Initial State
-		if (!$pWrapper.hasClass('opened')) {
-
-			$pLi.removeClass('active-image nonactive-item');
-			$pCloseBtn.removeClass('opened');
+		if($(this).hasClass('active-item')){
+			
+			$pLi.removeClass('active-item nonactive-item');
+			$pCloseBtn.removeClass('activated');
+			$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
+			$pWrapper.removeClass('opened');
+			$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+			
+			return false;
 
 		}
 
+		if ($($pLi.siblings().hasClass('active-item'))) {
+
+			$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+			$pLi.removeClass('active-item nonactive-item');
+			$(this).addClass('active-item');
+			$(this).siblings().addClass('nonactive-item');
+
+			$pCloseBtn.removeClass('activated');
+			$(this).find('.close-btn').addClass('activated');
+
+			$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
+			$(".progressintro-wrapper .additionalinfo-wrapper .single-box[data-counter="+$detNo+"]").addClass('opened');
+
+			$pWrapper.addClass('opened');
+
+		} 
+
 		return false;
 	});
+
+	
+	//More-Info
+	$(".progressintro-wrapper .additionalinfo-wrapper .single-box .moreinfo-trigger").click(function(){
+		$(this).parents().find('.more-info').addClass('opened');
+
+		return false;
+	});
+
+	$(".progressintro-wrapper .additionalinfo-wrapper .single-box .moreinfo-back-trigger").click(function(){
+		$(this).parents('.more-info').removeClass('opened');
+
+		return false;
+	});
+
 
 
 	//======= Video =======//
@@ -157,9 +183,10 @@ $(document).ready(function() {
 		}
 	});
 
+    
+
 
 });
-
 
 
 
