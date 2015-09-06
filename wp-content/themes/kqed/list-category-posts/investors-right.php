@@ -58,7 +58,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
     $lcp_display_output .= '<div class="col span_12 hasvideo">';
     $lcp_display_output .= '<a href="'.$video_url.'" class="lightbox fancybox.iframe">';
     $lcp_display_output .= '<img src="'.$url.'"/>';
-    $lcp_display_output .= '<img src="/wp-content/themes/kqed/img/play-icon.png" alt="play icon" class="play-icon" />';
+    $lcp_display_output .= '<img src="../wp-content/themes/kqed/img/play-icon.png" alt="play icon" class="play-icon" />';
     $lcp_display_output .= '<h4>'.get_the_title($single->ID).'</h4>';
     $lcp_display_output .= '</a>';
     $lcp_display_output .=  '</div>';
