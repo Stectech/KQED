@@ -8,11 +8,18 @@
  */
 
 ?>
+
+<?php 
+
+$video_mov = get_field( "video_mov", $post->ID ); 
+$video_webm = get_field( "video_webm", $post->ID ); 
+?>
 <!-- ATF-Section -->
+
 <section class="atf-section">
 	<video loop poster="<?php bloginfo('template_directory'); ?>/img/video.jpg" id="homepage-video">
-		<source src="<?php bloginfo('template_directory'); ?>/img/videos/KQ001_CAMPAIGN_21_05_1-VP9_1080p_3Mbps.webm" type="video/webm"/>
-		<source src="<?php bloginfo('template_directory'); ?>/img/videos/KQ001_CAMPAIGN_21_05_1-H264_1080p_3200kbs.mov" type="video/mp4"/>
+		<source src="<?php echo $video_webm['url'] ?>" type="video/webm"/>
+		<source src="<?php echo $video_mov['url'] ?>" type="video/mp4"/>
 	</video>
 </section>
 
