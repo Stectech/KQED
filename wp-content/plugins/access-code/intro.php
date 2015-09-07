@@ -63,7 +63,6 @@
 							<form method='post'>
 								<input class='input_email' type='text' name='access_email' size='32' />
 								<input type='submit' class='input_submit' name='Submit' value="<?php get_option('prompt_submit') ?>">
-								<img src="<?php bloginfo('template_directory'); ?>/img/arrow-blue.png" alt="arrow" />
 							</form>
 						</div>
 					</div>
