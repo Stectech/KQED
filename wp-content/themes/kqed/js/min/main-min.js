@@ -36,6 +36,32 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
+	//======= The Future page's slider =======//
+	var $opacity = 0.99;
+	$('.intro-slider').flexslider({
+		animation: "fade",
+		controlNav: true,
+		slideshowSpeed: 3000,
+		animationSpeed: 600, 
+		directionNav: false,
+		animationLoop: false,
+		before: function(){
+			$opacity = $opacity - .13;
+			$('.intro-overlay').css('background-color', "rgba(0, 0, 0, "+$opacity+")");
+		},
+		end: function(){
+			$('.skip-btn').fadeOut();
+		}
+	});
+
+
+	$(".skip-btn").click(function () {    
+		$('.intro-slider').flexslider(6);
+		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, .2)");
+
+		return false;
+	});
+
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
 
