@@ -24,7 +24,7 @@ header .container .nav-menu-wrapper .current-menu-item a {
     position: absolute;
     right: 15px;
     top: 27px;
-    background-image: url(http://kqed.local/wp-content/themes/kqed/img/arrow-blue.png);
+    background-image: url(../../img/arrow-blue.png);
     width: 59px;
     height: 20px;
 }
