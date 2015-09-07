@@ -17,3 +17,15 @@ header .container .nav-menu-wrapper .current-menu-item a {
     letter-spacing: 4px;
     margin: 50px 0;
 }
+
+.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    background-image: url(http://kqed.local/wp-content/themes/kqed/img/arrow-blue.png);
+    width: 59px;
+    height: 20px;
+}
+}

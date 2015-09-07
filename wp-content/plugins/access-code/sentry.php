@@ -131,166 +131,167 @@ function fo_runSentry() {
 
 function fo_showLoginForm($error_message) {
 	
-	echo "<!DOCTYPE html>
-	<html ";
+	// echo "<!DOCTYPE html>
+	// <html ";
 	
-	echo language_attributes();
+	// echo language_attributes();
 	
-	echo ">
-	<head>
-	<title>";
+	// echo ">
+	// <head>
+	// <title>";
 	
-	echo htmlentities(bloginfo('name'));
+	// echo htmlentities(bloginfo('name'));
 	
-	echo "
-	</title>
-	  <META HTTP-EQUIV='CACHE-CONTROL' CONTENT='NO-CACHE'>
-	  <META HTTP-EQUIV='PRAGMA' CONTENT='NO-CACHE'>
-	  <META HTTP-EQUIV='CONTENT-TYPE' CONTENT='";
+	// echo "
+	// </title>
+	//   <META HTTP-EQUIV='CACHE-CONTROL' CONTENT='NO-CACHE'>
+	//   <META HTTP-EQUIV='PRAGMA' CONTENT='NO-CACHE'>
+	//   <META HTTP-EQUIV='CONTENT-TYPE' CONTENT='";
 
-	echo bloginfo('html_type');
-	echo " CHARSET=";
-	echo bloginfo('charset');
-	echo "'>";
+	// echo bloginfo('html_type');
+	// echo " CHARSET=";
+	// echo bloginfo('charset');
+	// echo "'>";
 	
-	wp_head();
+	// wp_head();
 	
-	// Check whether the user has specified their own CSS file. If not, use the default CSS styling.
+	// // Check whether the user has specified their own CSS file. If not, use the default CSS styling.
 	
-	if (strlen(get_option('css_link')))	{
-		echo "<link rel='stylesheet' type='text/css' href='";
-		echo get_option('css_link');
-		echo "'>";
-	}
-	else	{
-		echo "	<style type='text/css'>
+	// if (strlen(get_option('css_link')))	{
+	// 	echo "<link rel='stylesheet' type='text/css' href='";
+	// 	echo get_option('css_link');
+	// 	echo "'>";
+	// }
+	// else	{
+	// 	echo "	<style type='text/css'>
 		
-		// Reset the CSS styles using the Meyer Reset (http://meyerweb.com/eric/tools/css/reset/) before applying CSS styles
+	// 	// Reset the CSS styles using the Meyer Reset (http://meyerweb.com/eric/tools/css/reset/) before applying CSS styles
 		
-		/* This is the default Friends Only CSS. This CSS will be removed if you specify a custom CSS file in the Settings. */
+	// 	/* This is the default Friends Only CSS. This CSS will be removed if you specify a custom CSS file in the Settings. */
 				
-		html, body, div, span, applet, object, iframe,
-		h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-		a, abbr, acronym, address, big, cite, code,
-		del, dfn, em, img, ins, kbd, q, s, samp,
-		small, strike, strong, sub, sup, tt, var,
-		b, u, i, center,
-		dl, dt, dd, ol, ul, li,
-		fieldset, form, label, legend,
-		table, caption, tbody, tfoot, thead, tr, th, td,
-		article, aside, canvas, details, embed, 
-		figure, figcaption, footer, header, hgroup, 
-		menu, nav, output, ruby, section, summary,
-		time, mark, audio, video {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font-size: 100%;
-			font: inherit;
-			vertical-align: baseline;
-		}
-		article, aside, details, figcaption, figure, 
-		footer, header, hgroup, menu, nav, section {
-			display: block;
-		}
-		body {
-			line-height: 1;
-		}
-		ol, ul {
-			list-style: none;
-		}
-		blockquote, q {
-			quotes: none;
-		}
-		blockquote:before, blockquote:after,
-		q:before, q:after {
-			content: '';
-			content: none;
-		}
-		table {
-			border-collapse: collapse;
-			border-spacing: 0;
-		}
+	// 	html, body, div, span, applet, object, iframe,
+	// 	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	// 	a, abbr, acronym, address, big, cite, code,
+	// 	del, dfn, em, img, ins, kbd, q, s, samp,
+	// 	small, strike, strong, sub, sup, tt, var,
+	// 	b, u, i, center,
+	// 	dl, dt, dd, ol, ul, li,
+	// 	fieldset, form, label, legend,
+	// 	table, caption, tbody, tfoot, thead, tr, th, td,
+	// 	article, aside, canvas, details, embed, 
+	// 	figure, figcaption, footer, header, hgroup, 
+	// 	menu, nav, output, ruby, section, summary,
+	// 	time, mark, audio, video {
+	// 		margin: 0;
+	// 		padding: 0;
+	// 		border: 0;
+	// 		font-size: 100%;
+	// 		font: inherit;
+	// 		vertical-align: baseline;
+	// 	}
+	// 	article, aside, details, figcaption, figure, 
+	// 	footer, header, hgroup, menu, nav, section {
+	// 		display: block;
+	// 	}
+	// 	body {
+	// 		line-height: 1;
+	// 	}
+	// 	ol, ul {
+	// 		list-style: none;
+	// 	}
+	// 	blockquote, q {
+	// 		quotes: none;
+	// 	}
+	// 	blockquote:before, blockquote:after,
+	// 	q:before, q:after {
+	// 		content: '';
+	// 		content: none;
+	// 	}
+	// 	table {
+	// 		border-collapse: collapse;
+	// 		border-spacing: 0;
+	// 	}
 		
-		body {
-			font-family : Tahoma, Verdana, Arial;
-			font-color: #000000;
-			padding-left: 20%;
-			padding-top:50px;
-			padding-bottom: 50px;
-			padding-right: 5%;
-			background-color: #FFFFFF;
-		}
+	// 	body {
+	// 		font-family : Tahoma, Verdana, Arial;
+	// 		font-color: #000000;
+	// 		padding-left: 20%;
+	// 		padding-top:50px;
+	// 		padding-bottom: 50px;
+	// 		padding-right: 5%;
+	// 		background-color: #FFFFFF;
+	// 	}
 		
-		h1	{
-			font-size: 2em; 
-			padding-bottom: 50px;
-			font-weight: normal;
-		}
+	// 	h1	{
+	// 		font-size: 2em; 
+	// 		padding-bottom: 50px;
+	// 		font-weight: normal;
+	// 	}
 		
-		p	{
-			padding-top: 8px;
-			padding-bottom: 8px;
-		}
+	// 	p	{
+	// 		padding-top: 8px;
+	// 		padding-bottom: 8px;
+	// 	}
 		
-		p.prompt	{
-		}
+	// 	p.prompt	{
+	// 	}
 		
-		p.error	{
-			color: #AA0000;
-		}
+	// 	p.error	{
+	// 		color: #AA0000;
+	// 	}
 		
-		#form {
-			padding-top: 8px;
-			padding-bottom: 8px;
-		}
+	// 	#form {
+	// 		padding-top: 8px;
+	// 		padding-bottom: 8px;
+	// 	}
 		
-		input.input_email	{
-			font-size: 1.2em;
-		}
+	// 	input.input_email	{
+	// 		font-size: 1.2em;
+	// 	}
 		
-		input.input_submit	{
-			background-color: #DDDDDD; 
-			border-color: #AAAAAA; 
-			color: #000000; 
-			font-family: tahoma, verdana, arial; 
-			font-size: 1.2em;
-		}
+	// 	input.input_submit	{
+	// 		background-color: #DDDDDD; 
+	// 		border-color: #AAAAAA; 
+	// 		color: #000000; 
+	// 		font-family: tahoma, verdana, arial; 
+	// 		font-size: 1.2em;
+	// 	}
 		
-		.admin	{
-			padding-top: 20px;
-		}
+	// 	.admin	{
+	// 		padding-top: 20px;
+	// 	}
 		
-		.adminlink {
-			color: #CCCCCC; font-size: small;
-		}
+	// 	.adminlink {
+	// 		color: #CCCCCC; font-size: small;
+	// 	}
 	
-		</style>\n";
-	}
+	// 	</style>\n";
+	// }
 		
-	echo "</head>
+	// echo "</head>
 	
-	<body>";
+	// <body>";
 	
 				
-	if ($error_message == NULL) {
-		echo get_option('prompt_email');
-	}
-	else {
-		echo $error_message; 
-	}
+	// if ($error_message == NULL) {
+	// 	echo get_option('prompt_email');
+	// }
+	// else {
+	// 	echo $error_message; 
+	// }
 		
-	echo "
-	<div id='form'>
-	<form method='post'>\n<input class='input_email' type='text' name='access_email' size='32' />&nbsp;<input type='submit' class='input_submit' name='Submit' value='";
+	// echo "
+	// <div id='form'>
+	// <form method='post'>\n<input class='input_email' type='text' name='access_email' size='32' />&nbsp;<input type='submit' class='input_submit' name='Submit' value='";
 	
-	echo get_option('prompt_submit');
+	// echo get_option('prompt_submit');
 	
-	echo "' />\n</form></div>";
+	// echo "' />\n</form></div>";
 	
-	echo "</body></html>";
+	// echo "</body></html>";
 	
 	// stop at this point
+	include ('intro.php');
 	die();
 }
 
