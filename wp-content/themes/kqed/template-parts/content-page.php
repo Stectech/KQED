@@ -77,9 +77,9 @@
 
 <!-- Progress Slider Block Static -->
 <?php 
-// if ( is_page( 'progress' ) ) : 
-// 	include('progress.php');
-// endif; 
+if ( is_page( 'progress' ) ) : 
+	include('progress.php');
+endif; 
 ?>
 
 <!-- Investors -->
