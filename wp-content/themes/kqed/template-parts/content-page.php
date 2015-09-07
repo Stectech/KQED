@@ -46,6 +46,8 @@
 
 <?php $investors_left = get_post_meta($post->ID, 'investors_left', true); ?>
 <?php $investors_right= get_post_meta($post->ID, 'investors_right', true); ?>
+<?php $video_title= get_post_meta($post->ID, 'video_title', true); ?>
+
 
 <?php $future_subcontent = get_post_meta($post->ID, 'future_subcontent', true); ?>
 <?php $bg =   get_field( "background", $post->ID ); ?>
@@ -66,7 +68,7 @@
 	<div class="videobox-wrapper">
 		<img src="<?php echo $bg['url'] ?>" class="videobox-bg" alt="video" />
 		<div class="container">
-			<h3>lorem ipsum dolor sit amet</h3>
+			<h3><?php echo $video_title ?></h3>
 			<a href="<?php echo $video_url ?>" class="lightbox fancybox.iframe">
 				<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" />
 				Play video
