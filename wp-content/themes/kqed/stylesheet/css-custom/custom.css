@@ -28,4 +28,74 @@ header .container .nav-menu-wrapper .current-menu-item a {
     width: 59px;
     height: 20px;
 }
+
+.su-spoiler-style-default > .su-spoiler-title {
+    padding-left: 27px;
+    padding-right: 0;
+    color: #fff;
+    font-size: 46px;
+    text-transform: uppercase;
+    font-weight: normal;
+    border-top: 3px solid #fff;
+    padding-top: 54px;
+    margin-top: 10px;
+    padding-bottom: 30px;
 }
+
+.su-spoiler.su-spoiler-style-default.su-spoiler-icon-plus.su-spoiler-closed {
+    opacity: .4;
+}
+
+.su-spoiler-content.su-clearfix {
+    font-family: "Adelle-Light";
+    color: #fff;
+    font-size: 22px;
+}
+
+.su-spoiler-content.su-clearfix p {
+    color: #fff;
+    font-size: 22px;
+}
+
+.su-spoiler-icon-plus.su-spoiler-closed .su-spoiler-icon:before {
+    content: none;
+}
+
+.accordion .su-accordion .su-spoiler-style-default > .su-spoiler-title > .su-spoiler-icon {
+    left: 96%;
+    margin-top: 43px;
+    font-size: 23px;
+    border: 2px solid #fff;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    padding: 6px;
+    padding-top: 3px;
+    -webkit-transform: rotate(133deg);
+    -ms-transform: rotate(133deg);
+    transform: rotate(133deg);
+    transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
+
+.accordion .su-accordion .su-spoiler.su-spoiler-style-default.su-spoiler-icon-plus.su-spoiler-closed .su-spoiler-icon {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -webkit-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+}
+
+.accordion .su-accordion  .su-spoiler-icon-plus .su-spoiler-icon:before {
+    content: "+";
+}
+
+
+
+
