@@ -57,6 +57,10 @@ $lcp_display_output .= '<h3>CAMPAIGN OBJECTIVES</h3>';
  * you want to display. You can also assign a specific CSS class to each field.
  */
 
+$get_title = [];
+$get_content = [];
+$get_url = [];
+$get_accordion = [];
 
 foreach ($this->catlist->get_categories_posts() as $single){
   //$accordion = get_post_meta($single->ID, 'accordion_campaign', true);
@@ -65,26 +69,10 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
 
-  
-  // Title
-  $lcp_display_output .= '<div class="single-box" style="background-image:url('.$url.')" data-counter="'.$ctr.'">';
-  $lcp_display_output .= '<div class="inactive-overlay"></div>';
-  $lcp_display_output .= '<div class="overlay">';
-  $lcp_display_output .= '<h3>';
-  $lcp_display_output .= get_the_title($single->ID);
-  $lcp_display_output .= '<i class="">+</i></h3>';
-  $lcp_display_output .= '</div></div>';
-
-  // Content
-  $lcp_display_output .= '<div class="details-v2" id="box-no1-details" data-counter="'.$ctr.'">';
-  $lcp_display_output .= '<div class="container row">';
-  $lcp_display_output .= '<div class="col span_6">';
-  $lcp_display_output .= '<h4 class="big-text">'.$this->get_content($single).'</h4>';
-  $lcp_display_output .= '</div>';
-  $lcp_display_output .= '<div class="col span_6">';
-  $lcp_display_output .= '<div class="accordion">'.do_shortcode($accordion).'</div>';
-  $lcp_display_output .= '</div>';
-  $lcp_display_output .= '</div></div>';
+  array_push($get_title, get_the_title($single->ID));
+  array_push($get_content, $this->get_content($single));
+  array_push($get_url, $url);
+  array_push($get_accordion, $accordion);
 
   //Post Thumbnail
   //$lcp_display_output .= $this->get_thumbnail($single);
@@ -113,6 +101,51 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   // Get Posts "More" link:
   $lcp_display_output .= $this->get_posts_morelink($single);
+
+}
+
+foreach (array_chunk($get_title, 2, true) as $index=>$titles)
+{
+
+  $lcp_display_output .= '<div class="single-box" style="background-image:url('.$get_url[$index + $inc_index].')" data-counter="'.($index + $inc_index).'">';
+  $lcp_display_output .= '<div class="inactive-overlay"></div>';
+  $lcp_display_output .= '<div class="overlay">';
+  $lcp_display_output .= '<h3>';
+  $lcp_display_output .= $get_title[$index + $inc_index];
+  $lcp_display_output .= '<i class="">+</i></h3>';
+  $lcp_display_output .= '</div></div>';
+
+  $inc_index++;
+
+  $lcp_display_output .= '<div class="single-box" style="background-image:url('.$get_url[$index + $inc_index].')" data-counter="'.($index + $inc_index).'">';
+  $lcp_display_output .= '<div class="inactive-overlay"></div>';
+  $lcp_display_output .= '<div class="overlay">';
+  $lcp_display_output .= '<h3>';
+  $lcp_display_output .= $get_title[$index + $inc_index];
+  $lcp_display_output .= '<i class="">+</i></h3>';
+  $lcp_display_output .= '</div></div>';
+
+  $lcp_display_output .= '<div class="details-v2" id="box-no1-details" data-counter="'.($index + $get_index).'">';
+  $lcp_display_output .= '<div class="container row">';
+  $lcp_display_output .= '<div class="col span_6">';
+  $lcp_display_output .= '<h4 class="big-text">'.$get_content[$index + $get_index].'</h4>';
+  $lcp_display_output .= '</div>';
+  $lcp_display_output .= '<div class="col span_6">';
+  $lcp_display_output .= '<div class="accordion">'.do_shortcode($get_accordion[$index + $get_index]).'</div>';
+  $lcp_display_output .= '</div>';
+  $lcp_display_output .= '</div></div>';
+
+  $get_index++;
+
+  $lcp_display_output .= '<div class="details-v2" id="box-no1-details" data-counter="'.($index + $get_index).'">';
+  $lcp_display_output .= '<div class="container row">';
+  $lcp_display_output .= '<div class="col span_6">';
+  $lcp_display_output .= '<h4 class="big-text">'.$get_content[$index + $get_index].'</h4>';
+  $lcp_display_output .= '</div>';
+  $lcp_display_output .= '<div class="col span_6">';
+  $lcp_display_output .= '<div class="accordion">'.do_shortcode($get_accordion[$index + $get_index]).'</div>';
+  $lcp_display_output .= '</div>';
+  $lcp_display_output .= '</div></div>';
 
 }
 
