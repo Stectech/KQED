@@ -59,7 +59,8 @@ $lcp_display_output .= '<h3>CAMPAIGN OBJECTIVES</h3>';
 
 
 foreach ($this->catlist->get_categories_posts() as $single){
-  $accordion = get_post_meta($single->ID, 'accordion_campaign', true);
+  //$accordion = get_post_meta($single->ID, 'accordion_campaign', true);
+  $accordion =   get_field( "accordion_campaign", $single->ID );
   $ctr++;
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
