@@ -35,6 +35,11 @@
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</ul>
 			</div>
+			<a href="#" id='menu-trigger'>
+				<span id="line-1"></span>
+				<span id="line-2"></span>
+				<span id="line-3"></span>
+			</a>
 		</div>
 	</header>
 
