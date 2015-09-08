@@ -42,7 +42,6 @@ $lcp_display_output .= $this->get_conditional_title();
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
 $lcp_display_output .= '<div class="cascadeboxes-wrapper" id="cbs-aboutpage">';
-
 /**
  * POSTS LOOP
  *
@@ -114,6 +113,8 @@ foreach (array_chunk($get_title, 2, true) as $index=>$titles)
   $lcp_display_output .= $get_title[$index + $inc_index];
   $lcp_display_output .= '<i class="">+</i></h3>';
   $lcp_display_output .= '</div></div>';
+
+
 
   $inc_index++;
 

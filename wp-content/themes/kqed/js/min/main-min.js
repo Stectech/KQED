@@ -36,6 +36,8 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
+	
+
 	//======= The Future page's slider =======//
 	var $opacity = 0.99;
 	$('.intro-slider').flexslider({
@@ -142,46 +144,104 @@ $(document).ready(function() {
 		$(".progressintro-wrapper .backgrounds-wrapper img[data-counter="+$detNo+"]").addClass('active-image');
 	});
 
+	function bigScreenClick(){
 
-	//Click event
-	$pLi.click(function() {
+		//Click event
+		$pLi.click(function() {
 
-		$('.progressintro-wrapper').toggleClass('active');
-		$detNo = $(this).attr('data-counter');
+			$('.progressintro-wrapper').toggleClass('active');
+			$detNo = $(this).attr('data-counter');
 
 
-		if($(this).hasClass('active-item')){
-			
-			$pLi.removeClass('active-item nonactive-item');
-			$pCloseBtn.removeClass('activated');
-			$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
-			$pWrapper.removeClass('opened');
-			$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
-			
+			if($(this).hasClass('active-item')){
+				
+				$pLi.removeClass('active-item nonactive-item');
+				$pCloseBtn.removeClass('activated');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
+				$pWrapper.removeClass('opened');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+				
+				return false;
+
+			}
+
+			if ($($pLi.siblings().hasClass('active-item'))) {
+
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+				$pLi.removeClass('active-item nonactive-item');
+				$(this).addClass('active-item');
+				$(this).siblings().addClass('nonactive-item');
+
+				$pCloseBtn.removeClass('activated');
+				$(this).find('.close-btn').addClass('activated');
+
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box[data-counter="+$detNo+"]").addClass('opened');
+
+				$pWrapper.addClass('opened');
+
+			} 
+
 			return false;
+		});
 
-		}
+	}
 
-		if ($($pLi.siblings().hasClass('active-item'))) {
+	function smallScreenClick() {
+		$pLi.click(function() {
 
-			$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
-			$pLi.removeClass('active-item nonactive-item');
-			$(this).addClass('active-item');
-			$(this).siblings().addClass('nonactive-item');
+			$('.progressintro-wrapper').toggleClass('active');
+			$detNo = $(this).attr('data-counter');
 
-			$pCloseBtn.removeClass('activated');
-			$(this).find('.close-btn').addClass('activated');
 
-			$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('opened');
-			$(".progressintro-wrapper .additionalinfo-wrapper .single-box[data-counter="+$detNo+"]").addClass('opened');
+			if($(this).hasClass('active-item')){
+				
+				$pLi.removeClass('active-item nonactive-item');
+				$pCloseBtn.removeClass('activated');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('smallDeviceOpened');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+				
+				return false;
 
-			$pWrapper.addClass('opened');
+			}
 
-		} 
+			if ($($pLi.siblings().hasClass('active-item'))) {
+
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box .more-info").removeClass('opened');
+				$pLi.removeClass('active-item nonactive-item');
+				$(this).addClass('active-item');
+				$(this).siblings().addClass('nonactive-item');
+
+				$pCloseBtn.removeClass('activated');
+				$(this).find('.close-btn').addClass('activated');
+
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('smallDeviceOpened');
+				$(".progressintro-wrapper .additionalinfo-wrapper .single-box[data-counter="+$detNo+"]").addClass('smallDeviceOpened');
+
+			} 
+
+			return false;
+		});
+	}
+
+	$('.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn').click(function(){
+		$(".progressintro-wrapper .additionalinfo-wrapper .single-box").removeClass('smallDeviceOpened');
+		$pWrapper.removeClass('opened');
+		$pCloseBtn.removeClass('activated');
+		$pLi.removeClass('active-item nonactive-item');
 
 		return false;
 	});
 
+	if ($(window).width() > 992) {
+
+		bigScreenClick();
+
+	}else{
+
+		smallScreenClick();		
+
+	}
 	
 	//More-Info
 	$(".progressintro-wrapper .additionalinfo-wrapper .single-box .moreinfo-trigger").click(function(){
@@ -207,6 +267,61 @@ $(document).ready(function() {
 		exited: function(direction) {
 			$('.atf-section video')[0].pause(); 
 		}
+	});
+
+	//============== Responsive Navigation Menu ==============//
+	$('#menu-trigger').click(function(){
+
+		$('#line-1').toggleClass('line-1-hover');
+		$('#line-2').toggleClass('line-2-hover');
+		$('#line-3').toggleClass('line-3-hover');
+
+		$('.nav-menu-wrapper ul').fadeToggle(600);
+	});
+
+	if ($(window).width() < 768) {
+		$('#menu-trigger').click(function(){
+				$('.nav-menu-wrapper ul').addClass('mobile-menu');
+		});
+	}
+
+	var waitForFinalEvent = (function () {
+	  var timers = {};
+	  return function (callback, ms, uniqueId) {
+	    if (!uniqueId) {
+	      uniqueId = "Don't call this twice without a uniqueId";
+	    }
+	    if (timers[uniqueId]) {
+	      clearTimeout (timers[uniqueId]);
+	    }
+	    timers[uniqueId] = setTimeout(callback, ms);
+	  };
+	})();
+
+
+	$(window).resize(function () {
+	    waitForFinalEvent(function(){
+
+	    	if ($(window).width() < 768) {
+		    	$('#menu-trigger').click(function(){
+					$('.nav-menu-wrapper ul').addClass('mobile-menu');
+				});
+				$('.nav-menu-wrapper ul').hide();
+				$('#line-1').removeClass('line-1-hover');
+				$('#line-2').removeClass('line-2-hover');
+				$('#line-3').removeClass('line-3-hover');
+			}
+			else if($(window).width() > 768){
+				$('#menu-trigger').click(function(){
+					$('.nav-menu-wrapper ul').removeClass('mobile-menu');
+				});
+				$('.nav-menu-wrapper ul').removeClass('mobile-menu');
+
+				$('.nav-menu-wrapper ul').show();
+
+			}
+
+	    }, 10);
 	});
 
     

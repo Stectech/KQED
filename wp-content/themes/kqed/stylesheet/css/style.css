@@ -2532,6 +2532,10 @@ header .container .nav-menu-wrapper ul.nav-menu li a {
   line-height: 28px;
 }
 
+header .container .nav-menu-wrapper ul.nav-menu li:last-child {
+  margin-right: 0;
+}
+
 header .container .nav-menu-wrapper ul.nav-menu li:last-child a {
   margin-right: 0;
   font-size: 18px;
@@ -2539,6 +2543,44 @@ header .container .nav-menu-wrapper ul.nav-menu li:last-child a {
 
 header .container .nav-menu-wrapper ul.nav-menu li.active-menu-item a {
   color: #cfde00;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu {
+  position: absolute;
+  top: 72px;
+  right: 0;
+  padding-left: 0;
+  background-color: #000;
+  padding: 30px 10% 0px;
+  margin: 0;
+  z-index: 10;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu li {
+  margin-bottom: 20px;
+  float: none;
+  margin-right: 0 !important;
+  line-height: 22px !important;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu li a {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  color: #fff !important;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu li:last-child {
+  padding-bottom: 15px;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
+  font-size: 24px;
+}
+
+header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
+  color: #fff !important;
+  border-bottom: 1px solid #fff !important;
 }
 
 /**************** ATF-Section ****************/
@@ -2555,8 +2597,12 @@ header .container .nav-menu-wrapper ul.nav-menu li.active-menu-item a {
   text-align: center;
   font-weight: 300;
   letter-spacing: 5px;
-  line-height: 120px;
+  line-height: 140px;
   margin: 30px 0 140px;
+}
+
+.homepage-content .container h2:last-child {
+  margin-top: 80px;
 }
 
 .homepage-content .container p {
@@ -2768,6 +2814,7 @@ footer .footer-bar .container .footer-link a {
   -moz-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
+  display: table;
 }
 
 .cascadeboxes-wrapper .single-box .overlay h3 {
@@ -2779,12 +2826,14 @@ footer .footer-bar .container .footer-link a {
   text-shadow: -1px 1px 7px #333;
   line-height: 130px;
   position: relative;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .cascadeboxes-wrapper .single-box .overlay h3 i {
   font-style: initial;
   position: absolute;
-  top: 38%;
+  top: 43%;
   right: 6%;
   width: 35px;
   height: 35px;
@@ -2885,6 +2934,10 @@ footer .footer-bar .container .footer-link a {
   margin: 80px 0;
 }
 
+.cascadeboxes-wrapper.mobile-version {
+  display: none;
+}
+
 /**************** Inner-Slider ****************/
 .innerslider-wrapper h3 {
   font-size: 80px;
@@ -2956,10 +3009,21 @@ footer .footer-bar .container .footer-link a {
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
   width: 100%;
-  margin: auto;
+  height: 100%;
+}
+
+.videobox-wrapper .container .inner-wrapper {
+  position: relative;
   display: table;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+
+.videobox-wrapper .container .main-wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .videobox-wrapper .container h3 {
@@ -3010,10 +3074,11 @@ footer .footer-bar .container .footer-link a {
   -ms-transition: all 300ms ease-in-out;
 }
 
-.investors-wrapper .col + a {
+.investors-wrapper .col a {
   float: left;
   width: 100%;
   height: 100%;
+  display: table;
 }
 
 .investors-wrapper .col img {
@@ -3021,7 +3086,7 @@ footer .footer-bar .container .footer-link a {
   left: 0;
   top: 0;
   z-index: -1;
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
@@ -3033,6 +3098,8 @@ footer .footer-bar .container .footer-link a {
   text-transform: uppercase;
   text-align: center;
   text-shadow: -1px 1px 7px #333;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .investors-wrapper .col:hover {
@@ -3253,6 +3320,16 @@ footer .footer-bar .container .footer-link a {
   transform: translate(100%, 0px);
 }
 
+.progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened {
+  -webkit-transform: translate(50%, 0px);
+  -ms-transform: translate(50%, 0px);
+  transform: translate(50%, 0px);
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper {
+  position: relative;
+}
+
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
   font-size: 32px;
   font-weight: 300;
@@ -3306,6 +3383,35 @@ footer .footer-bar .container .footer-link a {
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger img {
   margin-left: 10px;
   vertical-align: middle;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
+  color: #000;
+  display: none;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #000;
+  border-radius: 100px;
+  transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -webkit-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  float: right;
+}
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn img {
+  max-width: 100%;
+  margin: 0px;
+  display: block;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg);
 }
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info {
@@ -3567,5 +3673,432 @@ footer .footer-bar .container .footer-link a {
   max-width: 100%;
 }
 
+a#menu-trigger {
+  color: #fff;
+  font-size: 54px;
+  margin-top: 24px;
+  display: none;
+  float: right;
+}
+
+a#menu-trigger span {
+  height: 5px;
+  background-color: #cede00;
+  width: 42px;
+  display: block;
+  margin-bottom: 9px;
+  transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+}
+
+a#menu-trigger .line-1-hover {
+  -webkit-transform: rotate(47deg) translate(9px, 12px);
+      -ms-transform: rotate(47deg) translate(9px, 12px);
+          transform: rotate(47deg) translate(9px, 12px);
+}
+
+a#menu-trigger .line-2-hover {
+  opacity: 0;
+}
+
+a#menu-trigger .line-3-hover {
+  -webkit-transform: rotate(-47deg) translate(8px, -11px);
+      -ms-transform: rotate(-47deg) translate(8px, -11px);
+          transform: rotate(-47deg) translate(8px, -11px);
+}
+
 /**** Media-queries ****/
+@media only screen and (max-width: 1680px) {
+  .homepage-content .container h2 {
+    font-size: 120px;
+    line-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .homepage-content .container h2 {
+    font-size: 100px;
+    line-height: 90px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+    font-size: 62px;
+    line-height: 70px;
+  }
+  .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+    font-size: 62px;
+    line-height: 70px;
+    margin: 40px 0;
+    line-height: 80px;
+  }
+  .todayskqed-section .inner-wrapper {
+    font-size: 90px;
+    height: 500px;
+  }
+  .homepage-content .container h2 {
+    font-size: 88px;
+    line-height: 70px;
+    margin: 30px 0 110px;
+  }
+  .homepage-content .container p {
+    font-size: 48px;
+  }
+  .homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
+    font-size: 56px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 20px;
+    padding: 2% 3%;
+  }
+  .innerpage-head .container h2 {
+    font-size: 118px;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 {
+    padding: 0 12%;
+    line-height: 43px;
+  }
+  .cascadeboxes-wrapper .details-v2 .container .col .big-text {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .investors-wrapper .col h4 {
+    font-size: 32px;
+  }
+  .investors-wrapper .col.quotation p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .investors-wrapper .right-side .quotation h5 {
+    margin: 20px 0 0;
+    font-size: 24px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side h4 {
+    font-size: 60px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side p {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 1160px) {
+  .homepage-content .container h2 {
+    font-size: 74px;
+    line-height: 70px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+    font-size: 46px;
+    line-height: 60px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+    line-height: 120px;
+    font-size: 110px;
+  }
+  header .container .nav-menu-wrapper ul.nav-menu li {
+    margin-right: 42px;
+    line-height: 35px;
+  }
+  header .container .nav-menu-wrapper ul.nav-menu li a {
+    font-size: 20px;
+  }
+  .containerv2, .container {
+    padding: 0 10%;
+  }
+  header .container, .footer-bar .container {
+    padding: 0 2%;
+  }
+  .homepage-content .container h2 {
+    font-size: 56px;
+    line-height: 60px;
+    margin: 30px 0 90px;
+  }
+  .homepage-content .container p {
+    font-size: 38px;
+  }
+  .homepage-boxes .container .col img {
+    width: 100%;
+  }
+  .homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
+    width: 100%;
+  }
+  .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
+    font-size: 20px;
+  }
+  .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger {
+    font-size: 22px;
+  }
+  .cascadeboxes-wrapper .details-v2 .container {
+    padding: 0 2%;
+  }
+  .investors-wrapper .col {
+    width: 100%;
+  }
+  .investors-wrapper .left-side, .investors-wrapper .right-side {
+    width: 100%;
+  }
+  .innerslider-wrapper #future-slider ul li .col {
+    width: 100%;
+  }
+  .innerslider-wrapper #future-slider {
+    max-height: none;
+  }
+  .videobox-wrapper .container h3 {
+    font-size: 60px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 24px;
+  }
+  .bold-link {
+    font-size: 44px;
+    padding: 45px 10% 35px 10%;
+    margin: 120px auto;
+  }
+  .bold-link img {
+    margin: 25px auto 0;
+  }
+  .innerpage-head .container h2 {
+    font-size: 72px;
+  }
+  .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+    font-size: 44px;
+    line-height: 40px;
+  }
+  .cascadeboxes-wrapper .details-v2 .container .col {
+    width: 100%;
+  }
+  .progressintro-wrapper .items-wrapper ul li a {
+    font-size: 28px;
+  }
+  .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
+    margin: 10px 15px 10px 0;
+  }
+  .progressintro-wrapper .backgrounds-wrapper img {
+    width: auto;
+  }
+  .cascadeboxes-wrapper {
+    display: none;
+  }
+  .cascadeboxes-wrapper.mobile-version {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
+    display: block;
+  }
+  .progressintro-wrapper .items-wrapper {
+    width: 70%;
+    -webkit-transform: translate(22%, 0px);
+    -ms-transform: translate(22%, 0px);
+    transform: translate(22%, 0px);
+  }
+  .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened {
+    width: 70%;
+    -webkit-transform: translate(50%, 0px);
+    -ms-transform: translate(50%, 0px);
+    transform: translate(22%, 0px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a#menu-trigger {
+    display: block;
+  }
+  .nav-menu-wrapper ul {
+    display: none;
+  }
+  .homepage-content .container h2 {
+    font-size: 48px;
+    line-height: 40px;
+    margin: 30px 0 70px;
+  }
+  .homepage-content .container p, .page-content p {
+    font-size: 28px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 24px;
+  }
+  footer .footer-bar .container .footer-link a, footer .footer-bar .container p.copyright-note {
+    font-size: 18px;
+  }
+  header .container .logo h1 {
+    margin: 12px 0 6px;
+  }
+  header .container .logo h1 a img {
+    width: 100px;
+  }
+  a#menu-trigger {
+    margin-top: 20px;
+  }
+  .cascadeboxes-wrapper .details-v2 .container .col .big-text {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side {
+    padding: 2% 2% 20% 4%;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side h4 {
+    font-size: 38px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side p {
+    font-size: 20px;
+  }
+  .videobox-wrapper .container h3 {
+    font-size: 40px;
+    margin: 0 0 10px;
+  }
+  .videobox-wrapper .container a {
+    font-size: 24px;
+  }
+  .videobox-wrapper .container a img {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+    line-height: 70px;
+    font-size: 60px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 20px;
+  }
+  .videobox-wrapper .container h3 {
+    font-size: 28px;
+    margin: 0 0 10px;
+    line-height: 36px;
+  }
+  .videobox-wrapper .container a {
+    font-size: 20px;
+  }
+  .videobox-wrapper .container a img {
+    width: 32px;
+  }
+  .cascadeboxes-wrapper .details .container p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .homepage-content .container h2 {
+    font-size: 34px;
+    margin: 30px 0 40px;
+  }
+  .homepage-content .container p, .page-content p {
+    font-size: 20px;
+  }
+  .innerpage-head .container h2 {
+    font-size: 45px;
+  }
+  .cascadeboxes-wrapper .details .container p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+    line-height: 60px;
+    font-size: 50px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+    font-size: 34px;
+    line-height: 32px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+    max-width: 95%;
+    width: auto;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
+    font-size: 24px;
+    text-indent: 10px;
+  }
+  .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form button {
+    top: 20px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 17px;
+  }
+  .homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
+    font-size: 42px;
+  }
+  .bold-link {
+    font-size: 32px;
+    padding: 25px 10% 25px 10%;
+    margin: 80px auto;
+  }
+  .bold-link img {
+    width: 70px;
+  }
+  .innerpage-head .container h2 {
+    font-size: 32px;
+    bottom: 16px;
+  }
+  .page-content {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 {
+    font-size: 24px;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 i {
+    font-size: 32px;
+  }
+  .containerv2, .container {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 14px;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .cascadeboxes-wrapper .details .container {
+    padding: 0 4%;
+    margin: 60px auto 90px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
