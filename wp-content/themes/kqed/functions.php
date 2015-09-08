@@ -117,7 +117,7 @@ function kqed_scripts() {
 	wp_enqueue_style( 'kqed-style', get_stylesheet_uri() );
 
 
-	wp_enqueue_script( 'kqed-main', get_template_directory_uri() . '/js/min/main-min.js', array(), '20150905', true );
+	wp_enqueue_script( 'kqed-main', get_template_directory_uri() . '/js/min/main-min.js', array(), '20150906', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
