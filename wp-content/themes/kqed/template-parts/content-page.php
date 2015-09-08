@@ -72,11 +72,15 @@
 	<div class="videobox-wrapper">
 		<img src="<?php echo $bg['url'] ?>" class="videobox-bg" alt="video" />
 		<div class="container">
-			<h3><?php echo $video_title ?></h3>
-			<a href="<?php echo $video_url ?>" class="lightbox fancybox.iframe">
+			<div class="inner-wrapper">
+				<div class="main-wrapper">
+					<h3><?php echo $video_title ?></h3>
+					<a href="<?php echo $video_url ?>" class="lightbox fancybox.iframe">
 				<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" />
 				Play video
 			</a>
+				</div>
+			</div>
 		</div>
 	</div>
 <?php endif; ?>
