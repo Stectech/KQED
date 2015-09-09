@@ -1,7 +1,7 @@
 .cascadeboxes-wrapper .details-v2 .container .col .big-text p {
-	font-size: 60px;
+	font-size: 38px;
 	font-weight: 300;
-	line-height: 62px;
+	line-height: 54px;
 	padding: 0 5% 0 0;
 }
 
@@ -61,16 +61,31 @@ header .container .nav-menu-wrapper .current-menu-item a {
     content: none;
 }
 
+@media only screen and (max-width: 1024px) {
+    .homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
+        height: 300px;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+   footer .container .bold-link {
+        padding: 24px 10% 22px 10%;
+    }
+}
+
 .accordion .su-accordion .su-spoiler-style-default > .su-spoiler-title > .su-spoiler-icon {
     left: 96%;
     margin-top: 43px;
     font-size: 23px;
     border: 2px solid #fff;
-    width: auto;
-    height: auto;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     padding: 6px;
     padding-top: 3px;
+    padding-left: 5px;
+    padding-top: 1px;
     -webkit-transform: rotate(133deg);
     -ms-transform: rotate(133deg);
     transform: rotate(133deg);
@@ -118,6 +133,15 @@ header .container .nav-menu-wrapper ul.mobile-menu {
     margin: 0;
     z-index: 10;
 }
+
+.homepage-boxes .container .col .second-overlay p {
+    text-align: justify;
+}
+
+.page-id-2 .cascadeboxes-wrapper .details .container p {
+    font-size: 26px;
+}
+
 
 
 

@@ -20,7 +20,7 @@
 			<li data-counter="5"><a href="#">NEWS <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
 			<li data-counter="6"><a href="#">BAY AREA LIFE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
 			<li data-counter="7"><a href="#">AUDIENCE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="8"><a href="#">TECHNOLOGY & INFRASTRUCTURE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="8"><a href="#">TECHNOLOGY & <br/>INFRASTRUCTURE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
 		</ul>
 	</div>
 
@@ -29,6 +29,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>INNOVATION FUND</h3>
 
 				<p class="serif">New ideas, new programs, new services, new fundraising techniques, new inspiration.</p>
@@ -59,6 +60,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>KQED Center for science & environment</h3>
 
 				<p class="serif">New content and applications help put scientific discovery and environmental reporting at your fingertips.</p>
@@ -94,6 +96,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>KQED Center for Education</h3>
 
 				<p class="serif">New digital learning media to engage learners of every age.</p>
@@ -130,6 +133,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>kqed center for arts & culture</h3>
 
 				<p class="serif">New media and partnerships bring the Bay Area’s arts & culture to everyone, any time.</p>
@@ -167,6 +171,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>kqed center for news & public affairs</h3>
 
 				<p class="serif">An expanded focus on all things local and regional so you are in the know—wherever you go.</p>
@@ -200,6 +205,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>kqed center for bay area life</h3>
 
 				<p class="serif">Everything you want to know, see and do: right here.</p>
@@ -231,6 +237,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>audience Engagement</h3>
 
 				<p class="serif">New initiatives to grow audiences and increase engagement by building stronger individual relationships.</p>
@@ -263,6 +270,7 @@
 
 			<!-- Inner-Wrapper -->
 			<div class="inner-wrapper">
+				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>Technology & Infrastructure fund</h3>
 
 				<p class="serif">KQED for the 21st century will offer a better user experience that is reliable and available wherever you are.</p>
