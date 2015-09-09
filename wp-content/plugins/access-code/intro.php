@@ -61,7 +61,7 @@
 							<h2>Welcome to <br> the future.</h2>
 							<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
 							<form method='post'>
-								<input class='input_email' type='text' name='access_email' size='32' />
+								<input class='input_email' type='text' name='access_email' size='32' placeholder="ACCESS CODE" />
 								<input type='submit' class='input_submit' name='Submit' value="<?php get_option('prompt_submit') ?>">
 							</form>
 						</div>
