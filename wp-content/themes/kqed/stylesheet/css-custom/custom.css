@@ -61,6 +61,8 @@ header .container .nav-menu-wrapper .current-menu-item a {
     content: none;
 }
 
+
+
 @media only screen and (max-width: 1024px) {
     .homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
         height: 300px;
@@ -71,6 +73,13 @@ header .container .nav-menu-wrapper .current-menu-item a {
 @media only screen and (max-width: 1024px) {
    footer .container .bold-link {
         padding: 24px 10% 22px 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    a#menu-trigger {
+        z-index: 100;
+        position: relative;
     }
 }
 
@@ -161,6 +170,10 @@ body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
 
 body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
     width: 44%;
+}
+
+body header .container .nav-menu-wrapper ul.mobile-menu {
+    top: 64px;
 }
 
 @media screen and (max-width: 992px) {
