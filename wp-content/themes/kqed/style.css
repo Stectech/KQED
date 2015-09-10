@@ -3897,7 +3897,7 @@ a#menu-trigger .line-3-hover {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
   .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
     display: block;
   }
@@ -4102,4 +4102,25 @@ a#menu-trigger .line-3-hover {
     margin: 60px auto 90px;
   }
 }
+
+/* Custom Breakpoints */
+
+@media screen and (max-width: 320px) {
+    .container {
+      width: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+      width: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+      width: auto;
+    }
+}
+
 /*# sourceMappingURL=style.css.map */

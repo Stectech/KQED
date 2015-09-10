@@ -41,9 +41,13 @@
 <?php $accordion = get_post_meta($post->ID, 'accordion', true); ?>
 <?php $accordion_mobile = get_post_meta($post->ID, 'accordion_mobile', true); ?>
 <?php echo do_shortcode($accordion); ?>
+
+<?php if ( $accordion_mobile) : ?>
+
 <div class="cascadeboxes-wrapper mobile-version">
 	<?php echo do_shortcode($accordion_mobile); ?>
 </div>
+<?php endif; ?>
 
 <?php $slider = get_post_meta($post->ID, 'slider', true); ?>
 <?php echo do_shortcode($slider); ?>

@@ -42,7 +42,7 @@ $lcp_display_output .= $this->get_category_link('strong');
 $lcp_display_output .= $this->get_conditional_title();
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
-$lcp_display_output .= '<div class="cascadeboxes-wrapper" id="cbs-aboutpage">';
+
 
 /**
  * POSTS LOOP
