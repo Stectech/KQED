@@ -279,6 +279,7 @@
 
 				<a href="#" class="lightbox image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-14.jpg" alt="media" />
+					<img src="http://kqed.local/wp-content/themes/kqed/img/play-icon.png" alt="play icon" class="play-icon">
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
 			</div>

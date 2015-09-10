@@ -233,14 +233,11 @@ $(document).ready(function() {
 		return false;
 	});
 
-	if ($(window).width() > 992) {
-
+	if ($(window).width() > 991) {
 		bigScreenClick();
 
-	}else{
-
+	} else {
 		smallScreenClick();		
-
 	}
 	
 	//More-Info
