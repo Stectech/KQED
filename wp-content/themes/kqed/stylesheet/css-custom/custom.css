@@ -159,6 +159,10 @@ body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
     margin-top: 100px;
 }
 
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
+    width: 44%;
+}
+
 @media screen and (max-width: 992px) {
     .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
         width: 100% !important;
