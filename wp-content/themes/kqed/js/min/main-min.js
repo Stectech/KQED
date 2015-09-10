@@ -256,15 +256,22 @@ $(document).ready(function() {
 
 
 	//======= Video =======//
-	var inview = new Waypoint.Inview({
-		element: $('.atf-section video')[0],
-		enter: function(direction) {
-			$('.atf-section video')[0].play(); 
-		},
-		exited: function(direction) {
-			$('.atf-section video')[0].pause(); 
-		}
-	});
+
+
+	if ( $( ".atf-section video" ).length ) {
+
+		console.log('video: true');
+
+		var inview = new Waypoint.Inview({
+			element: $('.atf-section video')[0],
+			enter: function(direction) {
+				$('.atf-section video')[0].play(); 
+			},
+			exited: function(direction) {
+				$('.atf-section video')[0].pause(); 
+			}
+		});
+	}
 
 	//============== Responsive Navigation Menu ==============//
 	$('#menu-trigger').click(function(){
