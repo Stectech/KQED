@@ -151,6 +151,7 @@ header .container .nav-menu-wrapper ul.mobile-menu {
     font-size: 26px;
 }
 
+
 .innerpage-head .container h2 {
     text-shadow: -1px 1px 4px #333;
     bottom: 83px;
@@ -173,12 +174,15 @@ body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a
 }
 
 body header .container .nav-menu-wrapper ul.mobile-menu {
-    top: 64px;
+    top: 41px;
 }
 
 @media screen and (max-width: 992px) {
     .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
         width: 100% !important;
+    }
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened {
+        -webkit-transform: translate(24%, 0px);
     }
 }
 
@@ -207,6 +211,49 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
 
     header .container .nav-menu-wrapper ul.mobile-menu {
         width: 80%;
+    }
+
+    body .progressintro-wrapper .items-wrapper ul li a {
+        font-size: 15px;
+    }
+
+    body .progressintro-wrapper .items-wrapper ul li a {
+        margin: 0 20px;
+    }
+
+    body .progressintro-wrapper .items-wrapper ul li a span img {
+        max-width: 72%;
+    }
+
+    body .progressintro-wrapper .items-wrapper ul li a span {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #000;
+    }
+
+    body .progressintro-wrapper .items-wrapper ul li a {
+        border-bottom: 2px solid #000;
+    }
+
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box {
+        padding: 29px;
+        margin-right: -10%;
+    }
+
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
+        font-size: 24px;
+    }
+
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
+        font-size: 18px;
+    }
+    header .container .logo h1 {
+        position: relative;
+        z-index: 100;
+    }
+
+    .innerpage-head img {
+        height: 230px;
     }
 }
 
