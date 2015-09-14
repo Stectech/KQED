@@ -56,6 +56,10 @@
   ga('create', 'UA-67164516-1', 'auto');
   ga('set', 'dimension1', "<?php echo $access_code ?>");
   ga('send', 'pageview', {'title': '<?php echo $access_code ?>'});
+
+  ga('create', 'UA-1538528-1', 'auto', {'name': 'clientTracker'});  // clients tracker.
+  ga('clientTracker.set', 'dimension1', "<?php echo $access_code ?>");
+  ga('clientTracker.send', 'pageview', {'title': '<?php echo $access_code ?>'});
   
 </script>
 
