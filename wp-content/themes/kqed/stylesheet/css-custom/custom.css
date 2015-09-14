@@ -255,6 +255,16 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
     .innerpage-head img {
         height: 230px;
     }
+
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info {
+        padding: 29px;
+    }
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info h3 {
+        font-size: 21px;
+    }
+    body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 768px) {
