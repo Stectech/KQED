@@ -233,7 +233,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	if ($(window).width() > 991) {
+	if ($(window).width() > 900) {
 		bigScreenClick();
 
 	} else {
