@@ -3897,7 +3897,7 @@ a#menu-trigger .line-3-hover {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 900px) {
   .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
     display: block;
   }

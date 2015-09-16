@@ -177,16 +177,46 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
     top: 41px;
 }
 
+@media screen and (max-width: 320px) {
+    .home footer .container .bold-link {
+        padding: 4%;
+    }
+
+    .page-id-2 .cascadeboxes-wrapper .details .container p {
+        font-size: 16px;
+    }
+
+    .page .innerpage-head .container h2 {
+        font-size: 40px;
+        bottom: 51px;
+        letter-spacing: 3px;
+    }
+
+    .page .investors-wrapper .col.quotation p {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .page main .investors-wrapper .quotation h5 {
+        font-size: 17px;
+    }
+
+    .page main .investors-wrapper .col.quotation {
+        height: 278px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
         width: 100% !important;
     }
+
     body .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened {
         -webkit-transform: translate(24%, 0px);
     }
 }
 
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 900px) {
     .cascadeboxes-wrapper .details-v2 .container .col {
         width: 50% !important;
     }
@@ -199,14 +229,25 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
 }
 
 @media screen and (max-width: 640px) {
+
+    footer .container .bold-link img {
+        margin: 16px auto 0;
+    }
+
     body .siteintro-wrapper .intro-slider ul.slides li .inner-wrapper .content-wrapper h2 {
-        line-height: 30px;
+        line-height: 32px;
         font-size: 30px;
         margin-top: 68px;
+        margin-bottom: 2px;
     }
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        margin-top: 12px;
+    }
+
     body .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 19px;
+        line-height: 24px;  
     }
 
     header .container .nav-menu-wrapper ul.mobile-menu {
@@ -247,6 +288,7 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
     body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
         font-size: 18px;
     }
+
     header .container .logo h1 {
         position: relative;
         z-index: 100;
@@ -259,9 +301,11 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
     body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info {
         padding: 29px;
     }
+
     body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info h3 {
         font-size: 21px;
     }
+
     body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
         font-size: 18px;
     }
@@ -287,7 +331,7 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
     }
 
     footer .container .bold-link {
-        padding: 23%;
+        padding: 16%;
         padding-top: 23px;
         padding-bottom: 33px;
     }
@@ -296,6 +340,31 @@ body header .container .nav-menu-wrapper ul.mobile-menu {
 @media only screen and (max-width: 1024px) {
     body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
         margin-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    footer .container .bold-link img {
+        margin: 25px auto 0;
+    }
+
+    footer .container .bold-link {
+        padding: 24px 95px 35px 95px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+        font-size: 130px;
+        line-height: 129px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+        font-size: 49px;
+        line-height: 66px;
+    }
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        margin-top: 15px;
     }
 }
 

@@ -17,9 +17,9 @@ $video_webm = get_field( "video_webm", $post->ID );
 <!-- ATF-Section -->
 
 <section class="atf-section">
-	<video loop poster="<?php bloginfo('template_directory'); ?>/img/video-img.jpg" id="homepage-video">
-		<source src="<?php echo $video_webm['url'] ?>" type="video/webm"/>
-		<source src="<?php echo $video_mov['url'] ?>" type="video/mp4"/>
+	<video loop poster="<?php bloginfo('template_directory'); ?>/img/videos/videobg.jpg" id="homepage-video">
+		<source src="<?php echo $video_webm['url'] ?>#t=1,100" type="video/webm"/>
+		<source src="<?php echo $video_mov['url'] ?>#t=1,100" type="video/mp4"/>
 	</video>
 </section>
 
