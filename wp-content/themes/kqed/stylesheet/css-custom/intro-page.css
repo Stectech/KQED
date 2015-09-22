@@ -1,0 +1,44 @@
+/* 320px */
+.siteintro-wrapper .overlay.intro-overlay h1 {
+    float: left;
+    margin-left: 11px;
+    margin-top: 0;
+}
+
+.siteintro-wrapper .intro-overlay h1 a img {
+	width: 90px;
+}
+
+body .siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+    line-height: 32px;
+    font-size: 31px;
+    margin-top: -19px;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    width: 252px;
+    margin: auto;
+    margin-top: 54px;
+}
+
+
+body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+    position: relative;
+    top: 60px;
+}
+
+.siteintro-wrapper {
+    background-position-x: -206px;
+}
+
+/*568px*/
+@media screen and (min-width: 568px) {
+	div.siteintro-wrapper {
+		background-size: 200%;
+	} 
+}
