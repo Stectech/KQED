@@ -34,7 +34,7 @@ header .container .nav-menu-wrapper .current-menu-item a {
     padding-left: 27px;
     padding-right: 0;
     color: #fff;
-    font-size: 46px;
+    font-size: 38px;
     text-transform: uppercase;
     font-weight: normal;
     border-top: 3px solid #fff;
@@ -55,7 +55,8 @@ header .container .nav-menu-wrapper .current-menu-item a {
 
 .su-spoiler-content.su-clearfix p {
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 25px;
 }
 .su-spoiler-content.su-clearfix p strong{
     font-family: "Adelle-Bold";

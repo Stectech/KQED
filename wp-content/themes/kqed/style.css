@@ -2797,7 +2797,7 @@ footer .footer-bar .container .footer-link a {
 
 /**************** Cascade-Boxes ****************/
 .cascadeboxes-wrapper h3 {
-  font-size: 80px;
+  font-size: 82px;
   font-weight: 300;
   color: #00a7ce;
   text-align: center;
@@ -2811,6 +2811,7 @@ footer .footer-bar .container .footer-link a {
   height: 223px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   float: left;
   cursor: pointer;
 }
@@ -2826,7 +2827,7 @@ footer .footer-bar .container .footer-link a {
 }
 
 .cascadeboxes-wrapper .single-box .overlay h3 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 400;
   color: #fff;
   text-transform: uppercase;
@@ -2976,7 +2977,7 @@ footer .footer-bar .container .footer-link a {
 }
 
 .innerslider-wrapper #future-slider ul li .text-side h4 {
-  font-size: 70px;
+  font-size: 58px;
   font-weight: 300;
   color: #fff;
   line-height: 80px;
@@ -3008,6 +3009,10 @@ footer .footer-bar .container .footer-link a {
 /**************** Video-Box ****************/
 .videobox-wrapper {
   position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 890px;
 }
 
 .videobox-wrapper .videobox-bg {
@@ -3884,8 +3889,11 @@ a#menu-trigger .line-3-hover {
   .innerpage-head .container h2 {
     font-size: 72px;
   }
+  .innerpage-head{
+    min-height: 360px;
+  }
   .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
-    font-size: 44px;
+    font-size: 50px;
     line-height: 40px;
   }
   .cascadeboxes-wrapper .details-v2 .container .col {
@@ -3905,6 +3913,60 @@ a#menu-trigger .line-3-hover {
   }
   .cascadeboxes-wrapper.mobile-version {
     display: block;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .cascadeboxes-wrapper .single-box .overlay h3{
+    font-size: 30px;
+    letter-spacing: 2px;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 i{
+    line-height: 28px;
+    text-indent: 1px;
+  }
+  .page-content p{
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .innerslider-wrapper #future-slider ul li .image-side img{
+    height: 400px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side h4 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-top: 30px;
+    letter-spacing: 2px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side p {
+    font-size: 20px;
+  }
+  .su-spoiler-style-default > .su-spoiler-title{
+    font-size: 32px;
+    letter-spacing: 2px;
+  }
+  .su-spoiler-content.su-clearfix p{
+    font-size: 18px;
+    line-height: 23px;
+  }
+  footer .container .bold-link {
+    padding: 24px 15% 22px 15%;
+  }
+  .homepage-content .container h2{
+    font-size: 68px;
+  }
+  .homepage-content .container p {
+    font-size: 36px;
+  }
+  .homepage-content .container p {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .homepage-boxes .container .col .second-overlay p {
+    font-size: 20px;
+  }
+  .homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
+    font-size: 60px;
   }
 }
 
@@ -3977,14 +4039,14 @@ a#menu-trigger .line-3-hover {
     font-size: 20px;
   }
   .videobox-wrapper .container h3 {
-    font-size: 40px;
+    font-size: 52px;
     margin: 0 0 10px;
   }
   .videobox-wrapper .container a {
-    font-size: 24px;
+    font-size: 32px;
   }
   .videobox-wrapper .container a img {
-    width: 40px;
+    width: 52px;
   }
   .cascadeboxes-wrapper .single-box{
     background-position: center;
@@ -4002,6 +4064,9 @@ a#menu-trigger .line-3-hover {
   }
   .homepage-boxes .container .col .second-overlay p {
     font-size: 20px;
+  }
+  .videobox-wrapper{
+    height: 480px;
   }
   .videobox-wrapper .container h3 {
     font-size: 28px;
@@ -4032,6 +4097,9 @@ a#menu-trigger .line-3-hover {
   }
   .cascadeboxes-wrapper .details .container p {
     font-size: 20px;
+  }
+  .innerslider-wrapper #future-slider ul li .text-side p{
+    font-size: 18px;
   }
 }
 
@@ -4098,7 +4166,7 @@ a#menu-trigger .line-3-hover {
   }
   .page-content {
     margin-top: 70px;
-    margin-bottom: 80px;
+    margin-bottom: 10px;
   }
   .cascadeboxes-wrapper .single-box .overlay h3 {
     font-size: 24px;
@@ -4150,6 +4218,9 @@ a#menu-trigger .line-3-hover {
   .cascadeboxes-wrapper .details .container {
     padding: 0 4%;
     margin: 60px auto 90px;
+  }
+  .videobox-wrapper{
+    height: 320px;
   }
 }
 

@@ -72,8 +72,7 @@
 
 <!-- Video-box -->
 <?php if ( $bg ) : ?>
-	<div class="videobox-wrapper">
-		<img src="<?php echo $bg['url'] ?>" class="videobox-bg" alt="video" />
+	<div class="videobox-wrapper" style="background-image: url('<?php echo $bg['url'] ?>');">
 		<div class="container">
 			<div class="inner-wrapper">
 				<div class="main-wrapper">
