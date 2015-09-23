@@ -44,8 +44,10 @@ $lcp_display_output .= $this->get_conditional_title();
 $lcp_display_output .= '<div class="cascadeboxes-wrapper mobile-version" id="cbs-aboutpage">';
 $lcp_display_output .= '<h3>CAMPAIGN OBJECTIVES</h3>';
 
+$anchorIndex = 1;
 
 foreach ($this->catlist->get_categories_posts() as $single){
+  $anchorIndex++;
 
   $ctr++;
   $thumb     = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
@@ -55,10 +57,12 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   $lcp_display_output .= '
     <div class="single-box" style="background-image:url('.$url.')" data-counter="'.$ctr.'">
+      <a href="#accordion-'.$ctr.'">
       <div class="inactive-overlay"></div>
       <div class="overlay">
         <h3>'.get_the_title($single->ID).' <i class="">+</i></h3>
       </div>
+      </a>
     </div>
     <div class="details-v2" id="box-no5-details" data-counter="'.$ctr.'" >
       <div class="container row">
@@ -69,9 +73,8 @@ foreach ($this->catlist->get_categories_posts() as $single){
           <div class="accordion"><h2>'.do_shortcode($accordion).'</h2></div>
         </div>
       </div>
-    </div>
+    </div> 
   ';
-
 }
 
 

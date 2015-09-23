@@ -2372,7 +2372,6 @@
 /**** MDefault-Styles ****/
 html {
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
@@ -2552,7 +2551,6 @@ header .container .nav-menu-wrapper ul.mobile-menu {
   right: 0;
   padding-left: 0;
   background-color: #000;
-  padding: 30px 10% 0px;
   margin: 0;
   z-index: 10;
 }
@@ -2751,6 +2749,9 @@ footer .footer-bar .container .footer-link a {
 /******************************** Inner-Pages ********************************/
 .innerpage-head {
   position: relative;
+  background-position: center;
+  background-size: cover;
+  min-height: 490px;
 }
 
 .innerpage-head img {
@@ -2783,9 +2784,15 @@ footer .footer-bar .container .footer-link a {
 .page-content p {
   font-family: "Adelle-Light";
   font-size: 28px;
+  line-height: 36px;
   color: #000;
   text-align: justify;
   margin: 10px 0 40px;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  word-break: break-all;
 }
 
 /**************** Cascade-Boxes ****************/
@@ -2916,6 +2923,7 @@ footer .footer-bar .container .footer-link a {
   color: #fff;
   font-family: Adelle-Light;
   font-size: 28px;
+  line-height: 36px;
   text-align: justify;
 }
 
@@ -2933,6 +2941,7 @@ footer .footer-bar .container .footer-link a {
 
 .cascadeboxes-wrapper .details-v2 .container .col .accordion {
   margin: 80px 0;
+  padding: 0 5%;
 }
 
 .cascadeboxes-wrapper.mobile-version {
@@ -2941,7 +2950,7 @@ footer .footer-bar .container .footer-link a {
 
 /**************** Inner-Slider ****************/
 .innerslider-wrapper h3 {
-  font-size: 80px;
+  font-size: 82px;
   font-weight: 300;
   color: #00a7ce;
   text-align: center;
@@ -3057,7 +3066,7 @@ footer .footer-bar .container .footer-link a {
 
 /**************** Investors-Section ****************/
 .investors-wrapper .container h3 {
-  font-size: 80px;
+  font-size: 82px;
   font-weight: 300;
   color: #00a7ce;
   text-align: center;
@@ -3304,7 +3313,8 @@ footer .footer-bar .container .footer-link a {
   top: 0;
   z-index: 1;
   padding: 60px 50px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -3512,6 +3522,7 @@ footer .footer-bar .container .footer-link a {
   background-image: url("img/introbg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   position: absolute;
   left: 0;
   top: 0;
@@ -3915,13 +3926,21 @@ a#menu-trigger .line-3-hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   a#menu-trigger {
     display: block;
+    margin-top: 20px;
   }
   .nav-menu-wrapper ul {
     display: none;
   }
+  header .container .nav-menu-wrapper ul.mobile-menu{
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
   .homepage-content .container h2 {
     font-size: 48px;
     line-height: 40px;
@@ -3941,9 +3960,6 @@ a#menu-trigger .line-3-hover {
   }
   header .container .logo h1 a img {
     width: 100px;
-  }
-  a#menu-trigger {
-    margin-top: 20px;
   }
   .cascadeboxes-wrapper .details-v2 .container .col .big-text {
     font-size: 24px;
@@ -3969,6 +3985,9 @@ a#menu-trigger .line-3-hover {
   }
   .videobox-wrapper .container a img {
     width: 40px;
+  }
+  .cascadeboxes-wrapper .single-box{
+    background-position: center;
   }
 }
 
@@ -4070,6 +4089,9 @@ a#menu-trigger .line-3-hover {
   .bold-link img {
     width: 70px;
   }
+  .innerpage-head{
+    min-height: 250px;
+  }
   .innerpage-head .container h2 {
     font-size: 32px;
     bottom: 16px;
@@ -4087,6 +4109,27 @@ a#menu-trigger .line-3-hover {
   .containerv2, .container {
     padding: 0 4%;
   }
+  .cascadeboxes-wrapper .details-v2 .container .col .big-text p{
+      font-size: 18px;
+      line-height: 34px;
+  }
+  footer .container .bold-link {
+        padding: 10%;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        font-size: 24px;
+    }
+    footer .container .bold-link img{
+        width: 55px;
+        margin: 10px auto 0;
+    }
+    .investors-wrapper .col.quotation{
+      height: 450px;
+      padding: 8% 8% 8% 8%;
+    }
+    .innerslider-wrapper #future-slider ul li .image-side img{
+      height: 280px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -4094,8 +4137,15 @@ a#menu-trigger .line-3-hover {
     font-size: 14px;
   }
   .cascadeboxes-wrapper .single-box .overlay h3 {
-    font-size: 20px;
+    font-size: 24px;
     line-height: 26px;
+    padding: 0 14%;
+  }
+  .cascadeboxes-wrapper .single-box .overlay h3 i{
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    font-size: 24px;
   }
   .cascadeboxes-wrapper .details .container {
     padding: 0 4%;

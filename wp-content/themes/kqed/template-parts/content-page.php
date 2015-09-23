@@ -14,8 +14,7 @@
 	$url = $thumb;
 ?>
 
-<div class="innerpage-head">
-	<img src="<?php echo $url ?>" alt="header">
+<div class="innerpage-head" style="background-image: url('<?php echo $url ?>');">
 	<div class="container">
 		<h2><?php single_post_title(); ?></h2>
 	</div>	

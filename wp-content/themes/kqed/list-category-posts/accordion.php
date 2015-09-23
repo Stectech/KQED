@@ -101,31 +101,38 @@ foreach ($this->catlist->get_categories_posts() as $single){
 }
 
 
+$anchorIndex = 1;
 
 foreach (array_chunk($get_title, 2, true) as $index=>$titles)
 {
+
   $i++;
    // Title
   $lcp_display_output .= '<div class="single-box" style="background-image:url('.$get_url[$index + $inc_index].')" data-counter="'.($index + $inc_index).'">';
+  $lcp_display_output .= '<a href="#accordion-'.$anchorIndex.'">';
   $lcp_display_output .= '<div class="inactive-overlay"></div>';
   $lcp_display_output .= '<div class="overlay">';
   $lcp_display_output .= '<h3>';
   $lcp_display_output .= $get_title[$index + $inc_index];
   $lcp_display_output .= '<i class="">+</i></h3>';
-  $lcp_display_output .= '</div></div>';
+  $lcp_display_output .= '</div></a></div>';
 
 
 
   $inc_index++;
+  $anchorIndex++;
 
   // Title
   $lcp_display_output .= '<div class="single-box" style="background-image:url('.$get_url[$index + $inc_index].')" data-counter="'.($index + $inc_index).'">';
+  $lcp_display_output .= '<a href="#accordion-'.$anchorIndex.'">';
   $lcp_display_output .= '<div class="inactive-overlay"></div>';
   $lcp_display_output .= '<div class="overlay">';
   $lcp_display_output .= '<h3>';
   $lcp_display_output .= $get_title[$index + $inc_index];
   $lcp_display_output .= '<i class="">+</i></h3>';
-  $lcp_display_output .= '</div></div>';
+  $lcp_display_output .= '</div></a></div>';
+
+   $anchorIndex++;
 
   //content
   $lcp_display_output .= '<div class="details" id="box-no1-details" data-counter="'.($index + $get_index).'">';

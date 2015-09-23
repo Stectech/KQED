@@ -57,10 +57,12 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   $lcp_display_output .= '
     <div class="single-box" style="background-image:url('.$url.')" data-counter="'.$ctr.'">
+      <a href="#accordion-'.$ctr.'">
       <div class="inactive-overlay"></div>
       <div class="overlay">
         <h3>'.get_the_title($single->ID).'<i class="">+</i></h3>
       </div>
+      </a>
     </div>
     <div class="details" id="box-no1-details" data-counter="'.$ctr.'" >
       <div class="container">
