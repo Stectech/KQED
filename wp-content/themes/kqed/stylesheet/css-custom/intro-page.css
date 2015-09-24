@@ -1,0 +1,193 @@
+/* 320px */
+::-webkit-input-placeholder {
+    font-size: 15px !important;
+}
+
+div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+    font-size: 15px;
+    text-indent: 10px;
+    letter-spacing: -1px;
+}
+
+.siteintro-wrapper .overlay.intro-overlay h1 {
+    float: left;
+    margin-left: 11px;
+    margin-top: 0;
+}
+
+div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="submit"] {
+    right: 47px;
+    top: 16px;
+    width: 33px;
+    height: 12px;
+    background-size: 33px;
+}
+
+.siteintro-wrapper .intro-overlay h1 a img {
+	width: 90px;
+}
+
+div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+body .siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+    line-height: 32px;
+    font-size: 31px;
+    margin-top: -19px;
+    margin-bottom: 2px;
+    letter-spacing: 1px;
+}
+
+body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+    font-size: 18px;
+    line-height: 24px;
+    display: block;
+    width: 252px;
+    margin: auto;
+    margin-top: 54px;
+}
+
+
+body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+    position: relative;
+    top: 60px;
+}
+
+.siteintro-wrapper {
+    background-position-x: -206px;
+}
+
+/*568px*/
+@media screen and (min-width: 568px) {
+	div.siteintro-wrapper {
+		background-size: 200%;
+	} 
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        margin-top: 20px;
+        width: 422px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        top: 6px;
+    }
+}
+
+/*768px*/
+@media screen and (min-width: 768px) {
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        top: 60px;
+    }
+
+    body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+        line-height: 109px;
+        font-size: 103px;
+    }
+
+    .siteintro-wrapper .intro-overlay h1 a img {
+        width: 136px;
+    }
+
+    .siteintro-wrapper .overlay.intro-overlay h1 {
+        float: left;
+        margin-left: 61px;
+        margin-top: 20px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        font-size: 36px;
+        line-height: 44px;
+        display: block;
+        width: 552px;
+        margin: auto;
+        margin-top: 96px;
+    }
+
+    div.siteintro-wrapper {
+        background-size: 259%;
+        background-position-x: -496px;
+    }
+
+    div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+        font-weight: 300;
+        font-size: 26px;
+        color: #000;
+        padding: 15px 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        float: left;
+        margin: auto;
+        width: 85.5%;
+        text-indent: 20px;
+        margin-left: 38px;
+        padding-bottom: 11px;
+    }
+
+    div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="submit"] {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 50px;
+        top: 27px;
+        background-image: url(../../img/arrow-blue.png);
+        width: 48px;
+        height: 16px;
+        background-size: 49px;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 23px !important;
+    }
+}
+
+/*992*/
+
+@media screen and (min-width: 992px) {
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+        line-height: 109px;
+        font-size: 116px;
+        letter-spacing: -1px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        width: 1000px;
+        font-size: 46px;
+    }
+
+    div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+        margin: auto;
+        font-size: 31px;
+        width: 95%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 31px !important;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+
+    body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+        line-height: 132px;
+        font-size: 137px;
+        letter-spacing: 3px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        width: 1500px;
+        font-size: 65px;
+        letter-spacing: -1px;
+        line-height: 87px;
+    }
+
+}
