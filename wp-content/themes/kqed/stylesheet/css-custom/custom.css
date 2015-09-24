@@ -198,17 +198,6 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
         font-size: 16px;
     }
 
-    .page .innerpage-head .container h2 {
-        font-size: 44px;
-        bottom: 30px;
-        letter-spacing: 3px;
-    }
-
-    .page .investors-wrapper .col.quotation p {
-        font-size: 12px;
-        line-height: 24px;
-    }
-
     .page main .investors-wrapper .quotation h5 {
         font-size: 17px;
     }
@@ -216,6 +205,7 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
     .page main .investors-wrapper .col.quotation {
         height: 278px;
     }
+
 }
 
 @media screen and (max-width: 992px) {

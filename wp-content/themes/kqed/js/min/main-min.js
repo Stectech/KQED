@@ -36,8 +36,6 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
-	
-
 	//======= The Future page's slider =======//
 	var $opacity = 0.99;
 	$('.intro-slider').flexslider({
@@ -243,6 +241,9 @@ $(document).ready(function() {
 	//More-Info
 	$(".progressintro-wrapper .additionalinfo-wrapper .single-box .moreinfo-trigger").click(function(){
 		$(this).parents().find('.more-info').addClass('opened');
+		var iwHeight = $(this).parents().find('.single-box').innerHeight();
+		iwHeight= iwHeight + 150;
+		$(this).parents().find('.more-info').height(iwHeight);
 
 		return false;
 	});
@@ -252,6 +253,8 @@ $(document).ready(function() {
 
 		return false;
 	});
+
+	
 
 
 
@@ -327,9 +330,6 @@ $(document).ready(function() {
 
 	    }, 10);
 	});
-
-    
-
 
 });
 
