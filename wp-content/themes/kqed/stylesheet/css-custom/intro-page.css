@@ -64,10 +64,23 @@ body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form
 	div.siteintro-wrapper {
 		background-size: 200%;
 	} 
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        margin-top: 20px;
+        width: 422px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        top: 6px;
+    }
 }
 
 /*768px*/
 @media screen and (min-width: 768px) {
+
+    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+        top: 60px;
+    }
 
     body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
         line-height: 109px;
@@ -149,6 +162,32 @@ body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form
     body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
         width: 1000px;
         font-size: 46px;
+    }
+
+    div.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+        margin: auto;
+        font-size: 31px;
+        width: 95%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 31px !important;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+
+    body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
+        line-height: 132px;
+        font-size: 137px;
+        letter-spacing: 3px;
+    }
+
+    body .siteintro-wrapper .intro-slider ul li:last-child .inner-wrapper h3 {
+        width: 1500px;
+        font-size: 65px;
+        letter-spacing: -1px;
+        line-height: 87px;
     }
 
 }
