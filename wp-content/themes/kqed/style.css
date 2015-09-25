@@ -3350,8 +3350,9 @@ footer .footer-bar .container .footer-link a {
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
 	font-size: 32px;
-	font-weight: 300;
+	font-weight: 400;
 	color: #fff;
+	letter-spacing: 1px;
 	margin: 10px 0 30px;
 	text-transform: uppercase;
 }
@@ -3396,6 +3397,8 @@ footer .footer-bar .container .footer-link a {
 	color: #cede00;
 	margin-top: 30px;
 	display: inline-block;
+	float: left;
+    width: 100%;
 }
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger img {
@@ -3915,13 +3918,17 @@ a#menu-trigger .line-3-hover {
 	}
 	.innerpage-head .container h2 {
 		font-size: 72px;
+		bottom: 65px;
 	}
 	.innerpage-head{
-		min-height: 360px;
+		min-height: 470px;
 	}
 	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
-		font-size: 50px;
+		font-size: 56px;
 		line-height: 40px;
+	}
+	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	    line-height: 60px;
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col {
 		width: 100%;
@@ -3948,7 +3955,7 @@ a#menu-trigger .line-3-hover {
 
 @media screen and (max-width: 992px) {
 	.cascadeboxes-wrapper .single-box .overlay h3{
-		font-size: 30px;
+		font-size: 28px;
 		letter-spacing: 2px;
 	}
 	.cascadeboxes-wrapper .single-box .overlay h3 i{
@@ -3957,7 +3964,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.page-content p{
 		font-size: 22px;
-		line-height: 30px;
+		line-height: 34px;
 	}
 	.innerslider-wrapper #future-slider ul li .image-side img{
 		height: 400px;
@@ -3967,6 +3974,7 @@ a#menu-trigger .line-3-hover {
 		line-height: 50px;
 		margin-top: 30px;
 		letter-spacing: 2px;
+		margin-bottom: 34px;
 	}
 	.innerslider-wrapper #future-slider ul li .text-side p {
 		font-size: 20px;
@@ -3982,6 +3990,9 @@ a#menu-trigger .line-3-hover {
 	footer .container .bold-link {
 		padding: 24px 15% 22px 15%;
 	}
+	.page-id-6 footer .container .bold-link {
+	    padding: 36px 12% 36px 12%;
+	 }
 	.homepage-content .container h2{
 		font-size: 68px;
 	}
@@ -3993,10 +4004,11 @@ a#menu-trigger .line-3-hover {
 		line-height: 44px;
 	}
 	.homepage-boxes .container .col .second-overlay p {
-		font-size: 20px;
+    font-size: 17px;
+    line-height: 25px;
 	}
 	.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
-		font-size: 60px;
+		font-size: 52px;
 	}
 	.progressintro-wrapper .items-wrapper ul li a{
 		padding: 40px 0;
@@ -4013,8 +4025,14 @@ a#menu-trigger .line-3-hover {
 		font-size: 20px;
 	}
 	.page-id-2 .cascadeboxes-wrapper .details .container p, .page-id-2 .cascadeboxes-wrapper .details .container p{
-		font-size: 24px;
-		line-height: 32px;
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.bold-link img{
+		width: 80px;
+	}
+	.page-id-61 .innerpage-head .container h2{
+		font-size: 86px;
 	}
 }
 
@@ -4098,6 +4116,9 @@ a#menu-trigger .line-3-hover {
 	}
 	.cascadeboxes-wrapper .single-box{
 		background-position: center;
+	}
+	.page-id-94 .innerpage-head .container h2{
+		font-size: 88px;
 	}
 }
 
@@ -4226,26 +4247,26 @@ a#menu-trigger .line-3-hover {
 		padding: 0 4%;
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col .big-text p{
-			font-size: 18px;
-			line-height: 34px;
+	    font-size: 25px;
+	    line-height: 30px;
 	}
 	footer .container .bold-link {
-				padding: 10%;
-				padding-top: 15px;
-				padding-bottom: 25px;
-				font-size: 24px;
-		}
-		footer .container .bold-link img{
-				width: 55px;
-				margin: 10px auto 0;
-		}
-		.investors-wrapper .col.quotation{
-			height: 450px;
-			padding: 8% 8% 8% 8%;
-		}
-		.innerslider-wrapper #future-slider ul li .image-side img{
-			height: 280px;
-		}
+		padding: 10%;
+		padding-top: 15px;
+		padding-bottom: 25px;
+		font-size: 24px;
+	}
+	footer .container .bold-link img{
+		width: 55px;
+		margin: 10px auto 0;
+	}
+	.investors-wrapper .col.quotation{
+		height: 450px;
+		padding: 8% 8% 8% 8%;
+	}
+	.innerslider-wrapper #future-slider ul li .image-side img{
+		height: 280px;
+	}
 	.investors-wrapper .col img{
 		width: auto;
 	}
@@ -4287,6 +4308,26 @@ a#menu-trigger .line-3-hover {
 	.su-spoiler-icon{
 		top: -20px !important;
 	}
+	.homepage-content .container p, .page-content p{
+		font-size: 18px !important;
+	}
+	footer .container .bold-link{
+        padding: 18px 10% 18px 10%;
+	    font-size: 24px;
+	}
+	footer .container .bold-link img {
+	    width: 42px;
+	}
+	.page-id-94 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3{
+		font-size: 50px;
+		line-height: 48px;
+	}
+	.cascadeboxes-wrapper .single-box{
+		height: 190px;
+	}
+	body .progressintro-wrapper .additionalinfo-wrapper .single-box{
+		padding: 20px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -4303,22 +4344,29 @@ a#menu-trigger .line-3-hover {
 		margin: 10px 0 20px;
 	}
 	.innerpage-head {
-    min-height: 150px;
+		min-height: 280px;
 	}
 	.page .innerpage-head .container h2 {
-		font-size: 30px;
-		bottom: 20px;
+		font-size: 48px;
+		bottom: 45px;
 		letter-spacing: 1px;
-  }
+	}
+	.page-id-61 .innerpage-head .container h2{
+		font-size: 36px;
+		bottom: 40px;
+	}
+	.page-id-61 .innerpage-head{
+	    background-position: 60% 0;
+	}
   header .container .logo h1 a img{
-  	max-width: 100px;
+		max-width: 130px;
   }
   a#menu-trigger{
 		margin-top: 20px;
   }
 	a#menu-trigger span{
 		height: 6px;
-		width: 40px;
+		width: 37px;
 		margin-bottom: 8px;
 	}
 	a#menu-trigger .line-1-hover{
@@ -4333,6 +4381,79 @@ a#menu-trigger .line-3-hover {
 	}
 	body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
     top: 59px;
+	}
+	footer .container .bold-link{
+	    padding: 12px 10% 12px 10%;
+	}
+	.progressintro-wrapper .items-wrapper {
+	    width: 90%;
+	    -webkit-transform: translate(5%, 0px);
+	    -ms-transform: translate(5%, 0px);
+	    transform: translate(5%, 0px);
+	}
+	.progressintro-wrapper .items-wrapper ul{
+		padding: 80px 0;
+	}
+	body .progressintro-wrapper .items-wrapper ul li a{
+		padding: 25px 0 25px;
+	    font-size: 22px;
+	}
+	body .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened{
+	    -webkit-transform: translate(5%, 0px);
+	    -moz-transform: translate(5%, 0px);
+	    -ms-transform: translate(5%, 0px);
+	    -o-transform: translate(5%, 0px);
+	    transform: translate(5%, 0px);
+	    width: 90%;
+	}
+	body .progressintro-wrapper .items-wrapper ul li a span{
+		width: 30px;
+		height: 30px;
+	}
+	.investors-wrapper .col.quotation{
+		height: 240px;
+	}
+	.page .investors-wrapper .col.quotation p{
+		font-size: 16px;
+	}
+	.investors-wrapper .col.quotation h5{
+		font-size: 18px;
+	}
+	.page-id-78 .innerpage-head{
+		background-position: 60% 0%;
+	}
+	header .container, .footer-bar .container {
+	    padding: 0 5%;
+	}
+	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+		font-size: 38px;
+		line-height: 34px;
+	}
+	body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
+	    font-size: 14px;
+	}
+	body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
+	    font-size: 20px;
+	}
+	.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn{
+		width: 25px;
+		height: 25px;
+	}
+	.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p.serif{
+	    margin: 5px 0 25px;
+	}
+	.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p{
+		margin-bottom: 30px;
+	}
+	.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger, .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info .moreinfo-back-trigger{
+	    font-size: 14px;
+	}
+	.progressintro-wrapper .items-wrapper ul li a span{
+		margin-top: 3px;
+	}
+	body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
+	    font-size: 16px;
+        margin-bottom: 10px;
 	}
 }
 
