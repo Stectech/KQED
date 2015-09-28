@@ -153,6 +153,11 @@ body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form
 
 @media screen and (min-width: 1200px) {
 
+    div.siteintro-wrapper {
+        background-size: 100%;
+        background-position-x: 0;
+    }
+
     body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2 {
         line-height: 109px;
         font-size: 116px;
