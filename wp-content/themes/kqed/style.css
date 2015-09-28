@@ -2609,6 +2609,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	font-size: 54px;
 	font-family: 'Adelle-Light';
 	text-align: justify;
+    line-height: 68px;
 }
 
 /**************** Homepage-Boxes ****************/
@@ -2662,6 +2663,9 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 }
 
 .homepage-boxes .container .col:hover .second-overlay {
+	opacity: 1;
+}
+.homepage-boxes .container .col .second-overlay.active {
 	opacity: 1;
 }
 
@@ -2789,7 +2793,7 @@ footer .footer-bar .container .footer-link a {
 	color: #000;
 	text-align: justify;
 	margin: 10px 0 40px;
-	word-break: break-all;
+	/*word-break: break-all;*/
 }
 
 /**************** Cascade-Boxes ****************/
@@ -3759,7 +3763,7 @@ a#menu-trigger .line-3-hover {
 		line-height: 70px;
 	}
 	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
-		font-size: 82px;
+		font-size: 72px;
 		line-height: 70px;
 		margin: 40px 0;
 		line-height: 80px;
@@ -3793,6 +3797,10 @@ a#menu-trigger .line-3-hover {
 	.cascadeboxes-wrapper .details-v2 .container .col .big-text {
 		font-size: 38px;
 		line-height: 50px;
+	}
+	.cascadeboxes-wrapper .details-v2 .container .col .big-text p{
+	    line-height: 42px;
+	    font-size: 40px;
 	}
 	.investors-wrapper .col{
 		height: 170px;
@@ -3876,6 +3884,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 38px;
 	}
 	.homepage-boxes .container .col img {
+	    max-height: 100%;
 		width: 100%;
 	}
 	.homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
@@ -4028,11 +4037,16 @@ a#menu-trigger .line-3-hover {
 		font-size: 22px;
 		line-height: 30px;
 	}
+	.bold-link{
+	    padding: 45px 150px 40px 160px;
+	}
 	.bold-link img{
 		width: 80px;
 	}
 	.page-id-61 .innerpage-head .container h2{
 		font-size: 86px;
+	}
+	.bold-link{
 	}
 }
 
@@ -4120,6 +4134,9 @@ a#menu-trigger .line-3-hover {
 	.page-id-94 .innerpage-head .container h2{
 		font-size: 88px;
 	}
+	footer .container .bold-link{
+		font-size: 50px;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4160,6 +4177,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.homepage-content .container p, .page-content p {
 		font-size: 20px;
+	    line-height: 32px;
 	}
 	.innerpage-head .container h2 {
 		font-size: 45px;
@@ -4247,8 +4265,8 @@ a#menu-trigger .line-3-hover {
 		padding: 0 4%;
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col .big-text p{
-	    font-size: 25px;
-	    line-height: 30px;
+		font-size: 26px;
+		line-height: 28px;
 	}
 	footer .container .bold-link {
 		padding: 10%;
@@ -4310,6 +4328,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.homepage-content .container p, .page-content p{
 		font-size: 18px !important;
+	    line-height: 24px;
 	}
 	footer .container .bold-link{
         padding: 18px 10% 18px 10%;
@@ -4327,6 +4346,9 @@ a#menu-trigger .line-3-hover {
 	}
 	body .progressintro-wrapper .additionalinfo-wrapper .single-box{
 		padding: 20px;
+	}
+	.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
+	    font-size: 28px;
 	}
 }
 
@@ -4380,7 +4402,7 @@ a#menu-trigger .line-3-hover {
     transform: rotate(-47deg) translate(11px, -13px);
 	}
 	body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
-    top: 59px;
+	    top: 39px;
 	}
 	footer .container .bold-link{
 	    padding: 12px 10% 12px 10%;
@@ -4454,6 +4476,22 @@ a#menu-trigger .line-3-hover {
 	body .progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
 	    font-size: 16px;
         margin-bottom: 10px;
+	}
+	.homepage-content .container h2 {
+	    font-size: 34px;
+	    letter-spacing: 2px;
+	}
+	.homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
+	    height: 210px;
+	    overflow: hidden;
+	}
+	.homepage-boxes .container .col .second-overlay p {
+	    font-size: 13px;
+	    line-height: 19px;
+	}
+	.page-id-94 .innerslider-wrapper h3{
+	    line-height: 40px;
+	    font-size: 42px;
 	}
 }
 
