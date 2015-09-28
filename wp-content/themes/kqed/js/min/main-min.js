@@ -341,9 +341,40 @@ $(document).ready(function() {
 	    }, 10);
 	});
 
-	$(".homepage-boxes .container .col").on("tap",function(){
-	 	$(this).children('.second-overlay').toggleClass('active');
-	});
+	
+
+	// Mobile Device Compatibility
+	var isMobile = {
+		Android: function() {
+		    return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+		    return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+		    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+		    return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+		    return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+		    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
+	if(isMobile.any()) {
+		$(".homepage-boxes .container .col").on("tap",function(){
+		 	$(this).siblings().children('.second-overlay').removeClass('active');
+		 	$(this).children('.second-overlay').toggleClass('active');
+		});
+	}else{
+		$(".homepage-boxes .container .col").hover(function(){
+		 	$(this).children('.second-overlay').toggleClass('active');
+		});
+	}
 
 });
 
