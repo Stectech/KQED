@@ -70,6 +70,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .= $this->get_post_title($single, 'h3', 'homeblocks_title');
   $lcp_display_output .=  '</div></div>';
   $lcp_display_output .=  '<div class="overlay second-overlay">';
+  $lcp_display_output .=  '<div class="inner-wrapper">';
   //Show comments:
   $lcp_display_output .= $this->get_comments($single);
 
@@ -100,7 +101,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
   //Close li tag
 
-  $lcp_display_output .= '</div></div>';
+  $lcp_display_output .= '</div></div></div>';
 }
 
 // Close the wrapper I opened at the beginning:

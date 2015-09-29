@@ -2623,6 +2623,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 
 .homepage-boxes .container .col img {
 	max-width: 100%;
+    max-height: 100%;
 	display: block;
 }
 
@@ -2648,13 +2649,17 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	z-index: 2;
 	background-color: #00a7ce;
 	opacity: 0;
+	display: table;
 	transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
 	-moz-transition: all 500ms ease-in-out;
 	-webkit-transition: all 500ms ease-in-out;
 	-ms-transition: all 500ms ease-in-out;
 }
-
+.homepage-boxes .container .col .second-overlay .inner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
 .homepage-boxes .container .col .second-overlay p {
 	color: #fff;
 	font-size: 28px;
@@ -3775,10 +3780,11 @@ a#menu-trigger .line-3-hover {
 		margin: 30px 0 110px;
 	}
 	.homepage-content .container p {
-		font-size: 48px;
+		font-size: 44px;
+	    line-height: 60px;
 	}
 	.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 {
-		font-size: 56px;
+	    font-size: 52px;
 	}
 	.homepage-boxes .container .col .second-overlay p {
 		font-size: 20px;
@@ -3840,6 +3846,13 @@ a#menu-trigger .line-3-hover {
 	}
 	body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link{
 		width: 45%;
+	}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	.homepage-boxes .container .col{
+		height: 380px;
 	}
 }
 
@@ -4092,7 +4105,7 @@ a#menu-trigger .line-3-hover {
 		margin: 30px 0 70px;
 	}
 	.homepage-content .container p, .page-content p {
-		font-size: 28px;
+		line-height: 27px;
 	}
 	.homepage-boxes .container .col .second-overlay p {
 		font-size: 24px;
@@ -4116,7 +4129,7 @@ a#menu-trigger .line-3-hover {
 	.innerslider-wrapper #future-slider ul li .text-side h4 {
 		font-size: 38px;
 		line-height: 30px;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.innerslider-wrapper #future-slider ul li .text-side p {
 		font-size: 20px;
@@ -4337,7 +4350,7 @@ a#menu-trigger .line-3-hover {
         padding: 18px 10% 18px 10%;
 	    font-size: 24px;
 	}
-	footer .container .bold-link img {
+	footer .container .bold-link img, .home footer .container .bold-link img {
 	    width: 42px;
 	}
 	.page-id-94 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3{
@@ -4373,11 +4386,11 @@ a#menu-trigger .line-3-hover {
 		margin: 10px 0 20px;
 	}
 	.innerpage-head {
-		min-height: 280px;
+		min-height: 235px;
 	}
 	.page .innerpage-head .container h2 {
-		font-size: 48px;
-		bottom: 45px;
+		font-size: 40px;
+		bottom: 42px;
 		letter-spacing: 1px;
 	}
 	.page-id-61 .innerpage-head .container h2{
@@ -4388,20 +4401,20 @@ a#menu-trigger .line-3-hover {
 	    background-position: 60% 0;
 	}
   header .container .logo h1 a img{
-		max-width: 130px;
+		max-width: 110px;
   }
   a#menu-trigger{
 		margin-top: 20px;
   }
 	a#menu-trigger span{
 		height: 6px;
-		width: 37px;
-		margin-bottom: 8px;
+		width: 33px;
+		margin-bottom: 7px;
 	}
 	a#menu-trigger .line-1-hover{
-		-webkit-transform: rotate(47deg) translate(7px, 9px);
-		-ms-transform: rotate(47deg) translate(7px, 9px);
-		transform: rotate(47deg) translate(7px, 9px);
+		-webkit-transform: rotate(47deg) translate(6px, 8px);
+		-ms-transform: rotate(47deg) translate(6px, 8px);
+		transform: rotate(47deg) translate(6px, 8px);
 	}
 	a#menu-trigger .line-3-hover{
     -webkit-transform: rotate(-47deg) translate(11px, -13px);
@@ -4411,8 +4424,9 @@ a#menu-trigger .line-3-hover {
 	body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
 	    top: 39px;
 	}
-	footer .container .bold-link{
-	    padding: 12px 10% 12px 10%;
+	footer .container .bold-link, .page-id-6 footer .container .bold-link{
+	    padding: 12px 12% 12px 12%;
+        letter-spacing: 3px;
 	}
 	.progressintro-wrapper .items-wrapper {
 	    width: 90%;
@@ -4499,6 +4513,10 @@ a#menu-trigger .line-3-hover {
 	.page-id-94 .innerslider-wrapper h3{
 	    line-height: 40px;
 	    font-size: 42px;
+	}
+	.homepage-content .container p, .page-content p {
+	    font-size: 14px !important;
+	    line-height: 22px;
 	}
 }
 

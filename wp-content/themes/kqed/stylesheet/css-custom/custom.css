@@ -201,14 +201,6 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
 }
 
 @media screen and (max-width: 320px) {
-    .home footer .container .bold-link {
-        padding: 4% 10%;
-        font-size: 18px;
-    }
-    .home footer .container .bold-link img{
-        width: 50px;
-    }
-
     .page-id-2 .cascadeboxes-wrapper .details .container p {
         font-size: 16px;
     }
