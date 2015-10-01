@@ -43,7 +43,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
-	//======= The Future page's slider =======//
+	//======= The Intro page's slider =======//
 	var $opacity = 0.99;
 	$('.intro-slider').flexslider({
 		animation: "fade",
@@ -58,6 +58,7 @@ $(document).ready(function() {
 		},
 		end: function(){
 			$('.skip-btn').fadeOut();
+			slider.pause();
 		}
 	});
 
