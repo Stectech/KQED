@@ -248,6 +248,7 @@ $(document).ready(function() {
 	//More-Info
 	$(".progressintro-wrapper .additionalinfo-wrapper .single-box .moreinfo-trigger").click(function(){
 		$(this).parents().find('.more-info').addClass('opened');
+
 		var iwHeight = $(this).parents().find('.single-box').innerHeight();
 		iwHeight= iwHeight + 150;
 		$(this).parents().find('.more-info').height(iwHeight);
@@ -269,9 +270,6 @@ $(document).ready(function() {
 
 
 	if ( $( ".atf-section video" ).length ) {
-
-		console.log('video: true');
-
 		var inview = new Waypoint.Inview({
 			element: $('.atf-section video')[0],
 			enter: function(direction) {
