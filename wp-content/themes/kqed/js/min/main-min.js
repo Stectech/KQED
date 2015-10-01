@@ -58,7 +58,7 @@ $(document).ready(function() {
 		},
 		end: function(){
 			$('.skip-btn').fadeOut();
-			slider.pause();
+			$('.intro-slider').flexslider('pause');
 		}
 	});
 
@@ -66,7 +66,8 @@ $(document).ready(function() {
 	$(".skip-btn").click(function () {    
 		$('.intro-slider').flexslider(6);
 		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, .2)");
-
+		$('.intro-slider').flexslider('pause');
+		
 		return false;
 	});
 
