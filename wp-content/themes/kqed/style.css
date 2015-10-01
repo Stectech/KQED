@@ -2649,7 +2649,6 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	z-index: 2;
 	background-color: #00a7ce;
 	opacity: 0;
-	display: table;
 	transition: all 500ms ease-in-out;
 	-o-transition: all 500ms ease-in-out;
 	-moz-transition: all 500ms ease-in-out;
@@ -2657,8 +2656,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	-ms-transition: all 500ms ease-in-out;
 }
 .homepage-boxes .container .col .second-overlay .inner-wrapper{
-    display: table-cell;
-    vertical-align: middle;
+	
 }
 .homepage-boxes .container .col .second-overlay p {
 	color: #fff;
@@ -3854,6 +3852,10 @@ a#menu-trigger .line-3-hover {
 	.homepage-boxes .container .col{
 		height: 380px;
 	}
+	.homepage-content .container h2 {
+	    margin: 30px 0 130px;
+	}
+
 }
 
 @media only screen and (max-width: 1160px) {
@@ -3888,7 +3890,6 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container h2 {
 		font-size: 56px;
 		line-height: 60px;
-		margin: 30px 0 90px;
 	}
 	.homepage-content .container p {
 		font-size: 38px;
@@ -3936,11 +3937,11 @@ a#menu-trigger .line-3-hover {
 		margin: 25px auto 0;
 	}
 	.innerpage-head .container h2 {
-		font-size: 72px;
+		font-size: 84px;
 		bottom: 65px;
 	}
 	.innerpage-head{
-		min-height: 470px;
+		min-height: 475px;
 	}
 	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
 		font-size: 56px;
@@ -4007,11 +4008,9 @@ a#menu-trigger .line-3-hover {
 		line-height: 23px;
 	}
 	footer .container .bold-link {
-		padding: 24px 15% 22px 15%;
+	    padding: 24px 10% 22px 10%;
+	    font-size: 60px;
 	}
-	.page-id-6 footer .container .bold-link {
-	    padding: 36px 12% 36px 12%;
-	 }
 	.homepage-content .container h2{
 		font-size: 68px;
 	}
@@ -4056,7 +4055,14 @@ a#menu-trigger .line-3-hover {
 	.page-id-61 .innerpage-head .container h2{
 		font-size: 86px;
 	}
-	.bold-link{
+	
+}
+@media (max-width:992px) and (min-width:770px) {
+	.homepage-boxes .container .col, .cascadeboxes-wrapper .single-box{
+		height: 250px;
+	}
+	.homepage-boxes .container .col img{
+		max-height: none;
 	}
 }
 
@@ -4107,6 +4113,10 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container p, .page-content p {
 		line-height: 27px;
 	}
+	.homepage-content .container p{
+	    line-height: 32px;
+	    font-size: 24px;
+	}
 	.homepage-boxes .container .col .second-overlay p {
 		font-size: 24px;
 	}
@@ -4153,6 +4163,20 @@ a#menu-trigger .line-3-hover {
 	footer .container .bold-link{
 		font-size: 50px;
 	}
+	.innerslider-wrapper #future-slider ul li .image-side img {
+	    height: 340px;
+	}
+	.page-id-61 .innerpage-head{
+		background-position: 70% 0px;
+		background-size: 245%;
+		background-repeat: no-repeat;
+	}
+	.innerpage-head .container h2, .page-id-61 .innerpage-head .container h2{
+	    font-size: 80px;
+	}
+	.page-content {
+		margin-top: 90px;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4194,9 +4218,6 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container p, .page-content p {
 		font-size: 20px;
 	    line-height: 32px;
-	}
-	.innerpage-head .container h2 {
-		font-size: 45px;
 	}
 	.cascadeboxes-wrapper .details .container p {
 		font-size: 20px;
@@ -4303,6 +4324,10 @@ a#menu-trigger .line-3-hover {
 	}
 	.investors-wrapper .col img{
 		width: auto;
+	}
+	.innerpage-head .container h2, .page-id-61 .innerpage-head .container h2, .page-id-94 .innerpage-head .container h2{
+		font-size: 42px;
+	    bottom: 42px;
 	}
 }
 
@@ -4523,9 +4548,43 @@ a#menu-trigger .line-3-hover {
 /* Custom Breakpoints */
 
 @media screen and (max-width: 320px) {
-		.container {
-			width: auto;
-		}
+	.container {
+		width: auto;
+	}
+	header .container .logo h1 {
+	    margin: 5px 0 5px;
+	}
+	header .container .logo h1 a img {
+	    max-width: 95px;
+	}
+	a#menu-trigger {
+	    margin-top: 14px;
+	}
+	.innerpage-head {
+	    min-height: 195px;
+	}
+	.page .innerpage-head .container h2 {
+	    font-size: 34px;
+	    bottom: 30px;
+	}
+	.homepage-content .container p, .page-content p {
+	    font-size: 12px !important;
+	    line-height: 17px;
+	    margin: 10px 0 20px;
+	}
+	.page-content {
+	    margin-top: 50px;
+	}
+	.page-id-2 .cascadeboxes-wrapper .details .container p, .page-id-2 .cascadeboxes-wrapper .details .container p {
+	    font-size: 12px;
+	    line-height: 17px;
+	}
+	.cascadeboxes-wrapper .single-box {
+	    height: 170px;
+	}
+	.cascadeboxes-wrapper .details .container {
+	    margin: 30px auto 40px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
