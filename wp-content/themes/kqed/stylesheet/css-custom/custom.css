@@ -59,7 +59,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
 
 .su-spoiler.su-spoiler-style-default.su-spoiler-icon-plus.su-spoiler-closed {
     opacity: .4;
-    margin-top: 10px;
+    padding-bottom: 20px;
 }
 
 .su-spoiler-content.su-clearfix {

@@ -2942,6 +2942,7 @@ footer .footer-bar .container .footer-link a {
 }
 
 .cascadeboxes-wrapper .details-v2 .container .col .accordion {
+    float: left;
 	margin: 80px 0;
 	padding: 0 5%;
 }
@@ -4227,6 +4228,13 @@ a#menu-trigger .line-3-hover {
 	}
 }
 
+@media screen and (max-width: 680px) {
+	.page-id-61 .innerpage-head .container h2{
+	    font-size: 54px;
+        bottom: 140px;
+	}
+}
+
 @media screen and (max-width: 580px) {
 	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
 		line-height: 60px;
@@ -4395,6 +4403,14 @@ a#menu-trigger .line-3-hover {
 	    font-size: 14px;
 	    line-height: 20px;
 	}
+	.progressintro-wrapper .items-wrapper ul li a{
+		padding: 25px 0 25px;
+	    font-size: 22px;
+	}
+	.progressintro-wrapper .items-wrapper ul li a span {
+	    width: 30px;
+	    height: 30px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -4462,21 +4478,13 @@ a#menu-trigger .line-3-hover {
 	.progressintro-wrapper .items-wrapper ul{
 		padding: 80px 0;
 	}
-	body .progressintro-wrapper .items-wrapper ul li a{
-		padding: 25px 0 25px;
-	    font-size: 22px;
-	}
-	body .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened{
+		body .progressintro-wrapper .additionalinfo-wrapper .single-box.smallDeviceOpened{
 	    -webkit-transform: translate(5%, 0px);
 	    -moz-transform: translate(5%, 0px);
 	    -ms-transform: translate(5%, 0px);
 	    -o-transform: translate(5%, 0px);
 	    transform: translate(5%, 0px);
 	    width: 90%;
-	}
-	body .progressintro-wrapper .items-wrapper ul li a span{
-		width: 30px;
-		height: 30px;
 	}
 	.investors-wrapper .col.quotation{
 		height: 240px;
