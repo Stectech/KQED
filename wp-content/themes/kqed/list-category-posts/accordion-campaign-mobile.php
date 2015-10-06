@@ -42,7 +42,7 @@ $lcp_display_output .= $this->get_conditional_title();
 
 //Add 'starting' tag. Here, I'm using an unordered list (ul) as an example:
 $lcp_display_output .= '<div class="cascadeboxes-wrapper mobile-version" id="cbs-aboutpage">';
-$lcp_display_output .= '<h3>CAMPAIGN OBJECTIVES</h3>';
+$lcp_display_output .= '<h3>CAMPAIGN GOALS</h3>';
 
 $anchorIndex = 1;
 

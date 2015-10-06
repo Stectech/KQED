@@ -48,8 +48,8 @@
 				<h3>opportunities for investment</h3>
 				<ul>
 					<li><b>KQED Lab: </b>This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment</li>
-					<li><b>Product Team</b></li>
-					<li><b>Operational Alignment Systems</b></li>
+					<li><b>Product Team: </b>This team will design, build, deliver and maintain online and mobile experiences for KQED audiences</li>
+					<li><b>Operational Alignment Systems: </b>Innovation in business operations systems and a centralization of digital assets to accommodate staff expansion</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -85,8 +85,8 @@
 			<div class="more-info">
 				<h3>EDUCATION INVESTMENTS</h3>
 				<ul>
-					<li><b>Future of You</b></li>
-					<li><b>eBooks: engineering, environment</b></li>
+					<li><b>Future of You: </b>A multimedia initiative focusing on the booming trend of individuals using big data and technology to track, manage and improve illness and health risks.</li>
+					<li><b>eBooks: engineering, environment: </b>KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -118,12 +118,10 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Science education - Quest web resources for new teachers</b></li>
-					<li><b>News education</b></li>
-					<li><b>Arts education</b></li>
-					<li><b>Professional learning for educators</b></li>
-					<li><b>Expanded Marketing and distribution plan</b></li>
-					<li><b>Evaluation</b></li>
+					<li><b>KQED Education Expansion: </b>KQED Education will expand the reach and impact of KQED in the Bay Area education market and become a key contributor to the national movement – through our engaging, bay area-based media that deepens learning through media making – to improve educational experiences and outcomes for youth.</li>
+					<li><b>Science Education: </b>KQED Science Education serves formal and informal science educators and learners in the Bay Area and beyond and promotes STEM learning in grades 6-12 and college.</li>
+					<li><b>News Education: </b>Educational work embedded in KQED News that seeks to engage young people in considering how major issues that face our communities, our state, our country and our world apply to and impact their lives and how they can be engaged in community and civic life now and in the future.</li>
+					<li><b>Professional Learning for Educators: </b>KQED Education will enhance and expand Professional Learning services for educators, with an emphasis on building communities of educator leaders and piloting innovative products in the Bay Area.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -140,15 +138,15 @@
 
 				<p>The arts move us, inspire us and make the Bay Area a more vibrant, interesting cultural center. KQED Arts mission is to illuminate the area’s rich arts, showcasing both the things you are interested in and those you never knew existed. The multimedia arts desk is a part of our strategic plan to better meet the needs of our audience today, while anticipating their needs for tomorrow.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="https://www.youtube.com/watch?v=T_tIG5mo1DM" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-5.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="https://youtu.be/ZIPaPiArbLI" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-6.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="#" class="lightbox image-link">
+				<a href="https://youtu.be/11jeAum8vQo" class="lightbox image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-7.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -158,15 +156,14 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Arts Desk Expansion</b></li>
-					<li><b>Main Stage</b></li>
-					<li><b>Dedicated audio Arts reporter</b></li>
-					<li><b>Do List</b></li>
+					<li><b>Arts Desk Expansion: </b>KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts' resource.</li>
+					<li><b>Main Stage: </b>An online showcase of bay area artists that bring music, performances and visual arts to you.</li>
+					<li><b>Dedicated audio Arts reporter: </b>Features artist Interviews and how-to videos that reveal new ways to get creative and learn about art</li>
+					<li><b>Do List: </b>KQED Arts scours the Bay Area for superb and surprising performing arts events, with an eye for local talent, new discoveries, and exciting opportunities across the price spectrum.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
 		</div>
-
 		<div class="single-box" data-counter="5">
 
 			<!-- Inner-Wrapper -->
@@ -178,11 +175,11 @@
 
 				<p>New technologies will make us even better at informing Bay Area residents of the local news and information, starting broader conversations, asking questions of a wider audience and creating even more cohesion in our community. We will be able to bring local and regional news to you wherever you are, whenever you want it, and on whatever device you prefer.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="http://player.vimeo.com/video/104668194" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-8.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="#" class="lightbox image-link">
+				<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226502693&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" data-fancybox-type="iframe" class="fancybox various image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-9.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -192,10 +189,8 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>California Politics and Government Desk</b></li>
-					<li><b>Silicon Valley News Desk</b></li>
-					<li><b>Increased news capacity</b></li>
-					<li><b>Enterprise units</b></li>
+					<li><b>California Politics and Government Desk: </b>This Desk delivers coverage for breaking news and long-lead enterprise reporting while providing much-needed context, analysis and accountability for decisions of California officials.</li>
+					<li><b>Silicon Valley News Desk: </b>A multi-platform news unit based in KQED’s Silicon Valley (San Jose) office producing daily and enterprise stories on key South Bay/Silicon Valley issues, including: local government, economics, tech, immigration & transportation.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -225,9 +220,8 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Bay Curious</b></li>
-					<li><b>KQED Guides (online examples)</b></li>
-					<li><b>KQED Pop</b></li>
+					<li><b>Bay Curious: </b>We collect questions about any Bay Area topic that tickles your fancy. The community chooses which question they most want answered and KQED reporters investigate the story with your help.</li>
+					<li><b>KQED Pop: </b>A daily that critically examines the social and cultural impact of music, movies, television, advertisements, fashion, the internet and all the other collective experiences that make us laugh, cringe and cry.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -258,9 +252,7 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>CRM</b></li>
-					<li><b>Civis analytics works</b></li>
-					<li><b>Audience Insights Team</b></li>
+					<li><b>Audience Insights Team: </b>A daily that critically examines the social and cultural impact of music, movies, television, advertisements, fashion, the internet and all the other collective experiences that make us laugh, cringe and cry.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -288,9 +280,9 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Dalet</b></li>
-					<li><b>Building renovation</b></li>
-					<li><b>Digitizing media assets</b></li>
+					<li><b>Dalet: </b>While KQED has moved to digital creation of all content, the systems that enable that content creation do not allow easy management of the content across platforms. Once implemented, Dalet will increase our efficiency and ability to utilize content across media platforms.</li>
+					<li><b>Building renovation: </b>As KQED expands, the development of a master space plan will be developed in order to increase seating capacity and to maximize the space in our current San Francisco location.</li>
+					<li><b>Digitizing media assets: </b>A system that will allow us to preserve historical content, and be able to more efficiently use the digitized media assets for future productions.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>

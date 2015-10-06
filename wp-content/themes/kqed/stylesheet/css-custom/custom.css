@@ -59,7 +59,6 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
 
 .su-spoiler.su-spoiler-style-default.su-spoiler-icon-plus.su-spoiler-closed {
     opacity: .4;
-    padding-bottom: 20px;
 }
 
 .su-spoiler-content.su-clearfix {
@@ -73,7 +72,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
     font-size: 20px;
     line-height: 25px;
 }
-.su-spoiler-content.su-clearfix p strong{
+.su-spoiler-content.su-clearfix p strong, .su-spoiler-content.su-clearfix p b{
     font-family: "Adelle-Bold";
 }
 
@@ -82,6 +81,9 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
 }
 .su-spoiler-style-default > .su-spoiler-title{
     letter-spacing: 4px;
+}
+.su-spoiler-style-default > .su-spoiler-content {
+    padding: 5px 0 1em 27px !important;
 }
 
 
@@ -118,9 +120,9 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
     padding-top: 3px;
     padding-left: 5px;
     padding-top: 1px;
-    -webkit-transform: rotate(133deg);
-    -ms-transform: rotate(133deg);
-    transform: rotate(133deg);
+    -webkit-transform: rotate(223deg);
+    -ms-transform: rotate(223deg);
+    transform: rotate(223deg);
     transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
