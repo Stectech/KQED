@@ -36,9 +36,8 @@
 
 				<p>Our audience is changing. A focus on innovation will keep us ahead of the curve.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="http://matter.vc/" class="image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media.jpg" alt="media" />
-					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
 			</div>
@@ -71,10 +70,10 @@
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/video.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="#" class="lightbox image-link">
+				<a href="http://ww2.kqed.org/futureofyou/" class="image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-1.jpg" alt="media" />
 				</a>
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="https://youtu.be/WGX581GhZ8A" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-2.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
@@ -86,7 +85,7 @@
 				<h3>EDUCATION INVESTMENTS</h3>
 				<ul>
 					<li><b>Future of You: </b>A multimedia initiative focusing on the booming trend of individuals using big data and technology to track, manage and improve illness and health risks.</li>
-					<li><b>eBooks: engineering, environment: </b>KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
+					<li><b>Science eBooks: </b>KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -103,11 +102,11 @@
 
 				<p>Curious minds are nurtured in the classroom and inspired for a lifetime. KQED Education is a distinct and critical contributor to KQED’s public service mission, creating and disseminating unique, engaging educational content focused on accelerating learning for youth aged 11–24 in the Bay Area and beyond.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="https://vip.soonr.com/1/filelink/sm7a-basdlzq-jlzofn42" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-3.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="https://vip.soonr.com/1/filelink/sm7a-basdlyo-xuckptfl" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-4.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
@@ -156,9 +155,9 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Arts Desk Expansion: </b>KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts' resource.</li>
+					<li><b>Arts Desk: </b>KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts' resource.</li>
 					<li><b>Main Stage: </b>An online showcase of bay area artists that bring music, performances and visual arts to you.</li>
-					<li><b>Dedicated audio Arts reporter: </b>Features artist Interviews and how-to videos that reveal new ways to get creative and learn about art</li>
+					<li><b>Art School: </b>Features artist Interviews and how-to videos that reveal new ways to get creative and learn about art</li>
 					<li><b>Do List: </b>KQED Arts scours the Bay Area for superb and surprising performing arts events, with an eye for local talent, new discoveries, and exciting opportunities across the price spectrum.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
@@ -207,10 +206,10 @@
 
 				<p>It’s hard to find an area more culturally rich than our own Bay Area.  The KQED Center for Bay Area Life will reflect this culture, its diversity, its rich history and its innovative spirit in order to enable the community to fully experience all it has to offer. Food, wine, arts, the outdoors—this outreach will be as diverse as the community itself. </p>
 
-				<a href="#" class="lightbox image-link">
+				<a href="http://ww2.kqed.org/news/series/baycurious" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-10.jpg" alt="media" />
 				</a>
-				<a href="#" class="lightbox image-link">
+				<a href="https://vip.soonr.com/1/filelink/sm7a-basif2k-don3fy5n" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-11.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -240,9 +239,8 @@
 
 				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-12.jpg" alt="media" />
-					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="#" class="lightbox image-link">
+				<a href="https://vip.soonr.com/1/filelink/sm7a-basifu4-5kjtyvxd" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-13.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -252,7 +250,7 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Audience Insights Team: </b>A daily that critically examines the social and cultural impact of music, movies, television, advertisements, fashion, the internet and all the other collective experiences that make us laugh, cringe and cry.</li>
+					<li><b>Audience Insights & Ingenuity Team: </b>A centralized team of research professionals dedicated to providing a 360 degree view of KQED's audience base with a focus on donor conversion and retention, across analytics, CRM, ratings, and research.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -269,9 +267,9 @@
 
 				<p>The need is undeniable. KQED must revolutionize our current technology and infrastructure in order to keep up with our changing audience.</p>
 
-				<a href="#" class="lightbox image-link">
+				<a href="https://vip.soonr.com/1/filelink/sm7a-basdnq6-ucdcg74l" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-14.jpg" alt="media" />
-					<img src="http://kqed.local/wp-content/themes/kqed/img/play-icon.png" alt="play icon" class="play-icon">
+					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
 			</div>

@@ -2779,6 +2779,11 @@ footer .footer-bar .container .footer-link a {
   max-width: 934px;
 }
 
+.page-content .container .entry-content h2{
+    text-align: left;
+    margin: 0px 0 25px;
+}
+
 .page-content p {
   font-family: "Adelle-Light";
   font-size: 28px;
