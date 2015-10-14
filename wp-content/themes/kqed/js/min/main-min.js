@@ -350,6 +350,41 @@ $(document).ready(function() {
 	    }, 10);
 	});
 
+	//======= Investors-Block =======//
+	$('.investors-wrapper .col').click(function(){
+
+		var $el = $(this), 
+		$val = $(this).attr('data-counter');
+
+		$(".details-v3").slideUp(300);
+
+
+		if($el.hasClass('active')){
+
+			$('.investors-wrapper .col').find('i').removeClass('active');
+			$('.investors-wrapper .col').find('.inactive-overlay').fadeOut();
+			$el.removeClass('active');
+			$(".details-v3[data-counter="+$val+"]").slideUp(300);
+
+
+		} else{
+
+			$el.toggleClass('active');
+			$el.find('i').addClass('active');
+			$el.find('.inactive-overlay').fadeOut(300);
+
+			$('.investors-wrapper .col').not(this).find('.inactive-overlay').fadeIn(300);
+			$('.investors-wrapper .col').not(this).find('i').removeClass('active');
+			$('.investors-wrapper .col').not(this).removeClass('active');
+
+			$(".details-v3[data-counter="+$val+"]").slideToggle(300);
+
+		}
+
+		return false;
+		
+	});
+
 	
 
 	// Mobile Device Compatibility

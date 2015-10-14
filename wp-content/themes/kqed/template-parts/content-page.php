@@ -100,11 +100,13 @@ endif;
 	<div class="container">
 		<h3>INVESTORS</h3>
 	</div>
-	<div class="left-side">
-		<?php echo do_shortcode($investors_left); ?>
-	</div>
-	<div class="right-side">
-		<?php echo do_shortcode($investors_right); ?>
+	<div class="inner-wrapper">
+		<div class="left-side">
+			<?php echo do_shortcode($investors_left); ?>
+		</div>
+		<div class="right-side">
+			<?php echo do_shortcode($investors_right); ?>
+		</div>
 	</div>
 </div> 
 <?php endif; ?>

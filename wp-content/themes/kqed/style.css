@@ -3077,6 +3077,11 @@ footer .footer-bar .container .footer-link a {
 }
 
 /**************** Investors-Section ****************/
+.investors-wrapper .inner-wrapper{
+	float: left;
+	width: 100%;
+	background-color: #f1f1f1;
+}
 .investors-wrapper .container h3 {
 	font-size: 82px;
 	font-weight: 300;
@@ -3107,7 +3112,7 @@ footer .footer-bar .container .footer-link a {
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 0;
 	width: auto;
 	height: 100%;
 }
@@ -3122,6 +3127,8 @@ footer .footer-bar .container .footer-link a {
 	text-shadow: -1px 1px 7px rgba(51, 51, 51, 0.7);
 	display: table-cell;
 	vertical-align: middle;
+	position: relative;
+	z-index: 1;
 }
 
 .investors-wrapper .col i {
@@ -3147,8 +3154,8 @@ footer .footer-bar .container .footer-link a {
 
 .investors-wrapper .col i.active {
 	-webkit-transform: rotate(133deg);
-			-ms-transform: rotate(133deg);
-					transform: rotate(133deg);
+	-ms-transform: rotate(133deg);
+	transform: rotate(133deg);
 	transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -3164,15 +3171,6 @@ footer .footer-bar .container .footer-link a {
 	background-color: #000;
 	height: 390px;
 	padding: 8% 8% 8% 12%;
-}
-
-.investors-wrapper .col.quotation p {
-	font-size: 26px;
-	font-family: Adelle-Light;
-	line-height: 34px;
-	text-align: justify;
-	color: #fff;
-	margin: 0;
 }
 
 .investors-wrapper .col.quotation h5 {
@@ -3205,12 +3203,38 @@ footer .footer-bar .container .footer-link a {
 	width: 50%;
 }
 
-.investors-wrapper .right-side .quotation {
-	padding: 6% 8% 7% 12%;
-}
-
 .investors-wrapper .right-side .quotation h5 {
 	margin: 35px 0 0;
+}
+
+.investors-wrapper .details-v3{
+	float: left;
+	width: 100%;
+	background-color: #000;
+	padding: 5% 10% 6% 5%;
+	display: none;
+}
+
+.investors-wrapper .details-v3 p{
+	font-size: 26px;
+	font-family: Adelle-Light;
+	line-height: 34px;
+	text-align: justify;
+	color: #fff;
+	margin: 0;
+}
+
+.investors-wrapper .col .inactive-overlay {
+    background-color: rgba(255, 255, 255, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    display: none;
 }
 
 /**************** ProgressIntro-Section ****************/
@@ -3845,7 +3869,7 @@ a#menu-trigger .line-3-hover {
 		height: 170px;
 	}
 	.investors-wrapper .col h4 {
-		font-size: 32px;
+		font-size: 26px;
 	}
 	.investors-wrapper .col.quotation p {
 		font-size: 21px;
@@ -4093,7 +4117,9 @@ a#menu-trigger .line-3-hover {
 	.page-id-61 .innerpage-head .container h2{
 		font-size: 86px;
 	}
-	
+	.investors-wrapper .details-v3 {
+		padding: 5% 5% 5% 5%;
+	}
 }
 @media (max-width:992px) and (min-width:770px) {
 	.homepage-boxes .container .col, .cascadeboxes-wrapper .single-box{
@@ -4375,6 +4401,15 @@ a#menu-trigger .line-3-hover {
 	    bottom: 42px;
 	}
 }
+@media screen and (max-width: 520px) {
+	.investors-wrapper .col h4 {
+		font-size: 18px;
+	}
+	.investors-wrapper .details-v3 p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
 
 @media screen and (max-width: 480px) {
 	.homepage-boxes .container .col .second-overlay p {
@@ -4451,9 +4486,6 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 400px) {
-	.investors-wrapper .col h4 {
-		font-size: 18px;
-	}
 	.page .investors-wrapper .col.quotation p {
 		font-size: 14px;
 		line-height: 18px;

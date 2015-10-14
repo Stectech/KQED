@@ -40,17 +40,25 @@ $lcp_display_output .= $this->get_category_link('strong');
 // Show the conditional title:
 $lcp_display_output .= $this->get_conditional_title();
 
+$blockIndex = 5;
+
 foreach ($this->catlist->get_categories_posts() as $single){
   //Start a List Item for each post:
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
 
-    $lcp_display_output .= '<div class="col span_12">';
+    $lcp_display_output .= '<div class="col span_12" data-counter="'.($blockIndex).'">';
+	$lcp_display_output .= '<div class="inactive-overlay"></div>';
     $lcp_display_output .= '<a href="#">';
     $lcp_display_output .= '<img src="'.$url.'"/>';
     $lcp_display_output .= '<h4>'.get_the_title($single->ID).'<i class="">+</i></h4>';
     $lcp_display_output .= '</a>';
     $lcp_display_output .=  '</div>';
+    $lcp_display_output .=  '<div class="details-v3" data-counter="'.($blockIndex).'">';
+    $lcp_display_output .=  '<p>"The foundation of a civil society rests upon having informed and engaged citizens. Through its transformation KQED is poised to expand its role as both the virtual and in-person community organizing institution for the Bay Area. We believe that KQED is the one organization that can fulfill our communities’ needs for fair and balanced news and information while also inspiring us through arts and cultural engagement opportunities and providing 21st century learning supports for our teachers and learners. KQED is a critical component of making the Bay Area an amazing place to live."</p>';
+    $lcp_display_output .=  '</div>';
+
+$blockIndex++;
 
 }
 
