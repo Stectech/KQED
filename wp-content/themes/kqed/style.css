@@ -2817,7 +2817,7 @@ footer .footer-bar .container .footer-link a {
 	height: 223px;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center 70%;
 	float: left;
 	cursor: pointer;
 }
