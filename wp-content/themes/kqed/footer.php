@@ -40,7 +40,7 @@
 		<div class="footer-bar">
 			<div class="container">
 				<p class="copyright-note">© KQED 2015</p>
-				<div class="footer-link"><a href="#">CONTACT US</a></div>
+				<div class="footer-link"><a href="mailto:johnboland@kqed.org">CONTACT US</a></div>
 			</div>
 		</div>
 	</footer>

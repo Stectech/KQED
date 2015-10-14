@@ -63,14 +63,13 @@
 				<h3>KQED Center for science & environment</h3>
 
 				<p class="serif">New content and applications help put scientific discovery and environmental reporting at your fingertips.</p>
-
 				<p>KQED Science reveals and demystifies science, helping our audience better comprehend their world and inspire them with curiousity to learn more.  We will increase coverage of science, technology and engineering in the Bay Area, impressing its importance in our daily lives and the role each of us plays as questioners of the universe.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/tech.html" id="custom-video-2" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/video.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="http://ww2.kqed.org/futureofyou/" class="image-link">
+				<a href="http://ww2.kqed.org/futureofyou/" class="image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-1.jpg" alt="media" />
 				</a>
 				<a href="https://youtu.be/WGX581GhZ8A" class="lightbox fancybox.iframe image-link">
@@ -102,11 +101,11 @@
 
 				<p>Curious minds are nurtured in the classroom and inspired for a lifetime. KQED Education is a distinct and critical contributor to KQED’s public service mission, creating and disseminating unique, engaging educational content focused on accelerating learning for youth aged 11–24 in the Bay Area and beyond.</p>
 
-				<a href="https://vip.soonr.com/1/filelink/sm7a-basdlzq-jlzofn42" class="lightbox image-link" target="_blank">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/educ1.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-3.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="https://vip.soonr.com/1/filelink/sm7a-basdlyo-xuckptfl" class="lightbox image-link" target="_blank">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/educ2.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-4.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
@@ -209,7 +208,7 @@
 				<a href="http://ww2.kqed.org/news/series/baycurious" class="lightbox image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-10.jpg" alt="media" />
 				</a>
-				<a href="https://vip.soonr.com/1/filelink/sm7a-basif2k-don3fy5n" class="lightbox image-link" target="_blank">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/bayarea.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-11.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -240,7 +239,7 @@
 				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-12.jpg" alt="media" />
 				</a>
-				<a href="https://vip.soonr.com/1/filelink/sm7a-basifu4-5kjtyvxd" class="lightbox image-link" target="_blank">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/audience.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-13.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -267,7 +266,7 @@
 
 				<p>The need is undeniable. KQED must revolutionize our current technology and infrastructure in order to keep up with our changing audience.</p>
 
-				<a href="https://vip.soonr.com/1/filelink/sm7a-basdnq6-ucdcg74l" class="lightbox image-link" target="_blank">
+				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/tech.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-14.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>

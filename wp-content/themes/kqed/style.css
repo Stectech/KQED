@@ -3124,6 +3124,38 @@ footer .footer-bar .container .footer-link a {
 	vertical-align: middle;
 }
 
+.investors-wrapper .col i {
+	font-style: initial;
+	position: absolute;
+	top: 43%;
+	right: 6%;
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	line-height: 23px;
+	text-align: center;
+	text-indent: 0px;
+	font-size: 24px;
+	font-weight: 300;
+	border-radius: 100px;
+	transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+}
+
+.investors-wrapper .col i.active {
+	-webkit-transform: rotate(133deg);
+			-ms-transform: rotate(133deg);
+					transform: rotate(133deg);
+	transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+}
+
 .investors-wrapper .col:hover {
 	opacity: .9;
 }
