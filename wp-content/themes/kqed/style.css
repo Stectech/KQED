@@ -2759,6 +2759,10 @@ footer .footer-bar .container .footer-link a {
 	min-height: 490px;
 }
 
+.page-id-78 .innerpage-head {
+    background-position: left;
+}
+
 .innerpage-head img {
 	max-width: 100%;
 }
@@ -4565,7 +4569,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 18px;
 	}
 	.page-id-78 .innerpage-head{
-		background-position: 60% 0%;
+		background-position: 10% 0%;
 	}
 	header .container, .footer-bar .container {
 	    padding: 0 5%;
