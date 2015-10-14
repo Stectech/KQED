@@ -55,7 +55,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
     $lcp_display_output .= '</a>';
     $lcp_display_output .=  '</div>';
     $lcp_display_output .=  '<div class="details-v3" data-counter="'.($blockIndex).'">';
-    $lcp_display_output .=  '<p>"The foundation of a civil society rests upon having informed and engaged citizens. Through its transformation KQED is poised to expand its role as both the virtual and in-person community organizing institution for the Bay Area. We believe that KQED is the one organization that can fulfill our communities’ needs for fair and balanced news and information while also inspiring us through arts and cultural engagement opportunities and providing 21st century learning supports for our teachers and learners. KQED is a critical component of making the Bay Area an amazing place to live."</p>';
+	$lcp_display_output .=  '<p>'. get_post_meta( $single->ID, 'details', true) . '</p>';
     $lcp_display_output .=  '</div>';
 
 $blockIndex++;
