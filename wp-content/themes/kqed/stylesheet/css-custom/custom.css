@@ -1,10 +1,11 @@
 .cascadeboxes-wrapper .details-v2 .container .col .big-text p {
-	font-size: 48px;
+	font-size: 44px;
 	font-weight: 300;
-    letter-spacing: 1px;
-    line-height: 50px;
     color: #000;
 	padding: 0 5% 0 0;
+    word-spacing: 15px;
+    line-height: 58px;
+    letter-spacing: -1px;
 }
 header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, header .container .nav-menu-wrapper ul li.current-menu-item a{
 	color: #cfde00 !important;

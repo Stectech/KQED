@@ -46,9 +46,9 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>KQED Lab: </b>This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment</li>
-					<li><b>Product Team: </b>This team will design, build, deliver and maintain online and mobile experiences for KQED audiences</li>
-					<li><b>Operational Alignment Systems: </b>Innovation in business operations systems and a centralization of digital assets to accommodate staff expansion</li>
+					<li><b>KQED Lab: </b>This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment.</li>
+					<li><b>Product Team: </b>This team will design, build, deliver and maintain online and mobile experiences for KQED audiences.</li>
+					<li><b>Operational Alignment Systems: </b>Innovation in business operations systems and a centralization of digital assets to accommodate staff expansion.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
 			</div>
@@ -81,7 +81,7 @@
 
 			<!-- More-Info -->
 			<div class="more-info">
-				<h3>EDUCATION INVESTMENTS</h3>
+				<h3>Opportunities for Investment</h3>
 				<ul>
 					<li><b>Future of You: </b>A multimedia initiative focusing on the booming trend of individuals using big data and technology to track, manage and improve illness and health risks.</li>
 					<li><b>Science eBooks: </b>KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
@@ -116,7 +116,7 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>KQED Education Expansion: </b>KQED Education will expand the reach and impact of KQED in the Bay Area education market and become a key contributor to the national movement – through our engaging, bay area-based media that deepens learning through media making – to improve educational experiences and outcomes for youth.</li>
+					<li><b>KQED Education Expansion: </b>KQED Education will expand the reach and impact of KQED in the Bay Area education market and become a key contributor to the national movement — through our engaging, Bay Area — based media that deepens learning through media making — to improve educational experiences and outcomes for youth.</li>
 					<li><b>Science Education: </b>KQED Science Education serves formal and informal science educators and learners in the Bay Area and beyond and promotes STEM learning in grades 6-12 and college.</li>
 					<li><b>News Education: </b>Educational work embedded in KQED News that seeks to engage young people in considering how major issues that face our communities, our state, our country and our world apply to and impact their lives and how they can be engaged in community and civic life now and in the future.</li>
 					<li><b>Professional Learning for Educators: </b>KQED Education will enhance and expand Professional Learning services for educators, with an emphasis on building communities of educator leaders and piloting innovative products in the Bay Area.</li>
@@ -154,9 +154,9 @@
 			<div class="more-info">
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li><b>Arts Desk: </b>KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts' resource.</li>
-					<li><b>Main Stage: </b>An online showcase of bay area artists that bring music, performances and visual arts to you.</li>
-					<li><b>Art School: </b>Features artist Interviews and how-to videos that reveal new ways to get creative and learn about art</li>
+					<li><b>Arts Desk: </b>KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts resource.</li>
+					<li><b>Main Stage: </b>An online showcase of Bay Area artists that bring music, performances and visual arts to you.</li>
+					<li><b>Art School: </b>Features artist interviews and how-to videos that reveal new ways to get creative and learn about art.</li>
 					<li><b>Do List: </b>KQED Arts scours the Bay Area for superb and surprising performing arts events, with an eye for local talent, new discoveries, and exciting opportunities across the price spectrum.</li>
 				</ul>
 				<a href="#" class="moreinfo-back-trigger"><img src="<?php bloginfo('template_directory'); ?>/img/small-arrow-2.png" alt="arrow" />Back</a>
@@ -238,6 +238,7 @@
 
 				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-12.jpg" alt="media" />
+					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
 				<a href="http://localhost:8888/Stectech/kqed/KQED-Github/wp-content/themes/kqed/html-files/audience.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-13.jpg" alt="media" />
@@ -262,7 +263,7 @@
 				<a href="#" class="close-btn"><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" /></a>
 				<h3>Technology & Infrastructure fund</h3>
 
-				<p class="serif">KQED for the 21st century will offer a better user experience that is reliable and available wherever you are.</p>
+				<p class="serif">KQED for the 21<sup>st</sup> century will offer a better user experience that is reliable and available wherever you are.</p>
 
 				<p>The need is undeniable. KQED must revolutionize our current technology and infrastructure in order to keep up with our changing audience.</p>
 
