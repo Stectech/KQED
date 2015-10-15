@@ -2826,6 +2826,10 @@ footer .footer-bar .container .footer-link a {
 	cursor: pointer;
 }
 
+.cascadeboxes-wrapper .single-box[data-counter="0"], .cascadeboxes-wrapper .single-box[data-counter="3"]{
+    background-position: center 10%;
+}
+
 .cascadeboxes-wrapper .single-box .overlay {
 	background-color: rgba(0, 0, 0, 0.15);
 	transition: all 300ms ease-in-out;
@@ -3098,6 +3102,9 @@ footer .footer-bar .container .footer-link a {
 .investors-wrapper .col {
 	position: relative;
 	height: 195px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	transition: all 300ms ease-in-out;
 	-o-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -3110,15 +3117,6 @@ footer .footer-bar .container .footer-link a {
 	width: 100%;
 	height: 100%;
 	display: table;
-}
-
-.investors-wrapper .col img {
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 0;
-	width: auto;
-	height: 100%;
 }
 
 .investors-wrapper .col h4 {

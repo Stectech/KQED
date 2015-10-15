@@ -47,10 +47,9 @@ $lcp_display_output .= '<div class="cascadeboxes-wrapper mobile-version" id="cbs
 $get_title = [];
 $get_content = [];
 $get_url = [];
-
+$ctr = 0;
 foreach ($this->catlist->get_categories_posts() as $single){
 
-  $ctr++;
   $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($single->ID), 'full');
   $url = $thumb[0];
 
@@ -71,6 +70,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
     </div>
   ';
 
+  $ctr++;
 }
 
 
