@@ -2539,6 +2539,8 @@ header .container .nav-menu-wrapper ul.nav-menu li:last-child {
 
 header .container .nav-menu-wrapper ul.nav-menu li:last-child a {
 	margin-right: 0;
+	font-family: 'Adelle-Light';
+	line-height: 34px;
 	font-size: 18px;
 }
 
@@ -3006,7 +3008,7 @@ footer .footer-bar .container .footer-link a {
 }
 
 .innerslider-wrapper #future-slider .flex-control-nav {
-	bottom: 30px;
+	bottom: 15px;
 }
 
 .innerslider-wrapper #future-slider .flex-control-paging li a {
@@ -3015,6 +3017,7 @@ footer .footer-bar .container .footer-link a {
 	border: 2px solid #cede00;
 	background-color: transparent;
 	box-shadow: none;
+	border-radius: 100px;
 }
 
 .innerslider-wrapper #future-slider .flex-control-paging li a.flex-active {
@@ -3023,6 +3026,7 @@ footer .footer-bar .container .footer-link a {
 
 .page-id-94 .flex-control-nav li {
 	margin: 0px 13px;
+	border-radius: 100px;
 }
 
 /**************** Video-Box ****************/
@@ -4570,7 +4574,7 @@ a#menu-trigger .line-3-hover {
     transform: rotate(-47deg) translate(11px, -13px);
 	}
 	body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
-	    top: 37px;
+	    top: 36px;
 	}
 	footer .container .bold-link, .page-id-6 footer .container .bold-link{
 	    padding: 12px 12% 12px 12%;
