@@ -56,7 +56,7 @@ $(document).ready(function() {
 		},
 		end: function(){
 			$('.skip-btn').fadeOut();
-			$('.intro-slider').flexslider('pause');
+			$('.intro-slider').flexslider('destroy');
 		}
 	});
 
@@ -64,7 +64,7 @@ $(document).ready(function() {
 	$(".skip-btn").click(function () {    
 		$('.intro-slider').flexslider(6);
 		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, .2)");
-		$('.intro-slider').flexslider('pause');
+		$('.intro-slider').flexslider('destroy');
 		
 		return false;
 	});
