@@ -50,16 +50,11 @@ $(document).ready(function() {
 		animationSpeed: 600, 
 		directionNav: false,
 		animationLoop: false,
-		before: function(){
-			$opacity = $opacity - .13;
-			$('.intro-overlay').css('background-color', "rgba(0, 0, 0, "+$opacity+")");
-		},
 		end: function(){
 			$('.skip-btn').fadeOut();
 			$('.intro-slider').flexslider('destroy');
 		}
 	});
-
 
 	$(".skip-btn").click(function () {    
 		$('.intro-slider').flexslider(6);
@@ -68,6 +63,13 @@ $(document).ready(function() {
 		
 		return false;
 	});
+
+	$opacity = 0.99;
+	window.setInterval(function(){
+		$opacity = $opacity - .009;
+		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, "+$opacity+")");
+
+	} ,150);
 
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
@@ -365,14 +367,12 @@ $(document).ready(function() {
 
 		$(".details-v3").slideUp(300);
 
-
 		if($el.hasClass('active')){
 
 			$('.investors-wrapper .col').find('i').removeClass('active');
 			$('.investors-wrapper .col').find('.inactive-overlay').fadeOut();
 			$el.removeClass('active');
 			$(".details-v3[data-counter="+$val+"]").slideUp(300);
-
 
 		} else{
 
