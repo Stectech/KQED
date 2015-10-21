@@ -46,14 +46,13 @@ $(document).ready(function() {
 		animationLoop: false,
 		end: function(){
 			$('.skip-btn').fadeOut();
-			$('.intro-slider').flexslider('destroy');
+			$('.intro-slider').remove();
 		}
 	});
 
 	$(".skip-btn").click(function () {    
-		$('.intro-slider').flexslider(6);
-		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, .2)");
-		$('.intro-slider').flexslider('destroy');
+		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, 0)");
+		$('.intro-slider').remove();
 		
 		return false;
 	});
