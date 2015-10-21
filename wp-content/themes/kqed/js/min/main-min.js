@@ -50,19 +50,20 @@ $(document).ready(function() {
 		}
 	});
 
-	$(".skip-btn").click(function () {    
-		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, 0)");
-		$('.intro-slider').remove();
-		
-		return false;
-	});
-
 	$opacity = 0.99;
 	window.setInterval(function(){
 		$opacity = $opacity - .009;
 		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, "+$opacity+")");
 
 	} ,150);
+
+	$(".skip-btn").click(function () {    
+		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, 0)");
+		$('.intro-slider').remove();
+		$(this).fadeOut();
+
+		return false;
+	});
 
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
