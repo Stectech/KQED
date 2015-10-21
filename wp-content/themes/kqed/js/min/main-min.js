@@ -58,7 +58,7 @@ $(document).ready(function() {
 	} ,150);
 
 	$(".skip-btn").click(function () {    
-		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, 0)");
+		$('.intro-overlay').css('opacity', "0");
 		$('.intro-slider').remove();
 		$(this).fadeOut();
 
