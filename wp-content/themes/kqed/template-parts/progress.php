@@ -72,7 +72,7 @@
 				<a href="http://ww2.kqed.org/futureofyou/" class="image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-1.jpg" alt="media" />
 				</a>
-				<a href="https://youtu.be/WGX581GhZ8A" class="lightbox fancybox.iframe image-link">
+				<a href="https://www.youtube.com/embed/WGX581GhZ8A" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-2.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
@@ -136,15 +136,15 @@
 
 				<p>The arts move us, inspire us and make the Bay Area a more vibrant, interesting cultural center. KQED Arts mission is to illuminate the area’s rich arts, showcasing both the things you are interested in and those you never knew existed. The multimedia arts desk is a part of our strategic plan to better meet the needs of our audience today, while anticipating their needs for tomorrow.</p>
 
-				<a href="https://www.youtube.com/watch?v=T_tIG5mo1DM" class="lightbox fancybox.iframe image-link">
+				<a href="https://www.youtube.com/embed/T_tIG5mo1DM" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-5.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="https://youtu.be/ZIPaPiArbLI" class="lightbox fancybox.iframe image-link">
+				<a href="https://www.youtube.com/embed/ZIPaPiArbLI" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-6.jpg" alt="media" />
 					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
-				<a href="https://youtu.be/11jeAum8vQo" class="lightbox image-link">
+				<a href="https://www.youtube.com/embed/11jeAum8vQo" class="lightbox fancybox.iframe image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-7.jpg" alt="media" />
 				</a>
 				<a href="#" class='moreinfo-trigger'>Opportunities for investment <img src="<?php bloginfo('template_directory'); ?>/img/small-arrow.png" alt="arrow" /></a>
@@ -236,9 +236,8 @@
 
 				<p>To better serve our audience, we have to know our audience. Audience initiatives will enable us to truly understand the needs and behaviors of you and all Bay Area residents, make recommendations to better serve your needs, and enable KQED to grow our audience and donor base while meeting and exceeding our service oriented mission.</p>
 
-				<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe image-link">
+				<a class="image-link">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-12.jpg" alt="media" />
-					<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 				</a>
 				<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/audience.html" class="lightbox fancybox.iframe image-link" target="_blank">
 					<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-13.jpg" alt="media" />
