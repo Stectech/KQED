@@ -44,7 +44,7 @@ $lcp_display_output .= $this->get_conditional_title();
 $lcp_display_output .= '<div class="cascadeboxes-wrapper mobile-version" id="cbs-aboutpage">';
 $lcp_display_output .= '<h3>CAMPAIGN GOALS</h3>';
 
-$anchorIndex = 1;
+$anchorIndex = 0;
 
 foreach ($this->catlist->get_categories_posts() as $single){
   $anchorIndex++;

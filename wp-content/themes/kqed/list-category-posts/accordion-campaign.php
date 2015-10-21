@@ -104,7 +104,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
 }
 
-$anchorIndex = 1;
+$anchorIndex = 0;
 
 foreach (array_chunk($get_title, 2, true) as $index=>$titles)
 {
@@ -144,7 +144,7 @@ foreach (array_chunk($get_title, 2, true) as $index=>$titles)
 
   $get_index++;
 
-  $lcp_display_output .= '<div class="details-v2" id="box-no1-details" data-counter="'.($index + $get_index).'">';
+  $lcp_display_output .= '<div class="details-v2" id="box-no2-details" data-counter="'.($index + $get_index).'">';
   $lcp_display_output .= '<div class="container row">';
   $lcp_display_output .= '<div class="col span_6">';
   $lcp_display_output .= '<h4 class="big-text">'.$get_content[$index + $get_index].'</h4>';

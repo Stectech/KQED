@@ -101,7 +101,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
 }
 
 
-$anchorIndex = 1;
+$anchorIndex = 0;
 
 foreach (array_chunk($get_title, 2, true) as $index=>$titles)
 {
