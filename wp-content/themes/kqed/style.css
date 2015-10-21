@@ -3673,7 +3673,7 @@ footer .footer-bar .container .footer-link a {
 	width: 100% !important;
 }
 
-.siteintro-wrapper .intro-slider ul {
+.siteintro-wrapper .intro-slider ul, .main-content {
 	width: 100% !important;
 	height: 100% !important;
 }
@@ -3683,14 +3683,14 @@ footer .footer-bar .container .footer-link a {
 	height: 100% !important;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper {
+.siteintro-wrapper .intro-slider ul li .inner-wrapper, .main-content .inner-wrapper {
 	float: left;
 	display: table;
 	height: 100%;
 	width: 100%;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper h3 {
 	color: #fff;
 	text-align: center;
 	font-family: 'Adelle-Light';
@@ -3703,12 +3703,12 @@ footer .footer-bar .container .footer-link a {
 	text-shadow: -1px 1px 7px #000;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper {
+.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper, .main-content .inner-wrapper{
 	display: table-cell;
 	vertical-align: middle;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 	font-size: 154px;
 	font-weight: 300;
 	text-align: center;
@@ -3719,13 +3719,17 @@ footer .footer-bar .container .footer-link a {
 	text-shadow: -1px 1px 15px #000;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+.main-content{
+	display: none;
+}
+
+.main-content .inner-wrapper .content-wrapper form {
 	width: 500px;
 	margin: 6% auto 0;
 	position: relative;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+.main-content .inner-wrapper .content-wrapper form input[type='text'] {
 	font-weight: 300;
 	font-size: 36px;
 	color: #000;
@@ -3736,42 +3740,42 @@ footer .footer-bar .container .footer-link a {
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
+.main-content .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
 	font-weight: 300;
 	color: #000;
 	font-size: 36px;
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
+.main-content .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
 	font-weight: 300;
 	color: #000;
 	font-size: 36px;
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
+.main-content .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
 	font-weight: 300;
 	color: #000;
 	font-size: 36px;
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
+.main-content .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
 	font-weight: 300;
 	color: #000;
 	font-size: 36px;
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
+.main-content .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
 	font-weight: 300;
 	color: #000;
 	font-size: 36px;
 	text-indent: 20px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form button {
+.main-content .inner-wrapper .content-wrapper form button {
 	background-color: transparent;
 	border: none;
 	position: absolute;
@@ -3779,7 +3783,7 @@ footer .footer-bar .container .footer-link a {
 	top: 27px;
 }
 
-.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form button img {
+.main-content .inner-wrapper .content-wrapper form button img {
 	max-width: 100%;
 }
 
@@ -3848,7 +3852,7 @@ a#menu-trigger .line-3-hover {
 }
 
 @media only screen and (max-width: 1280px) {
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
 		font-size: 62px;
 		line-height: 70px;
 	}
@@ -3958,11 +3962,11 @@ a#menu-trigger .line-3-hover {
 }
 
 @media only screen and (max-width: 1024px) {
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
 		font-size: 46px;
 		line-height: 60px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 		line-height: 120px;
 		font-size: 110px;
 	}
@@ -4274,11 +4278,11 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 760px) {
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 		line-height: 70px;
 		font-size: 60px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
 		font-size: 34px;
 		line-height: 50px;
 	}
@@ -4329,43 +4333,43 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 580px) {
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 		line-height: 60px;
 		font-size: 50px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 {
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
 		font-size: 34px;
 		line-height: 32px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form {
+	.main-content .inner-wrapper .content-wrapper form {
 		max-width: 95%;
 		width: auto;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type='text'] {
+	.main-content .inner-wrapper .content-wrapper form input[type='text'] {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper form button {
+	.main-content .inner-wrapper .content-wrapper form button {
 		top: 20px;
 	}
 	.homepage-boxes .container .col .second-overlay p {

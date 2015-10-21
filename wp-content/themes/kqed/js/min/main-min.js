@@ -47,6 +47,7 @@ $(document).ready(function() {
 		end: function(){
 			$('.skip-btn').fadeOut();
 			$('.intro-slider').remove();
+			$('siteintro-wrapper .main-content').fadeIn();
 		}
 	});
 
@@ -61,6 +62,7 @@ $(document).ready(function() {
 		$('.intro-overlay').css('opacity', "0");
 		$('.intro-slider').remove();
 		$(this).fadeOut();
+		$('siteintro-wrapper .main-content').fadeIn();
 
 		return false;
 	});
