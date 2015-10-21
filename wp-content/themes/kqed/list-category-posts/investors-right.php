@@ -49,7 +49,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
 
     $lcp_display_output .= '<div class="col span_12" style="background-image: url('.$url.')" data-counter="'.($blockIndex).'">';
 	$lcp_display_output .= '<div class="inactive-overlay"></div>';
-    $lcp_display_output .= '<a href="#">';
+    $lcp_display_output .= '<a href="#investor-'.($blockIndex).'">';
     $lcp_display_output .= '<h4>'.get_the_title($single->ID).'<i class="">+</i></h4>';
     $lcp_display_output .= '</a>';
     $lcp_display_output .=  '</div>';

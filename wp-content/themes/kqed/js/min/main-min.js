@@ -427,7 +427,21 @@ $(document).ready(function() {
 		});
 	}
 
+
+//======= Smart URL Functionality =======//
+	if(location.hash){
+		var $hash = location.hash;
+		$("a[href="+$hash+"]").click();
+		 $('html, body').animate({
+            scrollTop: $("a[href="+$hash+"]").offset().top
+        }, 2000);
+	}
+
 });
+
+
+
+
 
 
 

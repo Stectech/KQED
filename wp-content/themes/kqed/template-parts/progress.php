@@ -13,14 +13,14 @@
 
 	<div class="items-wrapper">
 		<ul>
-			<li data-counter="1"><a href="#">INNOVATION <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="2"><a href="#">SCIENCE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="3"><a href="#">EDUCATION <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="4"><a href="#">ARTS <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="5"><a href="#">NEWS <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="6"><a href="#">BAY AREA LIFE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="7"><a href="#">AUDIENCE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
-			<li data-counter="8"><a href="#">TECHNOLOGY & <br/>INFRASTRUCTURE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="1"><a href="#progress-1">INNOVATION <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="2"><a href="#progress-2">SCIENCE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="3"><a href="#progress-3">EDUCATION <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="4"><a href="#progress-4">ARTS <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="5"><a href="#progress-5">NEWS <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="6"><a href="#progress-6">BAY AREA LIFE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="7"><a href="#progress-7">AUDIENCE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
+			<li data-counter="8"><a href="#progress-8">TECHNOLOGY & <br/>INFRASTRUCTURE <span><img src="<?php bloginfo('template_directory'); ?>/img/plus-1.png" alt="plus" class="close-btn" /></span></a></li>
 		</ul>
 	</div>
 
