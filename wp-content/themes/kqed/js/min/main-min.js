@@ -124,7 +124,7 @@ $(document).ready(function() {
 			});
 			setTimeout(function() {
 				$('.innerslider-wrapper #future-slider .flex-control-paging li a').css('border-radius', '200px');
-			}, 1200);
+			}, 2000);
 		}
 
 	});
