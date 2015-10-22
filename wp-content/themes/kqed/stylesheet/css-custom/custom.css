@@ -20,17 +20,6 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
     margin: 50px 0;
 }
 
-.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    right: 15px;
-    top: 27px;
-    background-image: url(../../img/arrow-blue.png);
-    width: 59px;
-    height: 20px;
-}
-
 .su-spoiler-style-default > .su-spoiler-title {
     padding-left: 27px;
     padding-right: 0;
@@ -97,7 +86,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.current-menu-item a, heade
 }
 
 @media only screen and (max-width: 1024px) {
-   footer .container .bold-link {
+    footer .container .bold-link {
         padding: 24px 10% 22px 10%;
     }
 }
@@ -189,17 +178,13 @@ header .container .nav-menu-wrapper ul.mobile-menu {
 
 footer .container .bold-link {
     letter-spacing: 6px;
-}
+} 
 
-body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
-    margin-top: 100px;
-}
-
-body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link {
     width: 44%;
 }
 
-body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
+header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
     top: 61px;
 }
 
@@ -245,23 +230,6 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
     footer .container .bold-link img {
         margin: 16px auto 0;
     }
-
-    body .siteintro-wrapper .intro-slider ul.slides li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
-        line-height: 32px;
-        font-size: 30px;
-        margin-top: 68px;
-        margin-bottom: 2px;
-    }
-
-    .main-content .inner-wrapper .content-wrapper form {
-        margin-top: 12px;
-    }
-
-    .main-content .inner-wrapper h3 {
-        font-size: 19px;
-        line-height: 24px;  
-    }
-
     header .container .nav-menu-wrapper ul.mobile-menu {
         width: 80%;
     }
@@ -317,25 +285,16 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
     .page-content p {
         font-size: 19.5px !important;
     }
-
     header .container .logo h1 a img {
         width: auto !important;
         margin-top: 10px;
     }
-
     .su-spoiler-style-default > .su-spoiler-title {
         font-size: 30px;
     }
-
     .su-spoiler-content.su-clearfix p,
     .su-spoiler-content.su-clearfix {
         font-size: 16px;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
-        margin-top: 90px;
     }
 }
 
@@ -357,20 +316,5 @@ body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container
     footer .container .bold-link img{
         width: 80px;
         margin: 25px auto 0;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-    body .siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
-        font-size: 130px;
-        line-height: 129px;
-    }
-
-    body .siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper h3{
-        font-size: 49px;
-        line-height: 66px;
-    }
-    .main-content .inner-wrapper .content-wrapper form {
-        margin-top: 15px;
     }
 }

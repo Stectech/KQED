@@ -11,7 +11,6 @@
 @import url(stylesheet/css/flexslider.css);
 @import url(stylesheet/css/jquery.fancybox.css);
 @import url(stylesheet/css-custom/custom.css);
-@import url(stylesheet/css-custom/intro-page.css);
 /*!
  *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3628,6 +3627,65 @@ footer .footer-bar .container .footer-link a {
 	width: 100%;
 }
 
+::-webkit-input-placeholder {
+	font-size: 15px !important;
+}
+
+.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+	font-size: 15px;
+	text-indent: 10px;
+}
+
+.siteintro-wrapper .overlay.intro-overlay h1 {
+	float: left;
+	margin-left: 11px;
+	margin-top: 0;
+}
+
+.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+	right: 9px;
+	top: 16px;
+	width: 33px;
+	height: 12px;
+	background-size: 33px;
+}
+
+.siteintro-wrapper .intro-overlay h1 a img {
+	width: 90px;
+}
+
+.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+.main-content .inner-wrapper .content-wrapper h2 {
+	line-height: 32px;
+	font-size: 31px;
+	margin-top: -19px;
+	margin-bottom: 2px;
+	letter-spacing: 1px;
+}
+
+.main-content .inner-wrapper .content-wrapper h3 {
+	font-size: 18px;
+	line-height: 24px;
+	display: block;
+	width: 252px;
+	margin: auto;
+	margin-top: 54px;
+}
+
+
+.main-content .inner-wrapper .content-wrapper form {
+	position: relative;
+	top: 60px;
+}
+
+.siteintro-wrapper {
+	background-position-x: -206px;
+}
+
 .siteintro-wrapper .intro-overlay {
 	background-color: rgba(0, 0, 0, 0.99);
 	transition: all 300ms ease-in-out;
@@ -3721,6 +3779,8 @@ footer .footer-bar .container .footer-link a {
 
 .main-content{
 	display: none;
+	position: relative;
+	z-index: 10;
 }
 
 .main-content .inner-wrapper .content-wrapper form {
@@ -3787,6 +3847,17 @@ footer .footer-bar .container .footer-link a {
 	max-width: 100%;
 }
 
+.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    background-image: url(../../img/arrow-blue.png);
+    width: 59px;
+    height: 20px;
+}
+
 a#menu-trigger {
 	color: #fff;
 	font-size: 54px;
@@ -3824,7 +3895,7 @@ a#menu-trigger .line-3-hover {
 	transform: rotate(-47deg) translate(8px, -11px);
 }
 
-/**** Media-queries ****/
+/******** Media-queries ********/
 @media screen and (min-width: 1180px) {
 	.progressintro-wrapper .items-wrapper ul li a br{
 		display: none;
@@ -3835,6 +3906,18 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container h2 {
 		font-size: 120px;
 		line-height: 100px;
+	}
+	body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
+		line-height: 132px;
+		font-size: 137px;
+		letter-spacing: 3px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper h3 {
+		width: 1500px;
+		font-size: 65px;
+		letter-spacing: -1px;
+		line-height: 87px;
 	}
 }
 
@@ -3951,7 +4034,26 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container h2 {
 	    margin: 30px 0 130px;
 	}
+	body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
+		line-height: 109px;
+		font-size: 116px;
+		letter-spacing: -1px;
+	}
 
+	.main-content .inner-wrapper .content-wrapper h3 {
+		width: 1000px;
+		font-size: 46px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+		margin: auto;
+		font-size: 31px;
+		width: 95%;
+	}
+
+	::-webkit-input-placeholder {
+		font-size: 31px !important;
+	}
 }
 
 @media only screen and (max-width: 1160px) {
@@ -3969,7 +4071,12 @@ a#menu-trigger .line-3-hover {
 	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 		line-height: 120px;
 		font-size: 110px;
+	    margin-top: 100px;
 	}
+	.main-content .inner-wrapper .content-wrapper form {
+        margin-top: 15px;
+    }
+
 	header .container .nav-menu-wrapper ul.nav-menu li {
 		margin-right: 42px;
 		line-height: 35px;
@@ -4066,6 +4173,13 @@ a#menu-trigger .line-3-hover {
 	}
 	.investors-wrapper .col img{
 		width: 100%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+
+	.main-content .inner-wrapper .content-wrapper h3 {
+		width: 800px;
 	}
 }
 
@@ -4200,9 +4314,73 @@ a#menu-trigger .line-3-hover {
 		opacity: 1;
 	}
 }
+@media screen and (min-width: 768px) {
+
+	.main-content .inner-wrapper .content-wrapper form {
+		top: 60px;
+	}
+
+	body div.siteintro-wrapper .intro-slider ul.slides li.flex-active-slide .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
+		line-height: 109px;
+		font-size: 103px;
+	}
+
+	.siteintro-wrapper .intro-overlay h1 a img {
+		width: 136px;
+	}
+
+	.siteintro-wrapper .overlay.intro-overlay h1 {
+		float: left;
+		margin-left: 61px;
+		margin-top: 20px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper h3 {
+		font-size: 36px;
+		line-height: 44px;
+		display: block;
+		width: 552px;
+		margin: auto;
+		margin-top: 96px;
+	}
+
+	/*div.siteintro-wrapper {
+		background-size: 259%;
+		background-position-x: -496px;
+	}*/
+
+	.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+		font-weight: 300;
+		font-size: 26px;
+		color: #000;
+		padding: 15px 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		float: left;
+		margin: auto;
+		width: 85.5%;
+		text-indent: 20px;
+		margin-left: 38px;
+		padding-bottom: 11px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		right: 50px;
+		top: 27px;
+		background-image: url(../../img/arrow-blue.png);
+		width: 48px;
+		height: 16px;
+		background-size: 49px;
+	}
+
+	::-webkit-input-placeholder {
+		font-size: 23px !important;
+	}
+}
 
 @media screen and (max-width: 768px) {
-	
 	.homepage-content .container h2 {
 		font-size: 48px;
 		line-height: 40px;
@@ -4329,6 +4507,34 @@ a#menu-trigger .line-3-hover {
 	.page-id-61 .innerpage-head .container h2{
 	    font-size: 54px;
         bottom: 140px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	body .siteintro-wrapper .intro-slider ul.slides li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
+        line-height: 32px;
+        font-size: 30px;
+        margin-top: 68px;
+        margin-bottom: 2px;
+    }
+    .main-content .inner-wrapper .content-wrapper form {
+        margin-top: 12px;
+    }
+
+    .main-content .inner-wrapper h3 {
+        font-size: 19px;
+        line-height: 24px;  
+    }
+}
+
+@media screen and (min-width: 568px) {
+	.main-content .inner-wrapper .content-wrapper h3 {
+		margin-top: 20px;
+		width: 422px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form {
+		top: 6px;
 	}
 }
 
