@@ -122,9 +122,9 @@ $(document).ready(function() {
 					$('.innerslider-wrapper #future-slider ul li .text-side').innerHeight(imgSideLive);
 				}
 			});
-			/*setTimeout(function() {
+			setTimeout(function() {
 				$('.innerslider-wrapper #future-slider .flex-control-paging li a').css('border-radius', '200px');
-			}, 2000);*/
+			}, 2000);
 		}
 
 	});
