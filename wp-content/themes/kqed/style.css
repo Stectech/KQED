@@ -3627,61 +3627,6 @@ footer .footer-bar .container .footer-link a {
 	width: 100%;
 }
 
-::-webkit-input-placeholder {
-	font-size: 15px !important;
-}
-
-.main-content .inner-wrapper .content-wrapper form input[type='text'] {
-	font-size: 15px;
-	text-indent: 10px;
-}
-
-.siteintro-wrapper .overlay.intro-overlay h1 {
-	float: left;
-	margin-left: 11px;
-	margin-top: 0;
-}
-
-.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
-	right: 9px;
-	top: 16px;
-	width: 33px;
-	height: 12px;
-	background-size: 33px;
-}
-
-.siteintro-wrapper .intro-overlay h1 a img {
-	width: 90px;
-}
-
-.main-content .inner-wrapper .content-wrapper form input[type='text'] {
-	padding-top: 9px;
-	padding-bottom: 9px;
-}
-
-.main-content .inner-wrapper .content-wrapper h2 {
-	line-height: 32px;
-	font-size: 31px;
-	margin-top: -19px;
-	margin-bottom: 2px;
-	letter-spacing: 1px;
-}
-
-.main-content .inner-wrapper .content-wrapper h3 {
-	font-size: 18px;
-	line-height: 24px;
-	display: block;
-	width: 252px;
-	margin: auto;
-	margin-top: 54px;
-}
-
-
-.main-content .inner-wrapper .content-wrapper form {
-	position: relative;
-	top: 60px;
-}
-
 .siteintro-wrapper {
 	background-position-x: -206px;
 }
@@ -4901,6 +4846,60 @@ a#menu-trigger .line-3-hover {
 	}
 	.cascadeboxes-wrapper .details .container {
 	    margin: 30px auto 40px;
+	}
+	::-webkit-input-placeholder {
+		font-size: 15px !important;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+		font-size: 15px;
+		text-indent: 10px;
+	}
+
+	.siteintro-wrapper .overlay.intro-overlay h1 {
+		float: left;
+		margin-left: 11px;
+		margin-top: 0;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+		right: 9px;
+		top: 16px;
+		width: 33px;
+		height: 12px;
+		background-size: 33px;
+	}
+
+	.siteintro-wrapper .intro-overlay h1 a img {
+		width: 90px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper form input[type='text'] {
+		padding-top: 9px;
+		padding-bottom: 9px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper h2 {
+		line-height: 32px;
+		font-size: 31px;
+		margin-top: -19px;
+		margin-bottom: 2px;
+		letter-spacing: 1px;
+	}
+
+	.main-content .inner-wrapper .content-wrapper h3 {
+		font-size: 18px;
+		line-height: 24px;
+		display: block;
+		width: 252px;
+		margin: auto;
+		margin-top: 54px;
+	}
+
+
+	.main-content .inner-wrapper .content-wrapper form {
+		position: relative;
+		top: 60px;
 	}
 }
 
