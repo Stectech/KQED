@@ -4005,7 +4005,8 @@ a#menu-trigger .line-3-hover {
 	.siteintro-wrapper .intro-slider ul li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
 		line-height: 120px;
 		font-size: 110px;
-	    margin-top: 100px;
+	    margin-top: 120px;
+	    margin-bottom: 9%;
 	}
 	.main-content .inner-wrapper .content-wrapper form {
         margin-top: 15px;
@@ -4293,8 +4294,8 @@ a#menu-trigger .line-3-hover {
 
 @media screen and (max-width: 768px) {
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
-		right: 35px;
-		top: 30px;
+		right: 42px;
+		top: 26px;
 		background-image: url(./img/arrow-blue.png);
 		width: 47px;
 		height: 20px;
@@ -4445,12 +4446,6 @@ a#menu-trigger .line-3-hover {
         font-size: 19px;
         line-height: 24px;  
     }
-}
-
-@media screen and (min-width: 568px) {
-	.main-content .inner-wrapper .content-wrapper form {
-		top: 6px;
-	}
 }
 
 @media screen and (max-width: 580px) {
