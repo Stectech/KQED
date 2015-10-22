@@ -59,7 +59,7 @@ $(document).ready(function() {
 	} ,150);
 
 	$(".skip-btn").click(function () {    
-		$('.intro-overlay').css('opacity', "0");
+		$('.intro-overlay').css('background', "none");
 		$('.intro-slider').remove();
 		$(this).fadeOut();
 		$('.siteintro-wrapper .main-content').fadeIn();
