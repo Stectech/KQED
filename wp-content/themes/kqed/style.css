@@ -4295,7 +4295,7 @@ a#menu-trigger .line-3-hover {
 @media screen and (max-width: 768px) {
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
 		right: 42px;
-		top: 26px;
+		top: 30px;
 		background-image: url(./img/arrow-blue.png);
 		width: 47px;
 		height: 20px;
@@ -4432,12 +4432,6 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 640px) {
-	body .siteintro-wrapper .intro-slider ul.slides li .inner-wrapper .content-wrapper h2, .main-content .inner-wrapper .content-wrapper h2{
-        line-height: 32px;
-        font-size: 30px;
-        margin-top: 68px;
-        margin-bottom: 2px;
-    }
     .main-content .inner-wrapper .content-wrapper form {
         margin-top: 12px;
     }
@@ -4472,15 +4466,15 @@ a#menu-trigger .line-3-hover {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-webkit-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type='text']::-webkit-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-moz-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type='text']::-moz-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-ms-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type='text']::-ms-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
@@ -4488,7 +4482,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 24px;
 		text-indent: 10px;
 	}
-	.main-content .inner-wrapper .content-wrapper form input[type="text"]::-o-input-placeholder {
+	.main-content .inner-wrapper .content-wrapper form input[type='text']::-o-input-placeholder {
 		font-size: 24px;
 		text-indent: 10px;
 	}
