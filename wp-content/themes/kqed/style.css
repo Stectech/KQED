@@ -3794,7 +3794,7 @@ footer .footer-bar .container .footer-link a {
     position: absolute;
     right: 15px;
     top: 27px;
-    background-image: url(../../img/arrow-blue.png);
+    background-image: url(./img/arrow-blue.png);
     width: 59px;
     height: 20px;
 }
@@ -3976,7 +3976,6 @@ a#menu-trigger .line-3-hover {
 	}
 
 	.main-content .inner-wrapper .content-wrapper h3 {
-		width: 1000px;
 		font-size: 46px;
 	}
 
@@ -4293,6 +4292,15 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 768px) {
+	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+		right: 35px;
+		top: 30px;
+		background-image: url(./img/arrow-blue.png);
+		width: 47px;
+		height: 20px;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
 	.homepage-content .container h2 {
 		font-size: 48px;
 		line-height: 40px;
@@ -4456,6 +4464,10 @@ a#menu-trigger .line-3-hover {
 	}
 	.siteintro-wrapper {
 	    background-position-x: -206px;
+	}
+	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+		right: 35px;
+		top: 26px;
 	}
 	.main-content .inner-wrapper .content-wrapper form {
 		max-width: 95%;
