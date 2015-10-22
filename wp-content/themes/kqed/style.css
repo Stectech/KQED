@@ -4280,7 +4280,7 @@ a#menu-trigger .line-3-hover {
 		border: none;
 		position: absolute;
 		right: 50px;
-		top: 27px;
+		top: 24px;
 		background-image: url(./img/arrow-blue.png);
 		width: 48px;
 		height: 16px;
@@ -4440,11 +4440,6 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (min-width: 568px) {
-	.main-content .inner-wrapper .content-wrapper h3 {
-		margin-top: 20px;
-		width: 422px;
-	}
-
 	.main-content .inner-wrapper .content-wrapper form {
 		top: 6px;
 	}
