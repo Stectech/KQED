@@ -4467,23 +4467,23 @@ a#menu-trigger .line-3-hover {
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type='text']::-webkit-input-placeholder {
-		font-size: 24px;
+		font-size: 24px !important;
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type='text']::-moz-placeholder {
-		font-size: 24px;
+		font-size: 24px !important;
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type='text']::-ms-input-placeholder {
-		font-size: 24px;
+		font-size: 24px !important;
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type="email"]::-ms-input-placeholder {
-		font-size: 24px;
+		font-size: 24px !important;
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type='text']::-o-input-placeholder {
-		font-size: 24px;
+		font-size: 24px !important;
 		text-indent: 10px;
 	}
 	.main-content .inner-wrapper .content-wrapper form button {
