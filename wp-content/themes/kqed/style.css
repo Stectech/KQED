@@ -3678,6 +3678,7 @@ footer .footer-bar .container .footer-link a {
 .siteintro-wrapper .intro-slider ul, .main-content {
 	width: 100% !important;
 	height: 100% !important;
+	list-style-type: none;
 }
 
 .siteintro-wrapper .intro-slider ul li {
