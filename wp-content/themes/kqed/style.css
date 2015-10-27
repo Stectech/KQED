@@ -3659,6 +3659,7 @@ footer .footer-bar .container .footer-link a {
 }
 
 .siteintro-wrapper .intro-slider {
+	position: absolute;
 	float: left;
 	margin: 0;
 	box-shadow: none;
