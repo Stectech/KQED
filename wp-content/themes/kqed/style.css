@@ -3729,8 +3729,9 @@ footer .footer-bar .container .footer-link a {
 
 .main-content .inner-wrapper .content-wrapper form {
 	width: 500px;
-	margin: 6% auto 0;
+	margin: 6% auto 6%;
 	position: relative;
+	display: table;
 }
 
 .main-content .inner-wrapper .content-wrapper form input[type='text'] {
@@ -4256,7 +4257,7 @@ a#menu-trigger .line-3-hover {
 }
 @media screen and (min-width: 768px) {
 	.main-content .inner-wrapper .content-wrapper form {
-		top: 60px;
+		top: 0px;
 	}
 
 	.siteintro-wrapper .intro-overlay h1 a img {
