@@ -3713,7 +3713,7 @@ footer .footer-bar .container .footer-link a {
 	text-align: center;
 	color: #fff;
 	text-transform: uppercase;
-	line-height: 150px;
+	line-height: 140px;
 	margin: 7% 0 5%;
 	text-shadow: -1px 1px 15px #000;
 }
@@ -3959,6 +3959,10 @@ a#menu-trigger .line-3-hover {
 	}
 	.progressintro-wrapper .items-wrapper ul li a{
 		font-size: 25px;
+	}
+	.main-content .inner-wrapper .content-wrapper form {
+		margin: 0% auto 0;
+		top: 30px;
 	}
 }
 
