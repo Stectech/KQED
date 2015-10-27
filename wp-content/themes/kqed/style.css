@@ -3623,7 +3623,8 @@ footer .footer-bar .container .footer-link a {
 	position: absolute;
 	left: 0;
 	top: 0;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	width: 100%;
 }
 
@@ -3962,7 +3963,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.main-content .inner-wrapper .content-wrapper form {
 		margin: 0% auto 0;
-		top: 30px !important;
+		top: 0px !important;
 	}
 }
 
@@ -4284,7 +4285,7 @@ a#menu-trigger .line-3-hover {
 		border: none;
 		position: absolute;
 		right: 50px;
-		top: 24px;
+	    top: 85px;
 		background-image: url(./img/arrow-blue.png);
 		width: 48px;
 		height: 16px;
@@ -4299,7 +4300,7 @@ a#menu-trigger .line-3-hover {
 @media screen and (max-width: 768px) {
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
 		right: 42px;
-		top: 30px;
+	    top: 90px;
 		background-image: url(./img/arrow-blue.png);
 		width: 47px;
 		height: 20px;
@@ -4460,7 +4461,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
 		right: 35px;
-		top: 26px;
+		top: 85px;
 	}
 	.main-content .inner-wrapper .content-wrapper form {
 		max-width: 95%;
