@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
 <body class="intro-page">
-	<div class="background-el"></div>
+	
 	<div class="siteintro-wrapper">
 		<!-- Intro-Overlay -->
 		<div class="overlay intro-overlay">
