@@ -2371,11 +2371,13 @@
 html {
 	text-rendering: optimizeLegibility;
 	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
 }
 
 body {
 	background-color: #FFF;
 	font: 1em/1.5 "Lato", Helvetica, Arial, sans-serif;
+	height: 100%;
 }
 
 *,
@@ -3962,8 +3964,9 @@ a#menu-trigger .line-3-hover {
 		font-size: 25px;
 	}
 	.main-content .inner-wrapper .content-wrapper form {
-		margin: 0% auto 0;
+		margin: 2% auto 2%;
 		top: 0px !important;
+		display: table;
 	}
 }
 
@@ -4285,7 +4288,7 @@ a#menu-trigger .line-3-hover {
 		border: none;
 		position: absolute;
 		right: 50px;
-	    top: 85px;
+		top: 24px;
 		background-image: url(./img/arrow-blue.png);
 		width: 48px;
 		height: 16px;
@@ -4300,7 +4303,7 @@ a#menu-trigger .line-3-hover {
 @media screen and (max-width: 768px) {
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
 		right: 42px;
-	    top: 90px;
+	    top: 28px;
 		background-image: url(./img/arrow-blue.png);
 		width: 47px;
 		height: 20px;
@@ -4461,7 +4464,7 @@ a#menu-trigger .line-3-hover {
 	}
 	.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
 		right: 35px;
-		top: 85px;
+		top: 25px;
 	}
 	.main-content .inner-wrapper .content-wrapper form {
 		max-width: 95%;
