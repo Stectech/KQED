@@ -15,12 +15,14 @@ $video_mov = get_field( "video_mov", $post->ID );
 $video_webm = get_field( "video_webm", $post->ID ); 
 ?>
 <!-- ATF-Section -->
-
 <section class="atf-section">
-	<video loop id="homepage-video">
+	<video id="homepage-video">
 		<source src="<?php echo $video_webm['url'] ?>#t=1,100" type="video/webm"/>
 		<source src="<?php echo $video_mov['url'] ?>#t=1,100" type="video/mp4"/>
 	</video>
+	<div class="container">
+		<a href="#" id="replay-btn">Replay <i class="fa fa-repeat"></i></a>
+	</div>
 </section>
 
 <!-- Homepage-Content -->

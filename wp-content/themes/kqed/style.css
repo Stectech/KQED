@@ -2585,12 +2585,36 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 }
 
 /**************** ATF-Section ****************/
+.atf-section{
+	position: relative;
+}
 .atf-section video {
 	float: left;
 	width: 100%;
 	max-width: 100%;
 }
-
+.atf-section .container{
+	position: relative;
+}
+.atf-section .container #replay-btn{
+	position: absolute;
+	right: 10%;
+	bottom: 18%;
+	color: #00a7ce;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 30px;
+	font-family: 'Adelle-Light';
+	padding: 10px 22px;
+}
+.atf-section .container #replay-btn i{
+	font-size: 28px;
+	vertical-align: middle;
+	-webkit-transform: rotateY(180deg) rotateZ(5deg);
+	-moz-transform: rotateY(180deg) rotateZ(5deg);
+	-o-transform: rotateY(180deg) rotateZ(5deg);
+	-ms-transform: rotateY(180deg) rotateZ(5deg);
+	transform: rotateY(180deg) rotateZ(5deg);
+}
 /**************** Homepage-Content ****************/
 .homepage-content .container h2 {
 	color: #00a7ce;

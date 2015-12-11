@@ -296,6 +296,11 @@ $(document).ready(function() {
 		});
 	}
 
+	$('#replay-btn').click(function(){
+		document.getElementById('homepage-video').play();
+		return false
+	});
+
 
 
 	//============== Responsive Navigation Menu ==============//
