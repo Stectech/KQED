@@ -296,9 +296,28 @@ $(document).ready(function() {
 		});
 	}
 
-	$('#replay-btn').click(function(){
+	$('.atf-section #replay-btn').click(function(){
 		document.getElementById('homepage-video').play();
 		return false
+	});
+
+	$('.atf-section #scrolldown-btn').click(function(){
+		$('html, body').animate({
+		 	scrollTop: $("#homecontent").offset().top
+		}, 1500);
+
+		return false;
+	});
+
+	$('.atf-section #mute-btn i.fa-volume-off').hide();
+	$('.atf-section #mute-btn').click(function(){
+
+		$('.atf-section #mute-btn i.fa-volume-up').toggle();
+		$('.atf-section #mute-btn i.fa-volume-off').toggle();
+
+		 $(".atf-section video").prop('muted', !$(".atf-section video").prop('muted'));
+
+		 return false;
 	});
 
 

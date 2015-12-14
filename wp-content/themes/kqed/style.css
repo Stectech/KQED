@@ -2378,6 +2378,11 @@ body {
 	background-color: #FFF;
 	font: 1em/1.5 "Lato", Helvetica, Arial, sans-serif;
 	height: 100%;
+	padding-top: 48px;
+}
+
+body.logged-in{
+	padding-top: 80px;
 }
 
 *,
@@ -2497,6 +2502,13 @@ p {
 /**************** Header ****************/
 header {
 	background-color: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+body.logged-in header{
+	top: 32px;
 }
 
 header .container .logo {
@@ -2604,7 +2616,9 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	background-color: rgba(255, 255, 255, 0.7);
 	font-size: 30px;
 	font-family: 'Adelle-Light';
-	padding: 10px 22px;
+	line-height: 20px;
+	padding: 15px 22px;
+	z-index: 1;
 }
 .atf-section .container #replay-btn i{
 	font-size: 28px;
@@ -2614,6 +2628,31 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	-o-transform: rotateY(180deg) rotateZ(5deg);
 	-ms-transform: rotateY(180deg) rotateZ(5deg);
 	transform: rotateY(180deg) rotateZ(5deg);
+}
+.atf-section .container #scrolldown-btn{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 18%;
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	z-index: 1;
+}
+.atf-section .container #scrolldown-btn img{
+	width: 100%;
+}
+.atf-section .container #mute-btn{
+	position: absolute;
+	left: 10%;
+	bottom: 18%;
+	z-index: 1;
+	width: 50px;
+}
+.atf-section .container #mute-btn i{
+	font-size: 52px;
+	color: rgba(255, 255, 255, 0.7);
+
 }
 /**************** Homepage-Content ****************/
 .homepage-content .container h2 {
@@ -2631,10 +2670,10 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 }
 
 .homepage-content .container p {
-	font-size: 54px;
+	font-size: 46px;
 	font-family: 'Adelle-Light';
 	text-align: justify;
-    line-height: 68px;
+	line-height: 62px;
 }
 
 /**************** Homepage-Boxes ****************/
@@ -2774,6 +2813,22 @@ footer .footer-bar .container .footer-link a {
 	-moz-transition: all 800ms ease-in-out;
 	-webkit-transition: all 800ms ease-in-out;
 	-ms-transition: all 800ms ease-in-out;
+}
+
+.footer-text{
+	margin-top: 80px;
+}
+
+.footer-text p{
+	font-size: 46px;
+	font-family: 'Adelle-Light';
+	text-align: center;
+	line-height: 62px;
+	color: #cede00;
+}
+
+.home footer .container .bold-link{
+    margin: 20px auto 150px;
 }
 
 /******************************** Inner-Pages ********************************/
@@ -4142,6 +4197,22 @@ a#menu-trigger .line-3-hover {
 	.investors-wrapper .col img{
 		width: 100%;
 	}
+	.atf-section .container #scrolldown-btn{
+		width: 40px;
+	}
+	.atf-section .container #replay-btn{
+		padding: 10px 16px;
+		font-size: 22px;
+	}
+	.atf-section .container #replay-btn i{
+		font-size: 22px;
+	}
+	.atf-section .container #mute-btn{
+		width: 40px;
+	}
+	.atf-section .container #mute-btn i{
+		font-size: 38px;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -4473,6 +4544,19 @@ a#menu-trigger .line-3-hover {
         font-size: 19px;
         line-height: 24px;  
     }
+	.atf-section .container #replay-btn {
+		padding: 6px 10px;
+		font-size: 16px;
+	}
+	.atf-section .container #replay-btn i {
+		font-size: 14px;
+	}
+	.atf-section .container #scrolldown-btn {
+		width: 28px;
+	}
+	.atf-section .container #mute-btn i {
+		font-size: 28px;
+	}
 }
 
 @media screen and (max-width: 580px) {
@@ -4669,6 +4753,12 @@ a#menu-trigger .line-3-hover {
 	.progressintro-wrapper .items-wrapper ul li a span {
 	    width: 30px;
 	    height: 30px;
+	}
+	.atf-section .container #replay-btn{
+		display: none;
+	}
+	.atf-section .container #mute-btn{
+		display: none;
 	}
 }
 

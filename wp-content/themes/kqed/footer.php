@@ -18,6 +18,11 @@
 	<?php $url = get_post_meta(get_the_ID(), 'url', true); ?>
 	
 	<footer>
+		<?php if ( is_front_page() ) : ?>
+			<div class='container footer-text'>
+				<p>Find out how we’ll do this through our Campaign 21 initiative.</p>
+			</div>
+		<?php endif; ?>
 		<?php if ( $linkname ) : ?>
 			<div class="container">
 				<a href="<?php echo $url; ?>" class="bold-link">

@@ -21,12 +21,14 @@ $video_webm = get_field( "video_webm", $post->ID );
 		<source src="<?php echo $video_mov['url'] ?>#t=1,100" type="video/mp4"/>
 	</video>
 	<div class="container">
+		<a href="#" id="scrolldown-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/scroll-arrow.png" alt="scroll down" /></a>
 		<a href="#" id="replay-btn">Replay <i class="fa fa-repeat"></i></a>
+		<a href="#" id="mute-btn"><i class="fa fa-volume-up"></i><i class="fa fa-volume-off"></i></a>
 	</div>
 </section>
 
 <!-- Homepage-Content -->
-<div class="homepage-content">
+<div class="homepage-content" id="homecontent">
 	<div class="container containerv2">
 		<div class="entry-content">
 			<?php the_content(); ?>
@@ -41,3 +43,4 @@ $video_webm = get_field( "video_webm", $post->ID );
 </div>
 
 <?php echo do_shortcode('[catlist name="homepage" content="yes" template="homeblocks" thumbnail="yes" thumbnail_size="full"]'); ?>
+
