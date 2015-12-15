@@ -12,22 +12,40 @@
 ?>
 
 	</div><!-- #content -->
-
 	<!-- Footer -->
 	<?php $linkname = get_post_meta(get_the_ID(), 'link_name', true); ?>
 	<?php $url = get_post_meta(get_the_ID(), 'url', true); ?>
+	<?php $btnHeadline = get_post_meta(get_the_ID(), 'btn_headline', true); ?>
 	
 	<footer>
+		
+		<?php if ( !is_front_page() ) : ?>
+			<div class="section timelinevideo-section">
+				<div class="container">
+					<h3>WHY KQED? WHY NOW?</h3>
+				</div>
+				<div class="inner-wrapper" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/timelinevideo-bg.jpg)">
+					<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe play-btn" class="play-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/timelinevideo-play-icon.png" alt="play button" /></a>
+				</div>
+			</div>
+		<?php endif; ?>
 		<?php if ( is_front_page() ) : ?>
 			<div class='container footer-text'>
 				<p>Find out how we’ll do this through our Campaign 21 initiative.</p>
 			</div>
 		<?php endif; ?>
+		
+
 		<?php if ( $linkname ) : ?>
 			<div class="container">
+
+				<?php if ( $btnHeadline ) : ?>
+					<h3><?php echo $btnHeadline; ?></h3>
+				<?php endif; ?>
+
 				<a href="<?php echo $url; ?>" class="bold-link">
-					<span data-text="<?php echo $linkname; ?>">
-						<?php echo $linkname; ?><img src="<?php bloginfo('template_directory'); ?>/img/arrow.png" alt="arrow" />
+					<span>
+						<?php echo $linkname; ?>
 					</span>
 				</a>
 			</div>
@@ -45,7 +63,7 @@
 		<div class="footer-bar">
 			<div class="container">
 				<p class="copyright-note">© KQED 2015</p>
-				<div class="footer-link"><a href="mailto:johnboland@kqed.org">CONTACT US</a></div>
+				<div class="footer-link"><a href="<?php bloginfo('url'); ?>/contact">CONTACT US</a></div>
 			</div>
 		</div>
 	</footer>

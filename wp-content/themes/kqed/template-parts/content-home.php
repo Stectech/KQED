@@ -28,7 +28,8 @@ $video_webm = get_field( "video_webm", $post->ID );
 </section>
 
 <!-- Homepage-Content -->
-<div class="homepage-content" id="homecontent">
+<div class="homepage-content">
+	<div id="homecontent"></div>
 	<div class="container containerv2">
 		<div class="entry-content">
 			<?php the_content(); ?>

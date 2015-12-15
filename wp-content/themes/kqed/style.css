@@ -2655,6 +2655,9 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 
 }
 /**************** Homepage-Content ****************/
+.homepage-content{
+	position: relative;;
+}
 .homepage-content .container h2 {
 	color: #00a7ce;
 	font-size: 154px;
@@ -2674,6 +2677,13 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	font-family: 'Adelle-Light';
 	text-align: justify;
 	line-height: 62px;
+}
+.homepage-content #homecontent{
+	position: absolute;
+	left: 0;
+	top: -100px;
+	width: 1px;
+	height: 1px;
 }
 
 /**************** Homepage-Boxes ****************/
@@ -2758,13 +2768,21 @@ footer .footer-bar .container .footer-link a {
 }
 
 .bold-link {
-	font-size: 80px;
+	font-size: 52px;
+	line-height: 55px;
 	font-weight: 300;
 	background-color: #cede00;
 	letter-spacing: 3px;
 	padding: 65px 190px 45px 190px;
 	display: table;
 	margin: 150px auto;
+	color: #000;
+	text-transform: uppercase;
+	text-align: center;
+    width: 680px;
+}
+.bold-link:visited{
+	color: #000;
 }
 
 .bold-link span {
@@ -2829,6 +2847,54 @@ footer .footer-bar .container .footer-link a {
 
 .home footer .container .bold-link{
     margin: 20px auto 150px;
+}
+
+.timelinevideo-section{
+	margin: 90px 0 130px;
+}
+.timelinevideo-section .container h3{
+	font-size: 82px;
+	font-weight: 300;
+	color: #00a7ce;
+	text-align: center;
+	letter-spacing: 4px;
+	margin: 50px 0 25px;
+}
+.timelinevideo-section .inner-wrapper{
+	background-size: cover;
+	float: left;
+	width: 100%;
+	height: 440px;
+	position: relative;
+	background-position: center;
+}
+
+.timelinevideo-section .inner-wrapper .play-btn{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 120px;
+	height: 120px;
+	display: block;
+	margin: auto;
+}
+.timelinevideo-section .inner-wrapper .play-btn img{
+	width: 100%;
+}
+
+footer h3{
+	font-size: 82px;
+	font-weight: 300;
+	color: #00a7ce;
+	text-align: center;
+	letter-spacing: 4px;
+	margin: 50px 0 30px;
+	display: block;
+	float: left;
+	width: 100%;
+	text-transform: uppercase;
 }
 
 /******************************** Inner-Pages ********************************/
@@ -3007,7 +3073,7 @@ footer .footer-bar .container .footer-link a {
 	background-color: #00a7ce;
 	display: none;
 }
-
+page-id-94
 .cascadeboxes-wrapper .details .container {
 	max-width: 934px;
 	margin: 100px auto 150px;
@@ -3106,6 +3172,10 @@ footer .footer-bar .container .footer-link a {
 	border-radius: 100px;
 }
 
+.page-id-94 .timelinevideo-section, .page-id-253 .timelinevideo-section{
+	margin-bottom: 0;
+}
+
 /**************** Video-Box ****************/
 .videobox-wrapper {
 	position: relative;
@@ -3195,6 +3265,16 @@ footer .footer-bar .container .footer-link a {
 	-moz-transition: all 300ms ease-in-out;
 	-webkit-transition: all 300ms ease-in-out;
 	-ms-transition: all 300ms ease-in-out;
+}
+
+.investors-wrapper .col::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.18);
 }
 
 .investors-wrapper .col a {
@@ -3919,6 +3999,37 @@ a#menu-trigger .line-3-hover {
 	transform: rotate(-47deg) translate(8px, -11px);
 }
 
+/**************** Contact-Page ****************/
+.page-template-content-contact .page-content{
+	margin-bottom: 10px;
+}
+.page-template-content-contact .page-content h3{
+	color: #00a7ce;
+	font-weight: 300;
+	font-size: 28px;
+}
+.page-template-content-contact .contact-box{
+	margin-bottom: 90px;
+}
+.page-template-content-contact .contact-box h4{
+	font-family: "Adelle-Bold";
+	font-size: 22px;
+	line-height: 18px;
+	margin: 10px 0 10px;
+}
+.page-template-content-contact .contact-box p{
+	margin: 10px 0;
+	font-size: 22px;
+	line-height: 18px;
+}
+.page-template-content-contact .contact-box p a{
+	color: #000;
+	text-decoration: underline;
+}
+.page-template-content-contact footer .footer-bar .container .footer-link a{
+	color: #cfde00;
+}
+
 /******** Media-queries ********/
 @media screen and (min-width: 1180px) {
 	.progressintro-wrapper .items-wrapper ul li a br{
@@ -3957,7 +4068,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 62px;
 		line-height: 70px;
 	}
-	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3 {
 		font-size: 72px;
 		line-height: 70px;
 		margin: 40px 0;
@@ -4169,11 +4280,11 @@ a#menu-trigger .line-3-hover {
 	.innerpage-head{
 		min-height: 475px;
 	}
-	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3 {
 		font-size: 56px;
 		line-height: 40px;
 	}
-	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3 {
 	    line-height: 60px;
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col {
@@ -4252,10 +4363,6 @@ a#menu-trigger .line-3-hover {
 	.su-spoiler-content.su-clearfix p{
 		font-size: 18px;
 		line-height: 23px;
-	}
-	footer .container .bold-link {
-	    padding: 24px 10% 22px 10%;
-	    font-size: 60px;
 	}
 	.homepage-content .container h2{
 		font-size: 68px;
@@ -4462,7 +4569,9 @@ a#menu-trigger .line-3-hover {
 		font-size: 88px;
 	}
 	footer .container .bold-link{
-		font-size: 50px;
+		font-size: 24px;
+		line-height: 30px;
+		padding: 25px 30px 30px 30px;
 	}
 	.innerslider-wrapper #future-slider ul li .image-side img {
 	    height: 340px;
@@ -4724,12 +4833,12 @@ a#menu-trigger .line-3-hover {
 	}
 	footer .container .bold-link{
         padding: 18px 10% 18px 10%;
-	    font-size: 24px;
+		font-size: 20px;
 	}
 	footer .container .bold-link img, .home footer .container .bold-link img {
 	    width: 42px;
 	}
-	.page-id-94 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3{
+	.page-id-94 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3{
 		font-size: 50px;
 		line-height: 48px;
 	}
@@ -4767,7 +4876,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 14px;
 		line-height: 18px;
 	}
-	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	.todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3 {
 		font-size: 32px;
 		line-height: 38px;
 		margin: 10px 0 20px;
@@ -4847,9 +4956,9 @@ a#menu-trigger .line-3-hover {
 	header .container, .footer-bar .container {
 	    padding: 0 5%;
 	}
-	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3 {
+	.page-id-61 .todayskqed-section h3, .investors-wrapper .container h3, .innerslider-wrapper h3, .cascadeboxes-wrapper h3, footer h3, .timelinevideo-section .container h3 {
 		font-size: 38px;
-		line-height: 34px;
+		line-height: 38px;
 	}
 	body .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
 	    font-size: 14px;

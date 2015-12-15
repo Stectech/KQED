@@ -70,23 +70,6 @@
 	</div>
 <?php endif; ?>
 
-<!-- Video-box -->
-<?php if ( $bg ) : ?>
-	<div class="videobox-wrapper" style="background-image: url('<?php echo $bg['url'] ?>');">
-		<div class="container">
-			<div class="inner-wrapper">
-				<div class="main-wrapper">
-					<h3><?php echo $video_title ?></h3>
-					<a href="<?php echo $video_url ?>" class="lightbox fancybox.iframe">
-				<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" />
-				Play video
-			</a>
-				</div>
-			</div>
-		</div>
-	</div>
-<?php endif; ?>
-
 <!-- Progress Slider Block Static -->
 <?php 
 if ( is_page( 'progress' ) ) : 

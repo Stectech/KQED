@@ -304,14 +304,17 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
     }
 
     footer .container .bold-link {
-        padding: 35px 200px 45px 200px;
+        padding: 35px 50px 45px 50px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     footer .container .bold-link {
-        padding: 33px 110px 32px 110px;
-        font-size: 68px;
+        padding: 35px 60px 45px 60px;
+        font-size: 42px;
+        line-height: 50px;
+        max-width: 90%;
+        width: auto;
     }
     footer .container .bold-link img{
         width: 80px;
