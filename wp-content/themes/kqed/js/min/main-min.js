@@ -146,7 +146,12 @@ $(document).ready(function() {
 		autoSize	: false,
 		closeClick	: false,
 		openEffect	: 'none',
-		closeEffect	: 'none'
+		closeEffect	: 'none',
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
 	});
 
 	//============== ProgressIntro-Section ==============//
@@ -155,7 +160,7 @@ $(document).ready(function() {
 
 	$pWrapper = $('.progressintro-wrapper .items-wrapper'),
 	$pLi = $('.progressintro-wrapper .items-wrapper ul li'),
-	$pCloseBtn = $('.progressintro-wrapper .items-wrapper ul li a img');
+	$pCloseBtn = $('.progressintro-wrapper .items-wrapper ul li a span');
 
 
 	//Rollover event

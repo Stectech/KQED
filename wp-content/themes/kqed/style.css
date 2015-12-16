@@ -2884,6 +2884,10 @@ footer .footer-bar .container .footer-link a {
 	width: 100%;
 }
 
+.fancybox-lock body {
+    overflow: visible !important;
+}
+
 footer h3{
 	font-size: 82px;
 	font-weight: 300;
@@ -2970,9 +2974,24 @@ footer h3{
 	float: left;
 	cursor: pointer;
 }
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info::-webkit-scrollbar {
+	width: 10px;
+}
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info::-webkit-scrollbar-track {
+	background-color: #e4e4e4;
+	border-left: 1px solid #ccc;
+	width: 15px;
+}
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info::-webkit-scrollbar-thumb {
+	background-color: #cfde00;
+	width: 15px;
+}
+.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info::-webkit-scrollbar-thumb:hover {
+	background-color: #cfde00;
+}
 
 .cascadeboxes-wrapper .single-box[data-counter="0"], .cascadeboxes-wrapper .single-box[data-counter="3"]{
-    background-position: center 10%;
+	background-position: center 10%;
 }
 
 .cascadeboxes-wrapper .single-box .overlay {
@@ -3243,7 +3262,6 @@ page-id-94
 .investors-wrapper .inner-wrapper{
 	float: left;
 	width: 100%;
-	background-color: #f1f1f1;
 }
 .investors-wrapper .container h3 {
 	font-size: 82px;
@@ -3291,7 +3309,7 @@ page-id-94
 	margin: 10% 0;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: -1px 1px 7px rgba(51, 51, 51, 0.7);
+	text-shadow: 0px 14px 30px #000;
 	display: table-cell;
 	vertical-align: middle;
 	position: relative;
@@ -3408,7 +3426,7 @@ page-id-94
 .progressintro-wrapper {
 	position: relative;
 	overflow: hidden;
-	margin-bottom: 100px;
+	margin-bottom: 15px;
 }
 
 .progressintro-wrapper .backgrounds-wrapper {
@@ -3475,31 +3493,26 @@ page-id-94
 	margin: 0px 50px;
 	padding: 35px 0;
 	position: relative;
-	transition: all 500ms ease-in-out;
-	-o-transition: all 500ms ease-in-out;
-	-moz-transition: all 500ms ease-in-out;
-	-webkit-transition: all 500ms ease-in-out;
-	-ms-transition: all 500ms ease-in-out;
 }
 
 .progressintro-wrapper .items-wrapper ul li a:after {
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 100%;
+	height: 3px;
+	background-color: #000;
+	content: '';
 }
 
 .progressintro-wrapper .items-wrapper ul li a:before {
-    position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    content: '';
+	position: absolute;
+	left: 0;
+	top: 0px;
+	width: 100%;
+	height: 3px;
+	background-color: #000;
+	content: '';
 }
 
 .progressintro-wrapper .items-wrapper ul li a span {
@@ -3510,6 +3523,17 @@ page-id-94
 	border: 3px solid #000;
 	margin-top: 5px;
 	border-radius: 100px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 32px;
+	-webkit-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+	transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	-moz-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
 }
 
 .progressintro-wrapper .items-wrapper ul li:last-child a span{
@@ -3520,14 +3544,9 @@ page-id-94
 	max-width: 85%;
 	margin: 2px auto;
 	display: block;
-	transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
 }
 
-.progressintro-wrapper .items-wrapper ul li a span img.activated {
+.progressintro-wrapper .items-wrapper ul li a span.activated {
 	-webkit-transform: rotate(-135deg);
 	-ms-transform: rotate(-135deg);
 	transform: rotate(-135deg);
@@ -3550,7 +3569,21 @@ page-id-94
 }
 
 .progressintro-wrapper .items-wrapper ul li.nonactive-item a {
-	opacity: 0.3;
+
+}
+
+.progressintro-wrapper .items-wrapper ul li.active-item a {
+	color: #00a6cf;
+}
+.progressintro-wrapper .items-wrapper ul li.active-item a::before{
+	background-color: #00a6cf;
+}
+.progressintro-wrapper .items-wrapper ul li.active-item a::after{
+	background-color: #00a6cf;
+	z-index: 2;
+}
+.progressintro-wrapper .items-wrapper ul li.active-item a span{
+	border-color: #00a6cf;
 }
 
 .progressintro-wrapper .items-wrapper.opened {
@@ -3596,6 +3629,10 @@ page-id-94
 	position: relative;
 }
 
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .img-box{
+	margin-bottom: 50px;
+}
+
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper h3 {
 	font-size: 32px;
 	font-weight: 400;
@@ -3606,7 +3643,7 @@ page-id-94
 }
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper p {
-	font-family: 'adelle-bold';
+	font-family: 'Adelle-Light';
 	font-size: 26px;
 	color: #fff;
 	line-height: 32px;
@@ -3626,8 +3663,31 @@ page-id-94
 	float: left;
 }
 
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link:hover::before{
+	opacity: 1;
+}
+
+
+.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.15);
+	opacity: 0;
+	transition: all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	-moz-transition: all 250ms ease-in-out;
+	-webkit-transition: all 250ms ease-in-out;
+	-ms-transition: all 250ms ease-in-out;
+}
+
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link img {
 	max-width: 100%;
+	display: block;
 }
 
 .progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper a.image-link img.play-icon {
@@ -3639,89 +3699,11 @@ page-id-94
 	height: 35px;
 }
 
-.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger {
-	font-family: 'Adelle-Light';
-	font-size: 26px;
-	color: #cede00;
-	margin-top: 30px;
-	display: inline-block;
-	float: left;
-    width: 100%;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .moreinfo-trigger img {
-	margin-left: 10px;
-	vertical-align: middle;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
-	color: #000;
-	display: none;
-	width: 35px;
-	height: 35px;
-	border: 3px solid #000;
-	border-radius: 100px;
-	transition: all 500ms ease-in-out;
-	-o-transition: all 500ms ease-in-out;
-	-moz-transition: all 500ms ease-in-out;
-	-webkit-transition: all 500ms ease-in-out;
-	-ms-transition: all 500ms ease-in-out;
-	float: right;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn img {
-	max-width: 100%;
-	margin: 0px;
-	display: block;
-	transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-	-webkit-transform: rotate(-135deg);
-	-ms-transform: rotate(-135deg);
-	transform: rotate(-135deg);
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info {
-	background-color: #00a6cf;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 2;
-	padding: 60px 50px;
-	overflow: scroll;
-	-webkit-transform: translate(100%, 0px);
-	-ms-transform: translate(100%, 0px);
-	transform: translate(100%, 0px);
-	transition: all 300ms ease-in-out;
-	-o-transition: all 300ms ease-in-out;
-	-moz-transition: all 300ms ease-in-out;
-	-webkit-transition: all 300ms ease-in-out;
-	-ms-transition: all 300ms ease-in-out;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info.opened {
-	-webkit-transform: translate(0%, 0px);
-	-ms-transform: translate(0%, 0px);
-	transform: translate(0%, 0px);
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info h3 {
-	font-size: 32px;
-	font-weight: 300;
-	color: #fff;
-	margin: 10px 0 30px;
-	text-transform: uppercase;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul {
+.progressintro-wrapper .additionalinfo-wrapper .single-box ul {
 	padding-left: 0;
 }
 
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li {
+.progressintro-wrapper .additionalinfo-wrapper .single-box ul li {
 	float: left;
 	width: 100%;
 	margin-bottom: 30px;
@@ -3730,21 +3712,8 @@ page-id-94
 	color: #fff;
 }
 
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info ul li b {
+.progressintro-wrapper .additionalinfo-wrapper .single-box ul li b {
 	font-family: 'adelle-bold';
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info .moreinfo-back-trigger {
-	font-family: 'Adelle-Light';
-	font-size: 26px;
-	color: #cede00;
-	margin-top: 30px;
-	display: inline-block;
-}
-
-.progressintro-wrapper .additionalinfo-wrapper .single-box .more-info .moreinfo-back-trigger img {
-	margin-right: 15px;
-	vertical-align: middle;
 }
 
 /**************** TodaysKQED-Section ****************/
