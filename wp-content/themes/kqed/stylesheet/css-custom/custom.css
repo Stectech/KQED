@@ -149,7 +149,7 @@ header .container .nav-menu-wrapper ul.mobile-menu {
 
 .home header .container .nav-menu-wrapper ul.mobile-menu {
     position: absolute;
-    top: 41px;
+    top: 36px;
     right: 0;
     padding-left: 0;
     background-color: #000;
@@ -185,7 +185,7 @@ footer .container .bold-link {
 }
 
 header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
-    top: 61px;
+    /*top: 61px;*/
 }
 
 @media screen and (max-width: 320px) {

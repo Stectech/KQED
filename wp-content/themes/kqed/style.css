@@ -2693,12 +2693,14 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 
 .homepage-boxes .container .col {
 	position: relative;
+	overflow: hidden;
 }
 
 .homepage-boxes .container .col img {
 	max-width: 100%;
     max-height: 100%;
-	display: block;
+    display: block;
+    min-width: 900px;
 }
 
 .homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper {
@@ -4134,6 +4136,9 @@ a#menu-trigger .line-3-hover {
 	.homepage-boxes .container .col{
 		height: 380px;
 	}
+	.homepage-boxes .container .col img {
+		min-width: 600px;
+	}
 	.homepage-content .container h2 {
 	    margin: 30px 0 130px;
 	}
@@ -4183,6 +4188,7 @@ a#menu-trigger .line-3-hover {
 	header .container .nav-menu-wrapper ul.nav-menu li {
 		margin-right: 42px;
 		line-height: 35px;
+		margin-top: 20px;
 	}
 	header .container .nav-menu-wrapper ul.nav-menu li a {
 		font-size: 20px;
@@ -4203,6 +4209,7 @@ a#menu-trigger .line-3-hover {
 	.homepage-boxes .container .col img {
 	    max-height: 100%;
 		width: 100%;
+		min-height: 540px;
 	}
 	.homepage-boxes .container .col, .cascadeboxes-wrapper .single-box {
 		width: 100%;
@@ -4556,6 +4563,9 @@ a#menu-trigger .line-3-hover {
 	.page-content {
 		margin-top: 90px;
 	}
+	.homepage-boxes .container .col img{
+		min-height: 350px;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4749,6 +4759,9 @@ a#menu-trigger .line-3-hover {
 	.siteintro-wrapper .intro-overlay h1{
 		margin-left: 20px;
 	}
+	.cascadeboxes-wrapper .details-v2 .container .col .accordion{
+	    margin: 20px 0;
+	}
 }
 @media screen and (max-width: 520px) {
 	.investors-wrapper .col h4 {
@@ -4838,6 +4851,9 @@ a#menu-trigger .line-3-hover {
 	.atf-section .container #mute-btn{
 		display: none;
 	}
+	.cascadeboxes-wrapper .details-v2 .container .col .accordion {
+		margin: 10px 0;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -4887,7 +4903,7 @@ a#menu-trigger .line-3-hover {
     transform: rotate(-47deg) translate(11px, -13px);
 	}
 	body header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav-menu-wrapper ul.mobile-menu {
-	    top: 36px;
+	    top: 32px;
 	}
 	footer .container .bold-link, .page-id-6 footer .container .bold-link{
 	    padding: 12px 12% 12px 12%;
@@ -4974,6 +4990,10 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container p, .page-content p {
 	    font-size: 14px !important;
 	    line-height: 22px;
+	}
+	.homepage-boxes .container .col img{
+		min-width: 420px;
+		min-height: 200px;
 	}
 }
 
@@ -5084,5 +5104,6 @@ a#menu-trigger .line-3-hover {
 		width: auto;
 	}
 }
+
 
 /*# sourceMappingURL=style.css.map */
