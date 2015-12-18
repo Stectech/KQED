@@ -4569,6 +4569,10 @@ a#menu-trigger .line-3-hover {
 	.homepage-boxes .container .col img{
 		min-height: 350px;
 	}
+	.footer-text p{
+		line-height: 34px;
+		font-size: 28px;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4856,6 +4860,9 @@ a#menu-trigger .line-3-hover {
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col .accordion {
 		margin: 10px 0;
+	}
+	.footer-text p{
+		font-size: 24px;
 	}
 }
 

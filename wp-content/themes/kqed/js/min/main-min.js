@@ -35,6 +35,27 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
+	var isMobile = {
+		Android: function() {
+		    return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+		    return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+		    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+		    return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+		    return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+		    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
 	//======= The Intro page's slider =======//
 	var $opacity = 0.99;
 	$('.intro-slider').flexslider({
@@ -328,18 +349,31 @@ $(document).ready(function() {
 
 
 	//============== Responsive Navigation Menu ==============//
-	$('#menu-trigger').click(function(){
+	if(isMobile.any()) {
 
-		$('#line-1').toggleClass('line-1-hover');
-		$('#line-2').toggleClass('line-2-hover');
-		$('#line-3').toggleClass('line-3-hover');
+		$("#menu-trigger").bind('tap', function(e){
+			$('#line-1').toggleClass('line-1-hover');
+			$('#line-2').toggleClass('line-2-hover');
+			$('#line-3').toggleClass('line-3-hover');
+			
+			$('.nav-menu-wrapper ul').fadeToggle(600);
+		});
 
-		$('.nav-menu-wrapper ul').fadeToggle(600);
-	});
+	}else{
+
+		$('#menu-trigger').click(function(){
+			$('#line-1').toggleClass('line-1-hover');
+			$('#line-2').toggleClass('line-2-hover');
+			$('#line-3').toggleClass('line-3-hover');
+
+			$('.nav-menu-wrapper ul').fadeToggle(600);
+		});
+
+	}
 
 	if ($(window).width() < 820) {
 		$('#menu-trigger').click(function(){
-				$('.nav-menu-wrapper ul').addClass('mobile-menu');
+			$('.nav-menu-wrapper ul').addClass('mobile-menu');
 		});
 	}
 
@@ -418,26 +452,6 @@ $(document).ready(function() {
 	
 
 	// Mobile Device Compatibility
-	var isMobile = {
-		Android: function() {
-		    return navigator.userAgent.match(/Android/i);
-		},
-		BlackBerry: function() {
-		    return navigator.userAgent.match(/BlackBerry/i);
-		},
-		iOS: function() {
-		    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-		Opera: function() {
-		    return navigator.userAgent.match(/Opera Mini/i);
-		},
-		Windows: function() {
-		    return navigator.userAgent.match(/IEMobile/i);
-		},
-		any: function() {
-		    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
 
 	if(isMobile.any()) {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
@@ -472,7 +486,7 @@ $(document).ready(function() {
 			 	$(this).children('.second-overlay').toggleClass('active');
 			});
 		}
-		
+
 	});
 
 
