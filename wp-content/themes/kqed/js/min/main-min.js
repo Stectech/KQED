@@ -77,7 +77,7 @@ $(document).ready(function() {
 		$opacity = $opacity - .009;
 		$('.intro-overlay').css('background-color', "rgba(0, 0, 0, "+$opacity+")");
 
-	} ,150);
+	} ,110);
 
 	$(".skip-btn").click(function () {    
 		$('.intro-overlay').css('background', "none");
@@ -450,8 +450,8 @@ $(document).ready(function() {
 
 	if(isMobile.any()) {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
-		 	$(this).siblings().children('.second-overlay').hide();
-		 	$(this).children('.second-overlay').toggle();
+		 	$(this).siblings().children('.second-overlay').hide(300);
+		 	$(this).children('.second-overlay').toggle(300);
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
