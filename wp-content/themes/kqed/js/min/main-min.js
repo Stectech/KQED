@@ -450,6 +450,31 @@ $(document).ready(function() {
 		});
 	}
 
+	// Landscape Issue Fix
+	
+	var height = $(window).height();
+	var width = $(window).width();
+
+	if(isMobile.any() && width>height) {
+		$(".homepage-boxes .container .col").bind('tap', function(e){
+		 	$(this).siblings().children('.second-overlay').removeClass('active');
+		 	$(this).children('.second-overlay').toggleClass('active');
+		});
+	}
+
+	$(window).resize(function () {
+		var height = $(window).height();
+		var width = $(window).width();
+
+		if(isMobile.any() && width>height) {
+			$(".homepage-boxes .container .col").bind('tap', function(e){
+			 	$(this).siblings().children('.second-overlay').removeClass('active');
+			 	$(this).children('.second-overlay').toggleClass('active');
+			});
+		}
+		
+	});
+
 
 //======= SmartURL Functionality =======//
 	if (location.hash) {
@@ -473,6 +498,7 @@ $(document).ready(function() {
 		}
 
 	}
+
 
 });
 

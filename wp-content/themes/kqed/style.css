@@ -2718,7 +2718,10 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
-	text-shadow: -1px 1px 7px #333;
+}
+
+.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 a{
+	text-shadow: 0px 20px 25px #000;
 }
 
 .homepage-boxes .container .col .second-overlay {
@@ -3012,7 +3015,7 @@ footer h3{
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: -1px 1px 7px #333;
+    text-shadow: 0px 20px 25px #000;
 	line-height: 130px;
 	position: relative;
 	display: table-cell;
