@@ -35,6 +35,27 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 
 $(document).ready(function() {
 
+	var isMobile = {
+		Android: function() {
+		    return navigator.userAgent.match(/Android/i);
+		},
+		BlackBerry: function() {
+		    return navigator.userAgent.match(/BlackBerry/i);
+		},
+		iOS: function() {
+		    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+		},
+		Opera: function() {
+		    return navigator.userAgent.match(/Opera Mini/i);
+		},
+		Windows: function() {
+		    return navigator.userAgent.match(/IEMobile/i);
+		},
+		any: function() {
+		    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+		}
+	};
+
 	//======= The Intro page's slider =======//
 	var $opacity = 0.99;
 	$('.intro-slider').flexslider({
@@ -335,11 +356,13 @@ $(document).ready(function() {
 		$('#line-3').toggleClass('line-3-hover');
 
 		$('.nav-menu-wrapper ul').fadeToggle(600);
+
+		return false;
 	});
 
 	if ($(window).width() < 820) {
 		$('#menu-trigger').click(function(){
-				$('.nav-menu-wrapper ul').addClass('mobile-menu');
+			$('.nav-menu-wrapper ul').addClass('mobile-menu');
 		});
 	}
 
@@ -361,9 +384,14 @@ $(document).ready(function() {
 	    waitForFinalEvent(function(){
 
 	    	if ($(window).width() < 820) {
+
 		    	$('#menu-trigger').click(function(){
+
 					$('.nav-menu-wrapper ul').addClass('mobile-menu');
+					return false;
+
 				});
+
 				$('.nav-menu-wrapper ul').hide();
 				$('#line-1').removeClass('line-1-hover');
 				$('#line-2').removeClass('line-2-hover');
@@ -372,6 +400,7 @@ $(document).ready(function() {
 			else if($(window).width() > 820){
 				$('#menu-trigger').click(function(){
 					$('.nav-menu-wrapper ul').removeClass('mobile-menu');
+					return false;			
 				});
 				$('.nav-menu-wrapper ul').removeClass('mobile-menu');
 
@@ -418,37 +447,43 @@ $(document).ready(function() {
 	
 
 	// Mobile Device Compatibility
-	var isMobile = {
-		Android: function() {
-		    return navigator.userAgent.match(/Android/i);
-		},
-		BlackBerry: function() {
-		    return navigator.userAgent.match(/BlackBerry/i);
-		},
-		iOS: function() {
-		    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-		Opera: function() {
-		    return navigator.userAgent.match(/Opera Mini/i);
-		},
-		Windows: function() {
-		    return navigator.userAgent.match(/IEMobile/i);
-		},
-		any: function() {
-		    return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
 
 	if(isMobile.any()) {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').removeClass('active');
 		 	$(this).children('.second-overlay').toggleClass('active');
+		 	alert('ssss');
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
 		});
 	}
+
+	// Landscape Issue Fix
+	
+	var height = $(window).height();
+	var width = $(window).width();
+
+	if(isMobile.any() && width>height) {
+		$(".homepage-boxes .container .col").bind('tap', function(e){
+		 	$(this).siblings().children('.second-overlay').removeClass('active');
+		 	$(this).children('.second-overlay').toggleClass('active');
+		});
+	}
+
+	$(window).resize(function () {
+		var height = $(window).height();
+		var width = $(window).width();
+
+		if(isMobile.any() && width>height) {
+			$(".homepage-boxes .container .col").bind('tap', function(e){
+			 	$(this).siblings().children('.second-overlay').removeClass('active');
+			 	$(this).children('.second-overlay').toggleClass('active');
+			});
+		}
+
+	});
 
 
 //======= SmartURL Functionality =======//
@@ -473,6 +508,7 @@ $(document).ready(function() {
 		}
 
 	}
+
 
 });
 

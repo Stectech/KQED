@@ -2718,7 +2718,10 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	text-align: center;
 	display: table-cell;
 	vertical-align: middle;
-	text-shadow: -1px 1px 7px #333;
+}
+
+.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 a{
+	text-shadow: 0px 20px 25px #000;
 }
 
 .homepage-boxes .container .col .second-overlay {
@@ -3012,7 +3015,7 @@ footer h3{
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: -1px 1px 7px #333;
+    text-shadow: 0px 20px 25px #000;
 	line-height: 130px;
 	position: relative;
 	display: table-cell;
@@ -3193,7 +3196,7 @@ page-id-94
 	border-radius: 100px;
 }
 
-.page-id-94 .timelinevideo-section, .page-id-253 .timelinevideo-section{
+.page-id-94 .timelinevideo-section, .page-id-253 .timelinevideo-section, .page-id-212 .timelinevideo-section{
 	margin-bottom: 0;
 }
 
@@ -4300,6 +4303,9 @@ a#menu-trigger .line-3-hover {
 	.atf-section .container #mute-btn i{
 		font-size: 38px;
 	}
+	header .container .nav-menu-wrapper {
+		margin: 5px 0px 0;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -4425,6 +4431,7 @@ a#menu-trigger .line-3-hover {
 	}
 	header .container .nav-menu-wrapper ul.mobile-menu{
 		padding-top: 30px;
+		top: 32px;
 	}
 }
 
@@ -4565,6 +4572,10 @@ a#menu-trigger .line-3-hover {
 	}
 	.homepage-boxes .container .col img{
 		min-height: 350px;
+	}
+	.footer-text p{
+		line-height: 34px;
+		font-size: 28px;
 	}
 }
 
@@ -4853,6 +4864,9 @@ a#menu-trigger .line-3-hover {
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col .accordion {
 		margin: 10px 0;
+	}
+	.footer-text p{
+		font-size: 24px;
 	}
 }
 
