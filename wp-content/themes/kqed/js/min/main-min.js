@@ -460,7 +460,7 @@ $(document).ready(function() {
 	}
 
 	// Landscape Issue Fix
-	$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').click(function() {
+	$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').bind('tap', function(e){
 		$(this).parent().parent('.second-overlay').removeClass('active');
 
 		return false;
