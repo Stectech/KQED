@@ -321,3 +321,48 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
         margin: 25px auto 0;
     }
 }
+
+@media only screen and (max-width: 320px) {
+    .inner-wrapper {
+        margin-top: 90px;
+    }
+
+    .main-content .inner-wrapper .content-wrapper form input[type='text'] {
+        font-size: 25px !important;
+    }
+
+    input.input_email {
+        width: 279px !important;
+        display: block;
+        height: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
