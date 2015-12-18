@@ -450,8 +450,8 @@ $(document).ready(function() {
 
 	if(isMobile.any()) {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
-		 	$(this).siblings().children('.second-overlay').removeClass('active');
-		 	$(this).children('.second-overlay').toggleClass('active');
+		 	$(this).siblings().children('.second-overlay').hide();
+		 	$(this).children('.second-overlay').toggle();
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
@@ -461,7 +461,7 @@ $(document).ready(function() {
 
 	// Landscape Issue Fix
 	$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').bind('tap', function(e){
-		$(this).parent().parent('.second-overlay').removeClass('active');
+		$(this).parent().parent('.second-overlay').hide();
 
 		return false;
 	});
