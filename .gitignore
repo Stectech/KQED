@@ -8,3 +8,5 @@ staticfiles/.DS_Store
 wp-content/uploads/*
 
 wp-content/themes/kqed/html-files/media/*
+
+.htaccess
