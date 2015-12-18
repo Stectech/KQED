@@ -452,11 +452,11 @@ $(document).ready(function() {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').removeClass('active');
 		 	$(this).children('.second-overlay').toggleClass('active');
+		 	alert('ssss');
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
-		 	alert('sss');
 		});
 	}
 
