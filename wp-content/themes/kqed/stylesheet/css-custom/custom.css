@@ -338,6 +338,14 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
     }
 }
 
+.forgot {
+    text-align: center;
+}
+
+.forgot a {
+    text-decoration: underline;
+    font-family: Adelle-Light;
+}
 
 
 

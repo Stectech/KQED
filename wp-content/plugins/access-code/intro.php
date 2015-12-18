@@ -67,6 +67,10 @@
 						<input class='input_email' type='text' name='access_email' size='32' placeholder="ACCESS CODE" />
 						<input type='submit' class='input_submit' name='Submit' value="<?php get_option('prompt_submit') ?>">
 					</form>
+					<div class="forgot">
+						<p><a href="mailto:mhealy@kqed.org">Forgot your password?</a></p>
+						<p><a href="mailto:mhealy@kqed.org">Need a password? Contact us here.<a/></p>
+					</div?
 				</div>
 			</div>
 		</div>
