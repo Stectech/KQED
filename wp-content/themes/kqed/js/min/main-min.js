@@ -450,8 +450,8 @@ $(document).ready(function() {
 
 	if(isMobile.any()) {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
-		 	$(this).siblings().children('.second-overlay').hide(300);
-		 	$(this).children('.second-overlay').toggle(300);
+		 	$(this).siblings().children('.second-overlay').fadeOut();
+		 	$(this).children('.second-overlay').fadeToggle();
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
