@@ -71,6 +71,7 @@ foreach ($this->catlist->get_categories_posts() as $single){
   $lcp_display_output .=  '</div></div>';
   $lcp_display_output .=  '<div class="overlay second-overlay">';
   $lcp_display_output .=  '<div class="inner-wrapper">';
+  $lcp_display_output .=  '<a href="#" class="close-btn">X</a>';
   //Show comments:
   $lcp_display_output .= $this->get_comments($single);
 

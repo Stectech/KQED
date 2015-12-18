@@ -2734,9 +2734,21 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	-webkit-transition: all 500ms ease-in-out;
 	-ms-transition: all 500ms ease-in-out;
 }
-.homepage-boxes .container .col .second-overlay .inner-wrapper{
-	
+.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 14px;
+	border: 2px solid #fff;
+	width: 30px;
+	height: 30px;
+	line-height: 26px;
+	text-align: center;
+	border-radius: 100px;
+	display: none;
 }
+
+
 .homepage-boxes .container .col .second-overlay p {
 	color: #fff;
 	font-size: 28px;

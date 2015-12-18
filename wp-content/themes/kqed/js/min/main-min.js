@@ -452,7 +452,6 @@ $(document).ready(function() {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').removeClass('active');
 		 	$(this).children('.second-overlay').toggleClass('active');
-		 	alert('ssss');
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
@@ -461,11 +460,19 @@ $(document).ready(function() {
 	}
 
 	// Landscape Issue Fix
+	$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').click(function() {
+		$(this).parent().parent('.second-overlay').removeClass('active');
+
+		return false;
+	});
+
+
 	
 	var height = $(window).height();
 	var width = $(window).width();
 
 	if(isMobile.any() && width>height) {
+		$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').fadeToggle();
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').removeClass('active');
 		 	$(this).children('.second-overlay').toggleClass('active');
@@ -478,6 +485,7 @@ $(document).ready(function() {
 
 		if(isMobile.any() && width>height) {
 			$(".homepage-boxes .container .col").bind('tap', function(e){
+			$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').fadeToggle();
 			 	$(this).siblings().children('.second-overlay').removeClass('active');
 			 	$(this).children('.second-overlay').toggleClass('active');
 			});
