@@ -4303,6 +4303,9 @@ a#menu-trigger .line-3-hover {
 	.atf-section .container #mute-btn i{
 		font-size: 38px;
 	}
+	header .container .nav-menu-wrapper {
+		margin: 5px 0px 0;
+	}
 }
 
 @media screen and (min-width: 992px) {
