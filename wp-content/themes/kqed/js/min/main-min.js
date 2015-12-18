@@ -452,6 +452,8 @@ $(document).ready(function() {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').fadeOut();
 		 	$(this).children('.second-overlay').fadeToggle();
+
+		 	return false;
 		});
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
