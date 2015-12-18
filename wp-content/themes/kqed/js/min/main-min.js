@@ -456,6 +456,7 @@ $(document).ready(function() {
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
+		 	alert('sss');
 		});
 	}
 
