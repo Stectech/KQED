@@ -460,6 +460,13 @@ $(document).ready(function() {
 	}
 
 	// Landscape Issue Fix
+	$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').click(function() {
+		$(this).parent().parent('.second-overlay').removeClass('active');
+
+		return false;
+	});
+
+
 	
 	var height = $(window).height();
 	var width = $(window).width();
