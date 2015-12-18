@@ -72,7 +72,7 @@
 
 <!-- Progress Slider Block Static -->
 <?php 
-if ( is_page( 'progress' ) ) : 
+if ( is_page( 'campaign21' ) ) : 
 	include('progress.php');
 endif; 
 ?>
