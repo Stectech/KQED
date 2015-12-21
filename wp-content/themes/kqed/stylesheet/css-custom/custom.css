@@ -403,18 +403,13 @@ outline: none;
     }
 }
 
-
-
-div.intro .container #mute-btn {
+.atf-section.intro .container #mute-btn {
     position: fixed;
-    left: 102px;
-    bottom: 110px;
-    z-index: 1;
+    left: 10%;
+    bottom: 80px;
+    z-index: 1000000;
     width: 50px;
 }
-
-
-
 
 
 
