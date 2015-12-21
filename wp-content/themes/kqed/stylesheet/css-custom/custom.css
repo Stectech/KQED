@@ -348,20 +348,70 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
 }
 
 
-  div.main-content .inner-wrapper .content-wrapper form:focus {
-    outline: none;
-  }
+div.main-content .inner-wrapper .content-wrapper form:focus {
+outline: none;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 320px) {
     div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
-        right: 7px;
+        right: -31px;
         top: 1px;
         width: 96px;
-        height: 61px;
-        background-size: 100px !important;
+        height: 39px;
+        background-size: 65px;
     }
 }
 
+@media screen and (min-width: 321px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 0px;
+        width: 96px;
+        height: 63px;
+        background-size: 100px;
+    }
+}
+
+@media screen and (min-width: 321px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 0px;
+        width: 96px;
+        height: 63px;
+        background-size: 100px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 1px;
+        width: 103px;
+        height: 71px;
+        background-size: 112px;
+    }
+}
+
+
+@media screen and (min-width: 580px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 1px;
+        width: 91px;
+        height: 61px;
+        background-size: 92px;
+    }
+}
+
+
+
+div.intro .container #mute-btn {
+    position: fixed;
+    left: 102px;
+    bottom: 110px;
+    z-index: 1;
+    width: 50px;
+}
 
 
 

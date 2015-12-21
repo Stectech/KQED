@@ -14,7 +14,11 @@
 
 <body <?php body_class(); ?>>
 <body class="intro-page">
-
+	<section class="atf-section intro">
+				<div class="container">
+					<a href="#" id="mute-btn"><i class="fa fa-volume-up"></i><i class="fa fa-volume-off"></i></a>
+				</div>
+			</section>
 	<div class="siteintro-wrapper">
 		<!-- Intro-Overlay -->
 		<div class="overlay intro-overlay">
@@ -91,7 +95,7 @@
 				</div>
 			</div>
 		</div>
-		
+			
 	</div>
 
 	<!-- Javascript -->
