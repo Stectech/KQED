@@ -412,8 +412,26 @@ outline: none;
 }
 
 
+.main-content .inner-wrapper h3.last {
+    font-size: 40px;
+    line-height: 1.5;
+    padding: 0 5%;
+    text-shadow: -1px 1px 7px #000;
+    display: block;
+    margin-top: 150px;
+}
 
 
+@media screen and (min-width: 768px) {
+    .main-content .inner-wrapper h3.last {
+        font-size: 72px;
+        line-height: 84px;
+        padding: 0 5%;
+        text-shadow: -1px 1px 7px #000;
+        display: block;
+        margin-top: 150px;
+    }
+}
 
 
 
