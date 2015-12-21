@@ -88,6 +88,14 @@ $(document).ready(function() {
 		return false;
 	});
 
+	if ( $('.checkerr').length > 0) {
+		$('.intro-overlay').css('background', "none");
+		$('.intro-slider').remove();
+		$(".skip-btn").fadeOut();
+		$('.siteintro-wrapper .main-content').fadeIn();
+	}
+	console.log('passed');
+
 	//======= Cascade-Boxes =======//
 	$('.cascadeboxes-wrapper .single-box').click(function(){
 

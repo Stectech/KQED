@@ -433,6 +433,18 @@ outline: none;
     }
 }
 
+.intro-error {
+    display: block;
+    margin-top: 80px;
+    background: #fff;
+    padding: 17px;
+    text-align: center;
+    font-family: adelle-light;
+    font-size: 19px;
+    width: 91%;
+    margin-left: 38px;
+}
+
 
 
 
