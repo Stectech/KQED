@@ -27,7 +27,12 @@
 			<ul class="slides">
 				<li>
 					<div class="inner-wrapper">
-						<h3>You care about community</h3>
+						<h3>You</h3>
+					</div>
+				</li>
+				<li>
+					<div class="inner-wrapper">
+						<h3>care about community</h3>
 					</div>
 				</li>
 				<li>
