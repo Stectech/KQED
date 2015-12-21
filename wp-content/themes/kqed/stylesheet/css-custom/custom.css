@@ -348,9 +348,19 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
 }
 
 
+  div.main-content .inner-wrapper .content-wrapper form:focus {
+    outline: none;
+  }
 
-
-
+@media screen and (min-width: 768px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 1px;
+        width: 96px;
+        height: 61px;
+        background-size: 100px !important;
+    }
+}
 
 
 

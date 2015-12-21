@@ -291,6 +291,8 @@ function fo_showLoginForm($error_message) {
 	// echo "</body></html>";
 	
 	// stop at this point
+
+	
 	include ('intro.php');
 	die();
 }

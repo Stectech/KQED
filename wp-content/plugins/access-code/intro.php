@@ -14,7 +14,7 @@
 
 <body <?php body_class(); ?>>
 <body class="intro-page">
-	
+
 	<div class="siteintro-wrapper">
 		<!-- Intro-Overlay -->
 		<div class="overlay intro-overlay">
@@ -66,7 +66,19 @@
 					<form method='post'>
 						<input class='input_email' type='text' name='access_email' size='32' placeholder="ACCESS CODE" />
 						<input type='submit' class='input_submit' name='Submit' value="<?php get_option('prompt_submit') ?>">
+
+						<?php
+						if ($error_message == NULL) {
+							//echo get_option('prompt_email');
+						}
+						else {
+							echo $error_message; 
+						}
+						?>
+
 					</form>
+
+
 					<div class="forgot">
 						<p><a href="mailto:mhealy@kqed.org">Forgot your password?</a></p>
 						<p><a href="mailto:mhealy@kqed.org">Need a password? Contact us here.<a/></p>
