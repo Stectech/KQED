@@ -242,10 +242,6 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
         max-width: 72%;
     }
 
-    body .progressintro-wrapper .items-wrapper ul li a {
-        border-bottom: 2px solid #000;
-    }
-
     body .progressintro-wrapper .additionalinfo-wrapper .single-box {
         padding: 29px;
         margin-right: -10%;
