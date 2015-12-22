@@ -4909,6 +4909,9 @@ a#menu-trigger .line-3-hover {
 	.footer-text p{
 		font-size: 24px;
 	}
+	body{
+		padding-top: 70px;
+	}
 }
 
 @media screen and (max-width: 400px) {
