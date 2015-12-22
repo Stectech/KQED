@@ -38,7 +38,7 @@
 				<p>Our audience is changing. A focus on innovation will keep us ahead of the curve.</p>
 
 				<div class="section img-box">
-					<a href="http://matter.vc/" class="image-link" target="_blank">
+					<a href="#" class="image-link" id="hostedvideo-trigger" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media.jpg" alt="media" />
 					</a>
 				</div>

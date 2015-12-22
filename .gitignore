@@ -10,3 +10,5 @@ wp-content/uploads/*
 wp-content/themes/kqed/html-files/media/*
 
 .htaccess
+
+wp-content/themes/kqed/img/KQED-x-Matter-v4.m4v

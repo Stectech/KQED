@@ -183,7 +183,7 @@ $(document).ready(function() {
 		}
 	});
 
-	//============== ProgressIntro-Section ==============//
+//============== ProgressIntro-Section ==============//
 	var $detNo = $(this).attr('data-counter'), 
 	$imgNo = $('.progressintro-wrapper .backgrounds-wrapper img').attr('data-img'),
 
@@ -313,8 +313,15 @@ $(document).ready(function() {
 		return false;
 	});
 
-	
+	$('#hostedvideo-trigger').click(function(){
+		$.fancybox.open({
+			padding: 0,
+			content: "<video width='auto' height='auto' controls='controls' preload='none' id='hosted-video' autoplay><source src='http://demo.stectech.com/kqed/wp-content/themes/kqed/img/KQED-x-Matter-v4.m4v' type='video/mp4' /></video>",
+			type: "html"
+		});
 
+		return false;
+	});
 
 
 	//======= Video =======//
