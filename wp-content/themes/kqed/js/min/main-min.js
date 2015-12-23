@@ -324,7 +324,7 @@ $(document).ready(function() {
 	});
 
 
-	//======= Video =======//
+	//======= Video & Audio =======//
 	if ( $( ".atf-section video" ).length ) {
 		var inview = new Waypoint.Inview({
 			element: $('.atf-section video')[0],
@@ -358,7 +358,7 @@ $(document).ready(function() {
 		$('.atf-section #mute-btn i.fa-volume-up').toggle();
 		$('.atf-section #mute-btn i.fa-volume-off').toggle();
 
-		 $(".atf-section video").prop('muted', !$(".atf-section video").prop('muted'));
+		 $(".atf-section video, #splash-audio").prop('muted', !$(".atf-section video, #splash-audio").prop('muted'));
 
 		 return false;
 	});
