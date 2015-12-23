@@ -86,6 +86,21 @@
   
 </script>
 
+<?php if ( is_front_page() ) : ?>
+<script type="text/javascript">
+$(document).ready(function() {
+	setInterval(function(){ 
+		var ctime = $('.atf-section video').get(0).currentTime;
+		var ctime = Math.round(ctime);
+		if(ctime == 46){
+			$('.atf-section video').get(0).pause();
+			$('.atf-section .container #replay-btn').fadeIn(500);
+		}
+	},1000);
+});
+</script>
+<?php endif; ?>
+
 </body>
 </html>
 
