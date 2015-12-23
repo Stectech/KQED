@@ -84,6 +84,7 @@ $(document).ready(function() {
 		$('.intro-slider').remove();
 		$(this).fadeOut();
 		$('.siteintro-wrapper .main-content').fadeIn();
+		document.getElementById('splash-audio').pause();
 
 		return false;
 	});
