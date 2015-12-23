@@ -338,7 +338,9 @@ $(document).ready(function() {
 	}
 
 	$('.atf-section #replay-btn').click(function(){
+		document.getElementById('homepage-video').currentTime = 0;
 		document.getElementById('homepage-video').play();
+		$(this).fadeOut(500);
 		return false
 	});
 
@@ -360,6 +362,17 @@ $(document).ready(function() {
 
 		 return false;
 	});
+
+	setInterval(function(){ 
+
+		var ctime = $('.atf-section video').get(0).currentTime;
+		var ctime = Math.round(ctime);
+		if(ctime == 46){
+			$('.atf-section video').get(0).pause();
+			$('.atf-section .container #replay-btn').fadeIn(500);
+		}
+
+	},1000);
 
 
 

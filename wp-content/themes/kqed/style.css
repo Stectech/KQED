@@ -2619,6 +2619,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	line-height: 20px;
 	padding: 15px 22px;
 	z-index: 1;
+	display: none;
 }
 .atf-section .container #replay-btn i{
 	font-size: 28px;
