@@ -20,7 +20,7 @@
 						?> -->
 <?php if ($error_message == NULL) { ?> 
 
-<audio id="splash-audio">
+<audio id="splash-audio" autoplay>
   <source src="<?php echo get_template_directory_uri(); ?>/img/57_full_human-evolution_0178.mp3" type="audio/mpeg">
 </audio>
 			
