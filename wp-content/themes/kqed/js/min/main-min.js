@@ -363,18 +363,6 @@ $(document).ready(function() {
 		 return false;
 	});
 
-	setInterval(function(){ 
-
-		var ctime = $('.atf-section video').get(0).currentTime;
-		var ctime = Math.round(ctime);
-		if(ctime == 46){
-			$('.atf-section video').get(0).pause();
-			$('.atf-section .container #replay-btn').fadeIn(500);
-		}
-
-	},1000);
-
-
 
 	//============== Responsive Navigation Menu ==============//
 	$('#menu-trigger').click(function(){
