@@ -3824,7 +3824,7 @@ footer h3{
 .siteintro-wrapper .skip-btn {
 	position: absolute;
 	right: 5%;
-	bottom: 0;
+	bottom: 55px;
 	z-index: 20;
 }
 
