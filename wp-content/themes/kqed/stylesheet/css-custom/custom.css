@@ -392,9 +392,9 @@ outline: none;
 @media screen and (min-width: 580px) {
     div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
         right: 7px;
-        top: 1px;
+        top: 0px;
         width: 91px;
-        height: 61px;
+        height: 62px;
         background-size: 92px;
     }
 }
