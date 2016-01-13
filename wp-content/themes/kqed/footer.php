@@ -29,11 +29,11 @@
 				</div>
 			</div>
 		<?php endif; ?>
-		<?php if ( is_front_page() ) : ?>
-			<div class='container footer-text'>
+		<div class='container footer-text'>
+			<?php if ( is_page('vision') ) : ?>
 				<p>Find out how we’ll do this through our Campaign 21 initiative.</p>
-			</div>
-		<?php endif; ?>
+			<?php endif; ?>
+		</div>
 		
 
 		<?php if ( $linkname ) : ?>
