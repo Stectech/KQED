@@ -513,6 +513,9 @@ $(document).ready(function() {
 		}
 
 	});
+	$('.homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 a').click(function(){
+		event.preventDefault();
+	});
 
 
 //======= SmartURL Functionality =======//

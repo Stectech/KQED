@@ -2733,6 +2733,7 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 
 .homepage-boxes .container .col .initial-overlay .overlay-inner-wrapper h3 a{
 	text-shadow: 0px 20px 25px #000;
+	cursor: default;
 }
 
 .homepage-boxes .container .col .second-overlay {
