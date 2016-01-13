@@ -455,7 +455,11 @@ div.footer-text p {
     color: #00a7ce;
 }
 
-
+.right-side .col.span_12,
+.left-side .col.span_12 {
+    background-size: 100%;
+    background-position-y: -20px;
+}
 
 
 
