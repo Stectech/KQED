@@ -4251,6 +4251,12 @@ a#menu-trigger .line-3-hover {
 	header .container .nav-menu-wrapper ul.nav-menu li a {
 		font-size: 20px;
 	}
+	header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
+    font-size: 21px;
+}
+	header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
+		font-size: 21px;
+	}
 	.containerv2, .container {
 		padding: 0 10%;
 	}
