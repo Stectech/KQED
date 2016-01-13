@@ -44,7 +44,7 @@
 
 				<li>
 					<div class="inner-wrapper">
-						<h3>Yous</h3>
+						<h3>You</h3>
 					</div>
 				</li>
 				<li>
