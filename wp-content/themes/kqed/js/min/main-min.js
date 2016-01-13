@@ -480,7 +480,7 @@ $(document).ready(function() {
 	 	$('.atf-section .container.onmobile #scrolldown-btn').css('display', 'block');
 
 		$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').show();
-	 	
+
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
@@ -539,6 +539,18 @@ $(document).ready(function() {
 		}
 
 	}
+
+//======= Open External Links =======//
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   if(!a.test(this.href)) {
+       $(this).click(function(event) {
+           event.preventDefault();
+           event.stopPropagation();
+           window.open(this.href, '_blank');
+       });
+   }
+});
 
 
 });
