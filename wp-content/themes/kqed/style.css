@@ -2640,6 +2640,13 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 	width: 50px;
 	z-index: 1;
 }
+.atf-section .container.onmobile{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 14%;
+	z-index: 99;
+}
 .atf-section .container.onmobile #scrolldown-btn{
 	display: none;
 }
