@@ -20,10 +20,13 @@ $video_webm = get_field( "video_webm", $post->ID );
 		<source src="<?php echo $video_webm['url'] ?>#t=1,100" type="video/webm"/>
 		<source src="<?php echo $video_mov['url'] ?>#t=1,100" type="video/mp4"/>
 	</video>
-	<div class="container">
+	<div class="container desktop">
 		<a href="#" id="scrolldown-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/scroll-arrow.png" alt="scroll down" /></a>
 		<a href="#" id="replay-btn">Replay <i class="fa fa-repeat"></i></a>
 		<a href="#" id="mute-btn"><i class="fa fa-volume-up"></i><i class="fa fa-volume-off"></i></a>
+	</div>
+	<div class="container onmobile">
+		<a href="#" id="scrolldown-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/scroll-arrow.png" alt="scroll down" /></a>
 	</div>
 </section>
 

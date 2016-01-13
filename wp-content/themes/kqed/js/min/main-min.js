@@ -468,6 +468,8 @@ $(document).ready(function() {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').hide();
 		 	$(this).children('.second-overlay').toggle();
+		 	$('.atf-section .container.desktop').hide();
+		 	$('.atf-section .container.onmobile').show();
 
 		 	return false;
 		});
