@@ -451,8 +451,9 @@ outline: none;
    padding: 0 17%;
 }
 
-
-
+div.footer-text p {
+    color: #00a7ce;
+}
 
 
 
