@@ -41,9 +41,10 @@
 		<!-- Intro-Slider -->
 		<div class="intro-slider">
 			<ul class="slides">
+
 				<li>
 					<div class="inner-wrapper">
-						<h3>You</h3>
+						<h3>Yous</h3>
 					</div>
 				</li>
 				<li>
@@ -79,7 +80,13 @@
 				<li>
 					<div class="inner-wrapper">
 						<h2>Welcome to <br> the future.</h2>
-						<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
+						<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
+					</div>
+				</li>
+				<li>
+					<div class="inner-wrapper">
+						<h2>Welcome to <br> the future.</h2>
+						<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
 					</div>
 				</li>
 			</ul>
@@ -127,7 +134,7 @@
 			<ul class="slides">
 				<li>
 					<div class="inner-wrapper">
-						<h3>You</h3>
+						<h3>Yous</h3>
 					</div>
 				</li>
 				<li>
@@ -153,6 +160,16 @@
 				<li>
 					<div class="inner-wrapper">
 						<h3>and believe media can build a more informed, connected and empowered society.</h3>
+					</div>
+				</li>
+				<li>
+					<div class="inner-wrapper">
+						<h3>You are KQEDa.</h3>
+					</div>
+				</li>
+				<li>
+					<div class="inner-wrapper">
+						<h3>You are KQEDb.</h3>
 					</div>
 				</li>
 				<li>
