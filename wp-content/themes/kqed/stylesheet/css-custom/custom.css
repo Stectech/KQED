@@ -461,7 +461,7 @@ div.footer-text p {
     background-position-y: -20px;
 }
 
-col.span_6.image-side {
+.col.span_6.image-side {
     overflow: hidden;
     height: 456px;
 }
