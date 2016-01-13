@@ -442,6 +442,12 @@ outline: none;
 }
 
 
+/** bug fixes css **/
+.homepage-content .container div.entry-content h2 {
+    font-size: 120px;
+}
+
+
 
 
 
