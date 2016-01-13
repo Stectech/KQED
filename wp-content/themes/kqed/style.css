@@ -4917,6 +4917,9 @@ a#menu-trigger .line-3-hover {
 	body{
 		padding-top: 70px;
 	}
+	.atf-section .container #scrolldown-btn{
+	    bottom: 14%;
+	}
 }
 
 @media screen and (max-width: 400px) {
