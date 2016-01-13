@@ -466,6 +466,10 @@ div.footer-text p {
     height: 456px;
 }
 
+.innerslider-wrapper #future-slider ul li:nth-child(4) .image-side img {
+    height: auto !important;
+    margin-top: -120px !important;
+}
 
 
 
