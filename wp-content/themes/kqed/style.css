@@ -4559,7 +4559,7 @@ a#menu-trigger .line-3-hover {
 	.homepage-content .container p, .page-content p {
 		line-height: 27px;
 	}
-	.homepage-content .container p{
+	.homepage-content .container p, .progressintro-wrapper .additionalinfo-wrapper .single-box ul li{
 	    line-height: 32px;
 	    font-size: 24px;
 	}
@@ -4670,7 +4670,7 @@ a#menu-trigger .line-3-hover {
 		font-size: 34px;
 		margin: 30px 0 40px;
 	}
-	.homepage-content .container p, .page-content p {
+	.homepage-content .container p, .page-content p, .progressintro-wrapper .additionalinfo-wrapper .single-box ul li{
 		font-size: 20px;
 	    line-height: 32px;
 	}
@@ -4840,7 +4840,7 @@ a#menu-trigger .line-3-hover {
 }
 
 @media screen and (max-width: 480px) {
-	.homepage-boxes .container .col .second-overlay p {
+	.homepage-boxes .container .col .second-overlay p{
 		font-size: 14px;
 	}
 	.cascadeboxes-wrapper .single-box .overlay h3 {
@@ -4875,7 +4875,7 @@ a#menu-trigger .line-3-hover {
 	.su-spoiler-icon{
 		top: -20px !important;
 	}
-	.homepage-content .container p, .page-content p{
+	.homepage-content .container p, .page-content p, .progressintro-wrapper .additionalinfo-wrapper .single-box ul li{
 		font-size: 18px !important;
 	    line-height: 24px;
 	}
@@ -5074,7 +5074,7 @@ a#menu-trigger .line-3-hover {
 	    line-height: 40px;
 	    font-size: 42px;
 	}
-	.homepage-content .container p, .page-content p {
+	.homepage-content .container p, .page-content p, .progressintro-wrapper .additionalinfo-wrapper .single-box ul li{
 	    font-size: 14px !important;
 	    line-height: 22px;
 	}
