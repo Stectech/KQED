@@ -44,9 +44,9 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>KQED Lab: This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment.</li>
-					<li>Product Team: This team will design, build, deliver and maintain online and mobile experiences for KQED audiences.</li>
-					<li>Operational Alignment Systems: Innovation in business operations systems and a centralization of digital assets to accommodate staff expansion.</li>
+					<li><b>KQED Lab:</b> This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment.</li>
+					<li><b>Product Team:</b> This team will design, build, deliver and maintain online and mobile experiences for KQED audiences.</li>
+					<li><b>Operational Alignment Systems:</b> Innovation in business operations systems and a centralization of digital assets to accommodate staff expansion.</li>
 				</ul>
 			</div>
 
@@ -77,8 +77,8 @@
 
 				<h3>Opportunities for Investment</h3>
 				<ul>
-					<li>Future of You: A multimedia initiative focusing on the booming trend of individuals using big data and technology to track, manage and improve illness and health risks.</li>
-					<li>Science eBooks: KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
+					<li><b>Future of You:</b> A multimedia initiative focusing on the booming trend of individuals using big data and technology to track, manage and improve illness and health risks.</li>
+					<li><b>Science eBooks:</b> KQED will produce and distribute multimedia resources that provide examples of real-world application of science and engineering, and careers in those fields.</li>
 				</ul>
 			</div>
 
@@ -107,10 +107,10 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>KQED Education Expansion: KQED Education will expand the reach and impact of KQED in the Bay Area education market and become a key contributor to the national movement — through our engaging, Bay Area — based media that deepens learning through media making — to improve educational experiences and outcomes for youth.</li>
-					<li>Science Education: KQED Science Education serves formal and informal science educators and learners in the Bay Area and beyond and promotes STEM learning in grades 6-12 and college.</li>
-					<li>News Education: Educational work embedded in KQED News that seeks to engage young people in considering how major issues that face our communities, our state, our country and our world apply to and impact their lives and how they can be engaged in community and civic life now and in the future.</li>
-					<li>Professional Learning for Educators: KQED Education will enhance and expand Professional Learning services for educators, with an emphasis on building communities of educator leaders and piloting innovative products in the Bay Area.</li>
+					<li><b>KQED Education Expansion:</b> KQED Education will expand the reach and impact of KQED in the Bay Area education market and become a key contributor to the national movement — through our engaging, Bay Area — based media that deepens learning through media making — to improve educational experiences and outcomes for youth.</li>
+					<li><b>Science Education:</b> KQED Science Education serves formal and informal science educators and learners in the Bay Area and beyond and promotes STEM learning in grades 6-12 and college.</li>
+					<li><b>News Education:</b> Educational work embedded in KQED News that seeks to engage young people in considering how major issues that face our communities, our state, our country and our world apply to and impact their lives and how they can be engaged in community and civic life now and in the future.</li>
+					<li><b>Professional Learning for Educators:</b> KQED Education will enhance and expand Professional Learning services for educators, with an emphasis on building communities of educator leaders and piloting innovative products in the Bay Area.</li>
 				</ul>
 			</div>
 
@@ -142,10 +142,10 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>Arts Desk: KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts resource.</li>
-					<li>Main Stage: An online showcase of Bay Area artists that bring music, performances and visual arts to you.</li>
-					<li>Art School: Features artist interviews and how-to videos that reveal new ways to get creative and learn about art.</li>
-					<li>Do List: KQED Arts scours the Bay Area for superb and surprising performing arts events, with an eye for local talent, new discoveries, and exciting opportunities across the price spectrum.</li>
+					<li><b>Arts Desk:</b> KQED Arts mission is to illuminate the centrality of the arts to the civic and cultural vitality of the Bay Area.  This is accomplished by expanding the range of voices on our community source blogs and utilizing web-based print, audio, video, radio and television to become the Bay Area's indispensable arts resource.</li>
+					<li><b>Main Stage:</b> An online showcase of Bay Area artists that bring music, performances and visual arts to you.</li>
+					<li><b>Art School:</b> Features artist interviews and how-to videos that reveal new ways to get creative and learn about art.</li>
+					<li><b>Do List:</b> KQED Arts scours the Bay Area for superb and surprising performing arts events, with an eye for local talent, new discoveries, and exciting opportunities across the price spectrum.</li>
 				</ul>
 			</div>
 
@@ -172,8 +172,8 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>California Politics and Government Desk: This Desk delivers coverage for breaking news and long-lead enterprise reporting while providing much-needed context, analysis and accountability for decisions of California officials.</li>
-					<li>Silicon Valley News Desk: A multi-platform news unit based in KQED’s Silicon Valley (San Jose) office producing daily and enterprise stories on key South Bay/Silicon Valley issues, including: local government, economics, tech, immigration & transportation.</li>
+					<li><b>California Politics and Government Desk:</b> This Desk delivers coverage for breaking news and long-lead enterprise reporting while providing much-needed context, analysis and accountability for decisions of California officials.</li>
+					<li><b>Silicon Valley News Desk:</b> A multi-platform news unit based in KQED’s Silicon Valley (San Jose) office producing daily and enterprise stories on key South Bay/Silicon Valley issues, including: local government, economics, tech, immigration & transportation.</li>
 				</ul>
 			</div>
 
@@ -200,8 +200,8 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>Bay Curious: We collect questions about any Bay Area topic that tickles your fancy. The community chooses which question they most want answered and KQED reporters investigate the story with your help.</li>
-					<li>KQED Pop: A daily blog that critically examines the social and cultural impact of music, movies, television, advertisements, fashion, the internet and all the other collective experiences that make us laugh, cringe and cry.</li>
+					<li><b>Bay Curious:</b> We collect questions about any Bay Area topic that tickles your fancy. The community chooses which question they most want answered and KQED reporters investigate the story with your help.</li>
+					<li><b>KQED Pop:</b> A daily blog that critically examines the social and cultural impact of music, movies, television, advertisements, fashion, the internet and all the other collective experiences that make us laugh, cringe and cry.</li>
 				</ul>
 			</div>
 
@@ -228,7 +228,7 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>Audience Insights & Ingenuity Team: A centralized team of research professionals dedicated to providing a 360 degree view of KQED's audience base with a focus on donor conversion and retention, across analytics, CRM, ratings, and research.</li>
+					<li><b>Audience Insights & Ingenuity Team:</b> A centralized team of research professionals dedicated to providing a 360 degree view of KQED's audience base with a focus on donor conversion and retention, across analytics, CRM, ratings, and research.</li>
 				</ul>
 			</div>
 
@@ -253,9 +253,9 @@
 				</div>
 				<h3>opportunities for investment</h3>
 				<ul>
-					<li>Dalet: While KQED has moved to digital creation of all content, the systems that enable that content creation do not allow easy management of the content across platforms. Once implemented, the Dalet digital asset and production system will increase our efficiency and ability to utilize content across media platforms.</li>
-					<li>Building renovation: As KQED expands, the development of a master space plan will be developed in order to increase seating capacity and to maximize the space in our current San Francisco location.</li>
-					<li>Digitizing media assets: A system that will allow us to preserve historical content, and be able to more efficiently use the digitized media assets for future productions.</li>
+					<li><b>Dalet:</b> While KQED has moved to digital creation of all content, the systems that enable that content creation do not allow easy management of the content across platforms. Once implemented, the Dalet digital asset and production system will increase our efficiency and ability to utilize content across media platforms.</li>
+					<li><b>Building renovation:</b> As KQED expands, the development of a master space plan will be developed in order to increase seating capacity and to maximize the space in our current San Francisco location.</li>
+					<li><b>Digitizing media assets:</b> A system that will allow us to preserve historical content, and be able to more efficiently use the digitized media assets for future productions.</li>
 				</ul>
 			</div>
 		</div>
