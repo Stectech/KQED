@@ -94,7 +94,7 @@
 
 		<div class="main-content">
 			<div class="inner-wrapper">
-				<h3 class="last">Start exploring now <br/> enter your password to get started.</h3>
+				<h3 class="last">Start exploring now. <br/> Enter your password to get started.</h3>
 				<div class="content-wrapper">
 					
 					<form method='post'>
