@@ -478,6 +478,9 @@ $(document).ready(function() {
 		$('.atf-section .container.desktop').hide();
 	 	$('.atf-section .container.onmobile').show();
 	 	$('.atf-section .container.onmobile #scrolldown-btn').css('display', 'block');
+
+		$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').show();
+	 	
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
@@ -495,10 +498,6 @@ $(document).ready(function() {
 	
 	var height = $(window).height();
 	var width = $(window).width();
-
-	if(isMobile.any() && width>height) {
-		$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').show();
-	}
 
 	$(window).resize(function () {
 		var height = $(window).height();

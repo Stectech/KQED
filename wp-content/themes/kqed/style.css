@@ -4931,6 +4931,16 @@ a#menu-trigger .line-3-hover {
 	.atf-section .container #scrolldown-btn{
 	    bottom: 14%;
 	}
+	.homepage-boxes .container .col .second-overlay p{
+		padding: 7% 3% 0;
+	}
+	.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn{
+		width: 25px;
+		height: 25px;
+		line-height: 23px;
+		top: 5px;
+		font-size: 13px;
+	}
 }
 
 @media screen and (max-width: 400px) {
