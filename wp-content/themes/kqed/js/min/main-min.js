@@ -468,11 +468,12 @@ $(document).ready(function() {
 		$(".homepage-boxes .container .col").bind('tap', function(e){
 		 	$(this).siblings().children('.second-overlay').hide();
 		 	$(this).children('.second-overlay').toggle();
-		 	$('.atf-section .container.desktop').hide();
-		 	$('.atf-section .container.onmobile').show();
 
 		 	return false;
 		});
+		$('.atf-section .container.desktop').hide();
+	 	$('.atf-section .container.onmobile').show();
+	 	$('.atf-section .container.onmobile #scrolldown-btn').css('display', 'block');
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
 		 	$(this).children('.second-overlay').toggleClass('active');
