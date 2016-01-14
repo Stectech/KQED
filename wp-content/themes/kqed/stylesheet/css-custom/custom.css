@@ -488,4 +488,10 @@ header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
     font-size: 16px !important;
 }
 
+span.welcome {
+    font-size: 90px;
+    padding: 0 5%;
+    text-shadow: -1px 1px 7px #000;
+}
+
 

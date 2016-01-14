@@ -79,14 +79,19 @@
 				</li>
 				<li>
 					<div class="inner-wrapper">
-						<h2>Welcome to <br> the future.</h2>
-						<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
+						
+						<h3>
+							<span class="welcome">Welcome to the future. </span> <br>
+							KQED is transforming today to meet the needs of tomorrow’s Bay Area.
+						</h3>
 					</div>
 				</li>
 				<li>
 					<div class="inner-wrapper">
-						<h2>Welcome to <br> the future.</h2>
-						<h3>KQED is transforming today to meet the needs of tomorrow’s Bay Area.</h3>
+						<h3 class="welcome">Welcome to the future. </h3> 
+						<h3>
+							KQED is transforming today to meet the needs of tomorrow’s Bay Area.
+						</h3>
 					</div>
 				</li>
 			</ul>
