@@ -316,6 +316,7 @@ $(document).ready(function() {
 	$('#hostedvideo-trigger').click(function(){
 		$.fancybox.open({
 			padding: 0,
+			width: '300',
 			content: "<video width='auto' height='auto' controls='controls' preload='none' id='hosted-video' autoplay><source src='http://demo.stectech.com/kqed/wp-content/themes/kqed/img/KQED-x-Matter-v4.m4v' type='video/mp4' /></video>",
 			type: "html"
 		});
