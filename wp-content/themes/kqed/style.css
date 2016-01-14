@@ -4060,7 +4060,7 @@ a#menu-trigger .line-3-hover {
 }
 
 /******** Media-queries ********/
-span.welcome {
+.main-content .inner-wrapper .content-wrapper h3 span.welcome {
     font-size: 90px;
     padding: 0 5%;
     text-shadow: -1px 1px 7px #000;
@@ -4730,8 +4730,13 @@ span.welcome {
 		font-size: 50px;
 	}
 	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
-		font-size: 34px;
-		line-height: 40px;
+		font-size: 30px;
+	    line-height: 34px;
+	}
+	.main-content .inner-wrapper .content-wrapper h3 span.welcome{
+		font-size: 48px;
+		line-height: 50px;
+		display: block;
 	}
 	.siteintro-wrapper {
 	    background-position-x: -206px;
