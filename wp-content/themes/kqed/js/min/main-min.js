@@ -474,6 +474,7 @@ $(document).ready(function() {
 		 	$(this).children('.second-overlay').addClass('active');
 
 		 	return false;
+
 		});
 
 		$('.atf-section .container.desktop').hide();
@@ -481,6 +482,8 @@ $(document).ready(function() {
 	 	$('.atf-section .container.onmobile #scrolldown-btn').css('display', 'block');
 
 		$('.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn').show();
+
+		$('video').attr('controls', 'true');
 
 	}else{
 		$(".homepage-boxes .container .col").hover(function(){
