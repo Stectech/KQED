@@ -542,7 +542,7 @@ $(document).ready(function() {
 	}
 
 //======= Open External Links =======//
-$('a').each(function() {
+$('footer .container .bold-link').each(function() {
    var a = new RegExp('/' + window.location.host + '/');
    if(!a.test(this.href)) {
        $(this).click(function(event) {
