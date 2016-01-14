@@ -3451,8 +3451,14 @@ footer h3{
     z-index: 10;
     display: none;
 }
-.investors-wrapper .details-v3[data-counter='3']{
-	display: none;
+.right-side .col.span_12[data-counter='6']{
+	background-position-y: -80px;
+}
+.right-side .col.span_12[data-counter='5']{
+	background-position-y: 0px;
+}
+.left-side .col.span_12[data-counter='3'] {
+	background-position-y: -190px;
 }
 
 /**************** ProgressIntro-Section ****************/
@@ -4247,6 +4253,9 @@ a#menu-trigger .line-3-hover {
 		font-size: 74px;
 		line-height: 70px;
 	}
+	.left-side .col.span_12[data-counter='3'] {
+	    background-position-y: -100px;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -4387,6 +4396,9 @@ a#menu-trigger .line-3-hover {
 	}
 	header .container .nav-menu-wrapper {
 		margin: 5px 0px 0;
+	}
+	.left-side .col.span_12[data-counter='3'] {
+	    background-position-y: 90%;
 	}
 }
 
@@ -4869,6 +4881,9 @@ a#menu-trigger .line-3-hover {
 	.innerslider-wrapper #future-slider .flex-control-nav {
 		bottom: 25px;
 	}
+	.right-side .col.span_12[data-counter='6'] {
+		background-position-y: -40px;
+	}
 }
 @media screen and (max-width: 520px) {
 	.investors-wrapper .col h4 {
@@ -5246,6 +5261,21 @@ a#menu-trigger .line-3-hover {
 	}
 	.right-side .col.span_12, .left-side .col.span_12{
 		background-position-y: 0px;
+	}
+	.right-side .col.span_12[data-counter='6']{
+		background-position-y: 0px;
+	}
+	.left-side .col.span_12[data-counter='3']{
+		background-position-y: 0;
+	}
+	.col.span_6.image-side{
+		height: 200px;
+	}
+	.col.span_6.image-side img{
+		height: 200px;
+	}
+	.innerslider-wrapper #future-slider ul li .image-side img{
+		height: 200px;
 	}
 }
 
