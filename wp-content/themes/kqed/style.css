@@ -2896,6 +2896,7 @@ footer .footer-bar .container .footer-link a {
 	height: 440px;
 	position: relative;
 	background-position: center;
+	margin-top: 0;
 }
 
 .timelinevideo-section .inner-wrapper .play-btn{
