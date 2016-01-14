@@ -4853,6 +4853,7 @@ a#menu-trigger .line-3-hover {
 @media screen and (max-width: 520px) {
 	.investors-wrapper .col h4 {
 		font-size: 18px;
+		padding: 0 15%;
 	}
 	.investors-wrapper .details-v3 p {
 		font-size: 16px;
@@ -5222,6 +5223,9 @@ a#menu-trigger .line-3-hover {
 	}
 	.homepage-boxes .container .col .second-overlay p{
 		padding: 4% 3% 0;
+	}
+	.right-side .col.span_12, .left-side .col.span_12{
+		background-position-y: 0px;
 	}
 }
 
