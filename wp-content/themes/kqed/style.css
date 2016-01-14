@@ -5188,6 +5188,10 @@ a#menu-trigger .line-3-hover {
 		position: relative;
 		top: 60px;
 	}
+	.main-content .inner-wrapper h3{
+		margin-top: 10px;
+		font-size: 28px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
