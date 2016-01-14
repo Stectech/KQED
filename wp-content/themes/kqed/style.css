@@ -3451,6 +3451,9 @@ footer h3{
     z-index: 10;
     display: none;
 }
+.investors-wrapper .details-v3[data-counter='3']{
+	display: none;
+}
 
 /**************** ProgressIntro-Section ****************/
 .progressintro-wrapper {
@@ -4405,7 +4408,7 @@ a#menu-trigger .line-3-hover {
 		line-height: 34px;
 	}
 	.innerslider-wrapper #future-slider ul li .image-side img{
-		height: 400px;
+		/*height: 400px;*/
 	}
 	.innerslider-wrapper #future-slider ul li .text-side h4 {
 		font-size: 42px;
@@ -4656,6 +4659,9 @@ a#menu-trigger .line-3-hover {
 		line-height: 34px;
 		font-size: 28px;
 	}
+	.col.span_6.image-side{
+		height: auto;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4859,6 +4865,9 @@ a#menu-trigger .line-3-hover {
 	}
 	.cascadeboxes-wrapper .details-v2 .container .col .accordion{
 	    margin: 20px 0;
+	}
+	.innerslider-wrapper #future-slider .flex-control-nav {
+		bottom: 25px;
 	}
 }
 @media screen and (max-width: 520px) {

@@ -467,8 +467,8 @@ div.footer-text p {
 }
 
 .innerslider-wrapper #future-slider ul li:nth-child(4) .image-side img {
-    height: auto !important;
-    margin-top: -120px !important;
+   /* height: auto !important;
+    margin-top: -120px !important;*/
 }
 
 ul li b {
