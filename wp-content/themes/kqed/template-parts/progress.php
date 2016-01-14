@@ -40,6 +40,7 @@
 				<div class="section img-box">
 					<a href="#" class="image-link" id="hostedvideo-trigger" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media.jpg" alt="media" />
+						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
 				</div>
 				<h3>opportunities for investment</h3>
