@@ -5209,6 +5209,9 @@ a#menu-trigger .line-3-hover {
 	.siteintro-wrapper .intro-slider ul li .inner-wrapper{
 		margin-top: 0;
 	}
+	div.overlay.second-overlay .inner-wrapper{
+		margin-top: 0 !important;
+	}
 }
 
 @media screen and (max-width: 1200px) {
