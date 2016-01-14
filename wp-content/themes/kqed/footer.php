@@ -92,7 +92,7 @@ $(document).ready(function() {
 	setInterval(function(){ 
 		var ctime = $('.atf-section video').get(0).currentTime;
 		var ctime = Math.round(ctime);
-		if(ctime == 46){
+		if(ctime == 48){
 			$('.atf-section video').get(0).pause();
 			$('.atf-section .container #replay-btn').fadeIn(500);
 		}
