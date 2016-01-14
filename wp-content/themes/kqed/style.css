@@ -4060,6 +4060,11 @@ a#menu-trigger .line-3-hover {
 }
 
 /******** Media-queries ********/
+span.welcome {
+    font-size: 90px;
+    padding: 0 5%;
+    text-shadow: -1px 1px 7px #000;
+}
 @media screen and (min-width: 1180px) {
 	.progressintro-wrapper .items-wrapper ul li a br{
 		display: none;
