@@ -3778,6 +3778,17 @@ footer h3{
 	max-height: 100%;
 }
 
+.progressintro-wrapper .additionalinfo-wrapper .single-box::-webkit-scrollbar{
+	background: #eee;
+}
+.progressintro-wrapper .additionalinfo-wrapper .single-box{
+	scrollbar-face-color: #cede00;
+}
+.progressintro-wrapper .additionalinfo-wrapper .single-box::-webkit-scrollbar-thumb {
+	background: #cede00;
+}
+
+
 /**************** TodaysKQED-Section ****************/
 .todayskqed-section {
 	margin-top: 150px;
