@@ -484,4 +484,8 @@ ul li b {
     font-weight: lighter !important;
 }
 
+header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
+    font-size: 16px !important;
+}
+
 
