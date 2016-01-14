@@ -480,4 +480,8 @@ ul li b {
 }
 
 
+.su-spoiler-content.su-clearfix p strong, .su-spoiler-content.su-clearfix p b {
+    font-weight: lighter !important;
+}
+
 
