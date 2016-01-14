@@ -320,7 +320,7 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
 
 @media only screen and (max-width: 320px) {
     .inner-wrapper {
-        margin-top: 90px;
+        margin-top: 0px;
     }
 
     .main-content .inner-wrapper .content-wrapper form input[type='text'] {
