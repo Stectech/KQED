@@ -292,6 +292,13 @@ header .container .nav-menu-wrapper ul.mobile-menu, .home header .container .nav
     .su-spoiler-content.su-clearfix {
         font-size: 16px;
     }
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 0px;
+        width: 105px;
+        height: 75px;
+        background-size: 114px;
+    }
 }
 
 @media only screen and (min-width: 1201px) {
