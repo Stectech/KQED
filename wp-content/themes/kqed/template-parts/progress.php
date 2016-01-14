@@ -170,6 +170,7 @@
 					</a>
 					<a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226502693&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" data-fancybox-type="iframe" class="fancybox various image-link">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-9.jpg" alt="media" />
+						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
 				</div>
 				<h3>opportunities for investment</h3>
