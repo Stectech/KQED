@@ -5212,6 +5212,15 @@ a#menu-trigger .line-3-hover {
 	div.overlay.second-overlay .inner-wrapper{
 		margin-top: 0 !important;
 	}
+	.homepage-boxes .container .col .second-overlay .inner-wrapper .close-btn{
+		width: 20px;
+		height: 20px;
+		line-height: 15px;
+		font-size: 11px;
+	}
+	.homepage-boxes .container .col .second-overlay p{
+		padding: 4% 3% 0;
+	}
 }
 
 @media screen and (max-width: 1200px) {
