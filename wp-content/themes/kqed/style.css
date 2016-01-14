@@ -5188,7 +5188,7 @@ a#menu-trigger .line-3-hover {
 		position: relative;
 		top: 60px;
 	}
-	.main-content .inner-wrapper h3{
+	.main-content .inner-wrapper h3, .main-content .inner-wrapper h3.last{
 		margin-top: 10px;
 		font-size: 28px;
 	}
