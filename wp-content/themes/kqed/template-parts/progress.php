@@ -139,6 +139,7 @@
 					</a>
 					<a href="https://www.youtube.com/embed/11jeAum8vQo" class="lightbox fancybox.iframe image-link">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-7.jpg" alt="media" />
+						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
 				</div>
 				<h3>opportunities for investment</h3>
