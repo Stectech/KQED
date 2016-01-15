@@ -4674,6 +4674,11 @@ a#menu-trigger .line-3-hover {
 	.col.span_6.image-side{
 		height: auto;
 	}
+	.intro-error{
+		width: 96%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 }
 
 @media screen and (max-width: 760px) {
@@ -4997,6 +5002,9 @@ a#menu-trigger .line-3-hover {
 		line-height: 23px;
 		top: 5px;
 		font-size: 13px;
+	}
+	.main-content .inner-wrapper h3.last{
+		font-size: 32px;
 	}
 }
 
