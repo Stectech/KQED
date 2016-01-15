@@ -89,7 +89,7 @@
 				<li>
 					<div class="inner-wrapper">
 						<h3> 
-							<span class="welcome">Welcome to the future. </span> <br>
+							<span class="welcome">Welcome to<br>the future. </span> <br>
 							KQED is transforming today to meet the needs of tomorrow’s Bay Area.
 						</h3>
 					</div>
