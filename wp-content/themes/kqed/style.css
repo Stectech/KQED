@@ -2671,12 +2671,12 @@ header .container .nav-menu-wrapper ul.mobile-menu li.active-menu-item a {
 }
 .homepage-content .container h2 {
 	color: #00a7ce;
-	font-size: 154px;
 	text-align: center;
 	font-weight: 300;
 	letter-spacing: 5px;
-	line-height: 140px;
 	margin: 30px 0 140px;
+	font-size: 110px;
+    line-height: 100px;
 }
 
 .homepage-content .container h2:last-child {
@@ -4105,7 +4105,7 @@ span.welcome{
 
 @media only screen and (max-width: 1680px) {
 	.homepage-content .container h2 {
-		font-size: 120px;
+		font-size: 110px;
 		line-height: 100px;
 	}
 
