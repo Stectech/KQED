@@ -390,8 +390,8 @@ outline: none;
         right: 7px;
         top: 1px;
         width: 103px;
-        height: 71px;
-        background-size: 112px;
+        height: 62px;
+        background-size: 105px;
     }
 }
 
@@ -433,6 +433,17 @@ outline: none;
         text-shadow: -1px 1px 7px #000;
         display: block;
         margin-top: 150px;
+    }
+}
+
+
+@media screen and (max-width: 768px) and (min-width: 580px) {
+    div.main-content .inner-wrapper .content-wrapper form input[type="submit"] {
+        right: 7px;
+        top: 1px;
+        width: 103px !important;
+        height: 71px !important;
+        background-size: 112px !important;
     }
 }
 
