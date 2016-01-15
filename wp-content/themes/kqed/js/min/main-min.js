@@ -289,7 +289,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	if ($(window).width() > 900) {
+	if ($(window).width() > 1024) {
 		bigScreenClick();
 
 	} else {
