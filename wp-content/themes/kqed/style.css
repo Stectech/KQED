@@ -4513,7 +4513,7 @@ span.welcome{
 	}
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 	.progressintro-wrapper .additionalinfo-wrapper .single-box .inner-wrapper .close-btn {
 		display: block;
 	}
