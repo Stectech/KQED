@@ -4889,6 +4889,11 @@ a#menu-trigger .line-3-hover {
 	.right-side .col.span_12[data-counter='6'] {
 		background-position-y: -40px;
 	}
+	.intro-error{
+		width: 98%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
 }
 @media screen and (max-width: 520px) {
 	.investors-wrapper .col h4 {
