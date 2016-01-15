@@ -5172,6 +5172,15 @@ span.welcome{
 		width: 15px;
 		height: 15px;
 	}
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3 span.welcome{
+		font-size: 30px;
+		line-height: 40px;
+		padding-bottom: 0;
+	}
+	.siteintro-wrapper .intro-slider ul li .inner-wrapper h3, .main-content .inner-wrapper .content-wrapper h3{
+		font-size: 24px;
+		line-height: 28px;
+	}
 }
 
 /* Custom Breakpoints */
