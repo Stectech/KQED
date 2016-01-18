@@ -3426,7 +3426,7 @@ footer h3{
 .investors-wrapper .details-v3{
 	float: left;
 	width: 100%;
-	background-color: #000;
+	background-color: #fff;
 	padding: 5% 10% 6% 5%;
 	display: none;
 }
@@ -3436,7 +3436,7 @@ footer h3{
 	font-family: Adelle-Light;
 	line-height: 34px;
 	text-align: justify;
-	color: #fff;
+	color: #000;
 	margin: 0;
 }
 
