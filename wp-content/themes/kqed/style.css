@@ -2783,11 +2783,12 @@ footer .footer-bar .container p.copyright-note {
 	text-align: left;
 	color: #fff;
 	float: left;
+	margin: 20px 0;
 }
 
 footer .footer-bar .container .footer-link {
 	float: right;
-	margin-top: 23px;
+	margin: 20px 0;
 }
 
 footer .footer-bar .container .footer-link a {
@@ -5314,6 +5315,9 @@ span.welcome{
 	}
 	.innerslider-wrapper #future-slider ul li .image-side img{
 		height: 200px;
+	}
+	footer .container .bold-link{
+		font-size: 17px;
 	}
 }
 
