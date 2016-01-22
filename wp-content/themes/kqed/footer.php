@@ -25,7 +25,7 @@
 					<h3>WHY KQED? WHY NOW?</h3>
 				</div>
 				<div class="inner-wrapper" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/timelinevideo-bg.jpg)">
-					<a href="https://www.youtube.com/embed/5NV6Rdv1a3I" class="lightbox fancybox.iframe play-btn" class="play-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/timelinevideo-play-icon.png" alt="play button" /></a>
+					<a href="https://player.vimeo.com/video/152659437" class="lightbox fancybox.iframe play-btn" class="play-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/timelinevideo-play-icon.png" alt="play button" /></a>
 				</div>
 			</div>
 		<?php endif; ?>
