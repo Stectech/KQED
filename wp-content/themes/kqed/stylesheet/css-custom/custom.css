@@ -506,6 +506,8 @@ header .container .nav-menu-wrapper ul.mobile-menu li:last-child a {
     font-size: 16px !important;
 }
 
-
+.innerslider-wrapper #future-slider ul li .text-side {
+    height: 450px !important;
+}
 
 
