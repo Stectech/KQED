@@ -38,11 +38,12 @@
 				<p>Our audience is changing. A focus on innovation will keep us ahead of the curve.</p>
 
 				<div class="section img-box">
-					<a href="#" class="image-link" id="hostedvideo-trigger" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/innovation.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media.jpg" alt="media" />
 						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
 				</div>
+				
 				<h3>opportunities for investment</h3>
 				<ul>
 					<li><b>KQED Lab:</b> This internal venture will inspire and support exciting innovations and the testing of new ideas in content and revenue generation in order to be relevant and sustainable in a rapidly changing media environment.</li>
@@ -63,7 +64,7 @@
 				<p class="serif">New content and applications help put scientific discovery and environmental reporting at your fingertips.</p>
 				<p>KQED Science reveals and demystifies science, helping our audience better comprehend their world and inspire them with curiousity to learn more.  We will increase coverage of science, technology and engineering in the Bay Area, impressing its importance in our daily lives and the role each of us plays as questioners of the universe.</p>
 				<div class="section img-box">
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/science.html" id="custom-video-2" class="lightbox fancybox.iframe image-link">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/science.html" id="custom-video-2" class="lightbox fancybox.iframe image-link">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/video.jpg" alt="media" />
 						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
@@ -97,11 +98,11 @@
 				<p>Curious minds are nurtured in the classroom and inspired for a lifetime. KQED Education is a distinct and critical contributor to KQED’s public service mission, creating and disseminating unique, engaging educational content focused on accelerating learning for youth aged 11–24 in the Bay Area and beyond.</p>
 
 				<div class="section img-box">
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/educ1.html" class="lightbox fancybox.iframe image-link" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/educ1.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-3.jpg" alt="media" />
 						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/educ2.html" class="lightbox fancybox.iframe image-link" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/educ2.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-4.jpg" alt="media" />
 						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
@@ -197,7 +198,7 @@
 					<a href="http://ww2.kqed.org/news/series/baycurious" class="lightbox image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-10.jpg" alt="media" />
 					</a>
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/bayarea.html" class="lightbox fancybox.iframe image-link" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/bayarea.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-11.jpg" alt="media" />
 					</a>
 				</div>
@@ -225,7 +226,7 @@
 					<a class="image-link">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-12.jpg" alt="media" />
 					</a>
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/audience.html" class="lightbox fancybox.iframe image-link" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/audience.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-13.jpg" alt="media" />
 					</a>
 				</div>
@@ -249,7 +250,7 @@
 				<p>The need is undeniable. KQED must revolutionize our current technology and infrastructure in order to keep up with our changing audience.</p>
 
 				<div class="section img-box">
-					<a href="http://demo.stectech.com/kqed/wp-content/themes/kqed/html-files/tech.html" class="lightbox fancybox.iframe image-link" target="_blank">
+					<a href="<?php echo get_site_url(); ?>/wp-content/themes/kqed/html-files/tech.html" class="lightbox fancybox.iframe image-link" target="_blank">
 						<img src="<?php bloginfo('template_directory'); ?>/img/thumbnails/media-14.jpg" alt="media" />
 						<img src="<?php bloginfo('template_directory'); ?>/img/play-icon.png" alt="play icon" class="play-icon" />
 					</a>
