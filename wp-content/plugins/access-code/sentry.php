@@ -6,9 +6,12 @@ function fo_runSentry() {
 
 	// Define session key and start the session
 	define ('SESSION_KEY', md5(site_url()));
+	
 	//session_start();
 	//session_name('fo_session');
-	$wp_session = WP_Session::get_instance();
+	//$_COOKIE = WP_Session::get_instance();
+
+	setcookie('friends_only');
 
 	// Check for https
 	
@@ -27,11 +30,11 @@ function fo_runSentry() {
 	$request_path = parse_url($request_URI, PHP_URL_PATH); // e.g. "/gabesblog/my-trip-to-the-supermarket"
 
 	// If the sesion variable has already been set, then don't show the sentry
-	if ($wp_session['friends_only'] == SESSION_KEY) {
+	if ($_COOKIE['friends_only'] == SESSION_KEY) {
 		return;
 		}
 	else {
-		$wp_session['friends_only'] = 'Not authenticated';
+		$_COOKIE['friends_only'] = 'Not authenticated';
 	}
 
 	// If the user is logged in then don't show the sentry	
@@ -107,7 +110,9 @@ function fo_runSentry() {
 	  	}
 		else {
 			// set session variable if password was validated
-			$wp_session['friends_only'] = SESSION_KEY;
+			setcookie('friends_only', SESSION_KEY);
+
+			//$_COOKIE['friends_only'] = SESSION_KEY;
 
 			// Clear password protector variables
 			unset($_POST['access_login']);
