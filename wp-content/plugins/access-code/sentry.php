@@ -6,10 +6,10 @@ function fo_runSentry() {
 
 	// Define session key and start the session
 	define ('SESSION_KEY', md5(site_url()));
-	session_start();
-	session_name('fo_session');
+	//session_start();
+	//session_name('fo_session');
 	$wp_session = WP_Session::get_instance();
-	
+
 	// Check for https
 	
 	if (is_ssl()) {
