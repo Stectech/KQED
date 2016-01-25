@@ -17,8 +17,8 @@ $video_webm = get_field( "video_webm", $post->ID );
 <!-- ATF-Section -->
 <section class="atf-section">
 	<video id="homepage-video">
-		<source src="<?php echo $video_webm['url'] ?>#t=1,100" type="video/webm"/>
 		<source src="<?php echo $video_mov['url'] ?>#t=1,100" type="video/mp4"/>
+		<source src="<?php echo $video_webm['url'] ?>#t=1,100" type="video/webm"/>
 	</video>
 	<div class="container desktop">
 		<a href="#" id="scrolldown-btn"><img src="<?php echo get_template_directory_uri(); ?>/img/scroll-arrow.png" alt="scroll down" /></a>
