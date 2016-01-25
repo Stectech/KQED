@@ -5,13 +5,14 @@
 function fo_runSentry() {
 
 	// Define session key and start the session
-	define ('SESSION_KEY', md5(site_url()));
+//	define ('SESSION_KEY', md5(site_url()));
+	
 	
 	//session_start();
 	//session_name('fo_session');
 	//$_COOKIE = WP_Session::get_instance();
 
-	setcookie('friends_only');
+//	setcookie('friends_only');
 
 	// Check for https
 	
@@ -31,11 +32,23 @@ function fo_runSentry() {
 
 	// If the sesion variable has already been set, then don't show the sentry
 	if ($_COOKIE['friends_only'] == SESSION_KEY) {
-		return;
+		define ('SESSION_KEY', md5(site_url()));
+		setcookie('friends_only', SESSION_KEY);
+		if (WP_DEBUG==true) {
+			echo "ACCESS ACCEPTED >>cookie(" . $_COOKIE['friends_only'] . ")" . SESSION_KEY . "]";
 		}
-	else {
-		$_COOKIE['friends_only'] = 'Not authenticated';
+		return;
 	}
+	else {
+//		define ('SESSION_KEY', NULL);
+//		setcookie('friends_only', SESSION_KEY);
+		if (WP_DEBUG==true) {
+			echo "ERROR 1 >>cookie(" . $_COOKIE['friends_only'] . ")" . SESSION_KEY . "]";
+		}
+		//$_COOKIE['friends_only'] = "Not authenticated";
+	}
+
+
 
 	// If the user is logged in then don't show the sentry	
 	if (is_user_logged_in()) {
@@ -65,6 +78,8 @@ function fo_runSentry() {
 	elseif (($_SERVER['SERVER_ADDR'] == $_SERVER['REMOTE_ADDR']) && (strpos($request_URI, 'backwpup') > 0)) {
 		return;
 	}
+
+
 	
 	// Check that the user requested URL matches the Wordpress domain settings, and if not, change
 	if (($_SERVER['HTTP_HOST'] != parse_url($base_WP_URI,PHP_URL_HOST)))
@@ -104,12 +119,15 @@ function fo_runSentry() {
 			wp_mail( $notify_address, "[".wp_specialchars_decode(get_bloginfo('name'), ENT_QUOTES)."] FAIL for ".$supplied_address,
 	  		"Failed login at ".wp_specialchars_decode(get_bloginfo('name'), ENT_QUOTES)." by ".$supplied_address."\n\nTime: ".date("H:i:s \(\G\M\TP\)")."\nIP: ".$_SERVER['REMOTE_ADDR']." (http://whatismyipaddress.com/ip/".$_SERVER['REMOTE_ADDR'].")");
 			}
-		
+			if (WP_DEBUG==true) {
+				echo "COOKIE CHECKPOINT 1 (" . $_COOKIE['friends_only'] . ")" . SESSION_KEY . "]";
+			}
 			fo_showLoginForm(get_option('prompt_error'));
 	  
 	  	}
 		else {
 			// set session variable if password was validated
+			define ('SESSION_KEY', md5(site_url()));
 			setcookie('friends_only', SESSION_KEY);
 
 			//$_COOKIE['friends_only'] = SESSION_KEY;
@@ -129,7 +147,13 @@ function fo_runSentry() {
 	
 	// If the user hasn't authenticated yet, show the login form	
 	else {
-    	fo_showLoginForm('');
+		// setcookie('friends_only', SESSION_KEY);	
+		
+		if (WP_DEBUG==true) {
+			echo "COOKIE CHECKPOINT 2 (" . $_COOKIE['friends_only'] . ")" . SESSION_KEY . "]";
+		}
+	
+		fo_showLoginForm('');
 	}
 }
 
